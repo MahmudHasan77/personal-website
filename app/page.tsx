@@ -893,7 +893,7 @@ const Home = () => {
       <section
         id="about"
         ref={aboutRef}
-        className={` scroll-mt-20 my-15 border border-zinc-300   dark:border-white/30 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31]`}
+        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31]`}
       >
         <h1 className="font-bold text-2xl text-center  animateText">
           About me
@@ -972,7 +972,7 @@ const Home = () => {
       <section
         ref={skillRef}
         id="skills"
-        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300 dark:border-white/30 rounded-xl w-[90%] mdw-[50%] mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1"
+        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[90%] mdw-[50%] mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Skills
@@ -1177,7 +1177,7 @@ const Home = () => {
       {/* services */}
       <section
         id="service"
-        className="scroll-mt-20 my-15 border border-zinc-300   dark:border-white/30 rounded-xl w-[90%] mx-auto  bg-[#d5dafd31] whiteShadow"
+        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[90%] mx-auto  bg-[#d5dafd31] whiteShadow"
       >
         <h1 className="text-center flex justify-center items-center gap-4 py-5">
           <span className="text-xl">
@@ -1194,7 +1194,7 @@ const Home = () => {
                 isService1
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Full Stack Web Development
@@ -1212,7 +1212,7 @@ const Home = () => {
                 isService2
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 Frontend Development </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1228,7 +1228,7 @@ const Home = () => {
                 isService3
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟣 Backend Development </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1244,7 +1244,7 @@ const Home = () => {
                 isService4
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟠 Authentication & Authorization
@@ -1262,7 +1262,7 @@ const Home = () => {
                 isService5
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟡 Hosting & Deployment </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1278,7 +1278,7 @@ const Home = () => {
                 isService6
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟤 Database Design & Management
@@ -1295,7 +1295,7 @@ const Home = () => {
                 isService7
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 API Integration </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1311,7 +1311,7 @@ const Home = () => {
                 isService8
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟣 Maintenance & Optimization
@@ -1329,7 +1329,7 @@ const Home = () => {
                 isService9
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Search Engine Optimization (SEO)
@@ -1347,7 +1347,7 @@ const Home = () => {
       {/* portfolio */}
       <section
         id="portfolio"
-        className="scroll-mt-20 my-15 p5  border border-zinc-300   dark:border-white/30 rounded-md bg-[#9799ac2f] whiteShadow py-10"
+        className="scroll-mt-20 my-15 p5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-[#9799ac2f] whiteShadow py-10"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Website List
@@ -1426,7 +1426,7 @@ const Home = () => {
       {/* contact */}
       <section
         id="contact"
-        className="scroll-mt-20 border border-zinc-300   dark:border-white/30 bg-[#d5dafd31] whiteShadow w-[90%] md:w-md lg:w-lg mx-auto rounded-md my-20 py-10 px-5 flex flex-col gap-y-10 duration-500 "
+        className="scroll-mt-20 border border-zinc-300/50   dark:border-white/10 bg-[#d5dafd31] whiteShadow w-[90%] md:w-md lg:w-lg mx-auto rounded-md my-20 py-10 px-5 flex flex-col gap-y-10 duration-500 "
       >
         <h1 className="font-bold text-lg animateText text-center">
           Contact me with Gmail Account
