@@ -690,7 +690,7 @@ const Home = () => {
       <main
         ref={heroRef}
         id="home"
-        className="scroll-mt-28 mt-10 md:my-10 my-5"
+        className="scroll-mt-28 mt-10 md:my-10 my-5  overflow-x-hidden"
       >
         {/* logo small screen */}
         <div className="flex justify-center md:justify-around gap-10">
@@ -1426,7 +1426,7 @@ const Home = () => {
       {/* contact */}
       <section
         id="contact"
-        className="scroll-mt-20 border border-zinc-300/50   dark:border-white/10 bg-[#d5dafd31] whiteShadow w-[90%] md:w-md lg:w-lg mx-auto rounded-md my-20 py-10 px-5 flex flex-col gap-y-10 duration-500 "
+        className="scroll-mt-20 border border-zinc-300/50   dark:border-white/10 bg-[#d5dafd31] whiteShadow w-[90%] md:w-md lg:w-lg mx-auto rounded-md my-5 py-10 px-5 flex flex-col gap-y-10 duration-500 "
       >
         <h1 className="font-bold text-lg animateText text-center">
           Contact me with Gmail Account
