@@ -1194,7 +1194,7 @@ const Home = () => {
                 isService1
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Full Stack Web Development
@@ -1212,7 +1212,7 @@ const Home = () => {
                 isService2
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 Frontend Development </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1228,7 +1228,7 @@ const Home = () => {
                 isService3
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟣 Backend Development </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1244,7 +1244,7 @@ const Home = () => {
                 isService4
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟠 Authentication & Authorization
@@ -1262,7 +1262,7 @@ const Home = () => {
                 isService5
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟡 Hosting & Deployment </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1278,7 +1278,7 @@ const Home = () => {
                 isService6
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟤 Database Design & Management
@@ -1295,7 +1295,7 @@ const Home = () => {
                 isService7
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 API Integration </h1>
               <p className="text-sm text-gray-700 dark:text-white">
@@ -1311,7 +1311,7 @@ const Home = () => {
                 isService8
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟣 Maintenance & Optimization
@@ -1329,7 +1329,7 @@ const Home = () => {
                 isService9
                   ? "translate-y-0 duration-300"
                   : "translate-y-[50%] opacity-0"
-              }  w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300   dark:border-white/30 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Search Engine Optimization (SEO)
