@@ -607,14 +607,14 @@ const Home = () => {
   return (
     <div
       onClick={handleClick}
-      className={`   ${
+      className={`relative overflow-x-hidden  ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gray-800 text-white "
           : "bg-gray-100 text-black "
       }
        transition-all duration-500`}
     >
-      <header className="flex justify-between  backdrop-blur-lg items-center py-2 px-10 md:px-20 sticky top-0 z-50 bg-white/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
+      <header className="flex justify-between  backdrop-blur-lg items-center py-2 px-10 md:px-20 fixed top-0 z-50 bg-white/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
           <button onClick={() => setShowNav(!showNav)}>
             <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
@@ -972,7 +972,7 @@ const Home = () => {
       <section
         ref={skillRef}
         id="skills"
-        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[90%] mdw-[50%] mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1"
+        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[100%] md:w-[90%]  mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Skills
@@ -1177,7 +1177,7 @@ const Home = () => {
       {/* services */}
       <section
         id="service"
-        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[90%] mx-auto  bg-[#d5dafd31] whiteShadow"
+        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[100%] md:w-[90%] mx-auto  bg-[#d5dafd31] whiteShadow pb-5"
       >
         <h1 className="text-center flex justify-center items-center gap-4 py-5">
           <span className="text-xl">
@@ -1426,7 +1426,7 @@ const Home = () => {
       {/* contact */}
       <section
         id="contact"
-        className="scroll-mt-20 border border-zinc-300/50   dark:border-white/10 bg-[#d5dafd31] whiteShadow w-[90%] md:w-md lg:w-lg mx-auto rounded-md my-5 py-10 px-5 flex flex-col gap-y-10 duration-500 "
+        className="scroll-mt-20 border border-zinc-300/50   dark:border-white/10 bg-[#d5dafd31] whiteShadow w-[95%] md:w-md lg:w-lg mx-auto rounded-md my-5 py-10 px-2 flex flex-col gap-y-10 duration-500 "
       >
         <h1 className="font-bold text-lg animateText text-center">
           Contact me with Gmail Account
