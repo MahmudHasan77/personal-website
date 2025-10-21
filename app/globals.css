@@ -1,0 +1,265 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+html {
+  scroll-behavior: smooth;
+}
+.themShadow {
+  box-shadow: 0px 0px 2px 1px rgb(190, 190, 190);
+  border: yellow;
+}
+
+.themLightShadow {
+  box-shadow: 0px 0px 2px 2px rgb(252, 252, 142);
+  border: yellow;
+}
+
+.heroName {
+  transform: translateX(100%);
+  animation: heroName 2s forwards;
+}
+
+@keyframes heroName {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.imageAnimate {
+  transform: scale(1);
+  opacity: 1;
+  animation: imageAnimate 5s infinite linear;
+}
+@keyframes imageAnimate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.topLogoLeft {
+  scale: 0.7;
+  animation: topLogoLeft 5s infinite linear;
+}
+@keyframes topLogoLeft {
+  50% {
+    scale: 1;
+  }
+}
+.topLogoRight {
+  scale: 1;
+
+  animation: topLogoRight 5s infinite linear;
+}
+@keyframes topLogoRight {
+  50% {
+    scale: 0.7;
+  }
+}
+
+.topLogoMiddle {
+  scale: 1;
+  animation: topLogoMiddle 5s infinite linear;
+}
+@keyframes topLogoMiddle {
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.sparklingRight {
+  scale: 1;
+  animation: sparklingRight 5s infinite linear;
+}
+@keyframes sparklingRight {
+  50% {
+    scale: 2;
+  }
+}
+
+.sparklingLeft {
+  scale: 2;
+  animation: sparklingLeft 5s infinite linear;
+}
+@keyframes sparklingLeft {
+  50% {
+    scale: 1;
+  }
+}
+.logoShadow {
+  box-shadow: 0px 0px 5px 1px rgb(0, 255, 4);
+}
+.whiteShadow {
+  box-shadow: 0px 0px 20px 5px rgba(184, 184, 184, 0.236);
+}
+
+.nodeLogo {
+  transform: translateY(10);
+  animation: nodeLogo 5s infinite linear;
+}
+@keyframes nodeLogo {
+  50% {
+    transform: translateY(-10);
+  }
+}
+
+.mongoLogo {
+  transform: translateY(-10);
+  animation: mongoLogo 5s infinite linear;
+}
+@keyframes mongoLogo {
+  50% {
+    transform: translateY(10);
+  }
+}
+
+.nodeLogoSmall {
+  transform: translateY(5);
+  animation: nodeLogoSmall 5s infinite linear;
+}
+@keyframes nodeLogoSmall {
+  50% {
+    transform: translateY(-5);
+  }
+}
+
+.mongoLogoSmall {
+  transform: translateY(-5);
+  animation: mongoLogoSmall 5s infinite linear;
+}
+@keyframes mongoLogoSmall {
+  50% {
+    transform: translateY(5);
+  }
+}
+
+.skillCardBg {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.055),
+    rgba(0, 0, 255, 0.055)
+  );
+
+  animation: moveBg 5s infinite linear;
+}
+
+@keyframes moveBg {
+  50% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+.skillBg {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.125),
+    rgba(255, 255, 255, 0.205)
+  );
+}
+
+.skillScale1 {
+  scale: 1;
+  animation: skillScale1 5s infinite linear;
+}
+@keyframes skillScale1 {
+  50% {
+    scale: 1.1;
+  }
+}
+.skillScale2 {
+  scale: 1.1;
+  animation: skillScale2 5s infinite linear;
+}
+@keyframes skillScale2 {
+  50% {
+    scale: 1;
+  }
+}
+
+.skillTranslate1 {
+  transform: translateX(5px);
+  animation: skillTranslate1 5s infinite linear;
+}
+@keyframes skillTranslate1 {
+  50% {
+    transform: translateX(-5px);
+  }
+}
+.skillTranslate2 {
+  transform: translateX(-5px);
+  animation: skillTranslate2 5s infinite linear;
+}
+@keyframes skillTranslate2 {
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.about {
+  background: radial-gradient(
+    circle,
+    rgba(138, 147, 186, 0.181),
+    rgba(252, 252, 252, 0.224)
+  );
+  animation: about 5s infinite linear;
+}
+@keyframes about {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.portfolioBox {
+  scrollbar-width: none;
+}
+.detailsScroll {
+  scrollbar-width: none;
+}
+
+.animateText {
+  background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateText 5s infinite linear;
+}
+@keyframes animateText {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.serviceIcon{
+  color: rgb(255, 208, 0);
+  scale: 1;
+  animation: serviceIcon 5s infinite linear;
+}
+@keyframes serviceIcon {
+  50%{
+    scale:1.5;
+  }
+}
+
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.6s linear;
+}
