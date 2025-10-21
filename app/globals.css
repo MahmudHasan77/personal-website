@@ -255,7 +255,7 @@ html {
     opacity: 0.6;
   }
   to {
-    transform: scale(4);
+    transform: scale(3);
     opacity: 0;
   }
 }

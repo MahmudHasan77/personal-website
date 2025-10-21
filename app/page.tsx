@@ -607,7 +607,7 @@ const Home = () => {
   return (
     <div
       onClick={handleClick}
-      className={` overflow-hidden  ${
+      className={`   ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gray-800 text-white "
           : "bg-gray-100 text-black "
@@ -702,7 +702,7 @@ const Home = () => {
             } duration-3000 h-7 w-7 md:h-10 md:w-10 relative topLogoLeft`}
           >
             <Image
-              src={"/TypeScript-logo.jpg"}
+              src={"/TypeScript-Logo.jpg"}
               fill
               alt="typeScript logo"
               className="rounded-full  logoShadow dark:shadow-none!"
