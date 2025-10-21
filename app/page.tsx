@@ -607,7 +607,7 @@ const Home = () => {
   return (
     <div
       onClick={handleClick}
-      className={` ${
+      className={` overflow-hidden  ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gray-800 text-white "
           : "bg-gray-100 text-black "
