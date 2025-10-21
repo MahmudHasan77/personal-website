@@ -893,7 +893,7 @@ const Home = () => {
       <section
         id="about"
         ref={aboutRef}
-        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31]`}
+        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31] overflow-hidden`}
       >
         <h1 className="font-bold text-2xl text-center  animateText">
           About me

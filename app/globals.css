@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .themShadow {
   box-shadow: 0px 0px 2px 1px rgb(190, 190, 190);
   border: yellow;
@@ -237,17 +238,16 @@ html {
   }
 }
 
-.serviceIcon{
+.serviceIcon {
   color: rgb(255, 208, 0);
   scale: 1;
   animation: serviceIcon 5s infinite linear;
 }
 @keyframes serviceIcon {
-  50%{
-    scale:1.5;
+  50% {
+    scale: 1.5;
   }
 }
-
 
 @keyframes ripple {
   from {
