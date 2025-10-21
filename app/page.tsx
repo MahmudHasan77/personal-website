@@ -609,7 +609,7 @@ const Home = () => {
       onClick={handleClick}
       className={`relative overflow-x-hidden  ${
         themMode && themMode === "dark"
-          ? "dark dark:bg-gray-800 text-white "
+          ? "dark dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800 text-white "
           : "bg-gray-100 text-black "
       }
        transition-all duration-500`}
