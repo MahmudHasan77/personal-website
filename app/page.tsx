@@ -687,11 +687,7 @@ const Home = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <main
-        ref={heroRef}
-        id="home"
-        className="scroll-mt-28   my-5 pt-20"
-      >
+      <main ref={heroRef} id="home" className="scroll-mt-28   my-5 pt-20">
         {/* logo small screen */}
         <div className="flex justify-center md:justify-around gap-10">
           <div
@@ -1192,8 +1188,8 @@ const Home = () => {
             <div
               className={`${
                 isService1
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1210,8 +1206,8 @@ const Home = () => {
             <div
               className={`${
                 isService2
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 Frontend Development </h1>
@@ -1226,8 +1222,8 @@ const Home = () => {
             <div
               className={`${
                 isService3
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟣 Backend Development </h1>
@@ -1242,8 +1238,8 @@ const Home = () => {
             <div
               className={`${
                 isService4
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1260,8 +1256,8 @@ const Home = () => {
             <div
               className={`${
                 isService5
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟡 Hosting & Deployment </h1>
@@ -1276,8 +1272,8 @@ const Home = () => {
             <div
               className={`${
                 isService6
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1293,8 +1289,8 @@ const Home = () => {
             <div
               className={`${
                 isService7
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 API Integration </h1>
@@ -1309,8 +1305,8 @@ const Home = () => {
             <div
               className={`${
                 isService8
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1327,8 +1323,8 @@ const Home = () => {
             <div
               className={`${
                 isService9
-                  ? "translate-y-0 duration-300"
-                  : "translate-y-[50%] opacity-0"
+                  ? "translate-y-0 duration-300 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
