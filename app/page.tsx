@@ -690,7 +690,7 @@ const Home = () => {
       <main
         ref={heroRef}
         id="home"
-        className="scroll-mt-28 mt-10 md:my-10 my-5  overflow-x-hidden"
+        className="scroll-mt-28   my-5 pt-20"
       >
         {/* logo small screen */}
         <div className="flex justify-center md:justify-around gap-10">
@@ -699,7 +699,7 @@ const Home = () => {
               isStart
                 ? "translate-x-0 opacity-100"
                 : "opacity-0 translate-x-[250%] md:translate-x-[1000%]"
-            } duration-3000 h-7 w-7 md:h-10 md:w-10 relative topLogoLeft`}
+            } duration-3000 h-10 w-10 md:h-15 md:w-15 relative topLogoLeft`}
           >
             <Image
               src={"/TypeScript-Logo.jpg"}
@@ -710,7 +710,7 @@ const Home = () => {
             />
           </div>
           <div
-            className={` h-7 w-7 md:h-10 md:w-10 relative duration-3000 topLogoMiddle ${
+            className={` h-10 w-10 md:h-15 md:w-15 relative duration-3000 topLogoMiddle ${
               isStart ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -723,7 +723,7 @@ const Home = () => {
             />
           </div>
           <div
-            className={`h-7 w-7 md:h-10 md:w-10 relative duration-3000 topLogoRight ${
+            className={`h-10 w-10 md:h-15 md:w-15 relative duration-3000 topLogoRight ${
               isStart
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-[250%] md:-translate-x-[1000%] opacity-0"
@@ -750,8 +750,8 @@ const Home = () => {
           >
             <Image
               src={"/node-js-logo.png"}
-              width={50}
-              height={50}
+              width={60}
+              height={60}
               alt="node js"
               className="rounded-full nodeLogo logoShadow dark:shadow-none!"
             />
@@ -759,8 +759,8 @@ const Home = () => {
           <div className="text-center px-4 my-10 overflow-hidden  flex justify-center items-center gap-5">
             <Image
               src={"/sparkling.png"}
-              height={15}
-              width={15}
+              height={20}
+              width={20}
               alt="sparkling"
               className={` ${
                 isStart
@@ -785,8 +785,8 @@ const Home = () => {
             </div>
             <Image
               src={"/sparkling.png"}
-              height={15}
-              width={15}
+              height={20}
+              width={20}
               alt="sparkling"
               className={` ${
                 isStart
@@ -804,8 +804,8 @@ const Home = () => {
           >
             <Image
               src={"/mongodb-logo.png"}
-              width={50}
-              height={50}
+              width={60}
+              height={60}
               alt="node js"
               className="rounded-full mongoLogo logoShadow dark:shadow-none!"
             />
@@ -816,8 +816,8 @@ const Home = () => {
         <div className="flex justify-center md:hidden gap-10">
           <Image
             src={"/node-js-logo.png"}
-            width={30}
-            height={30}
+            width={40}
+            height={40}
             alt="node js"
             className={`rounded-full nodeLogoSmall logoShadow dark:shadow-none! duration-3000 ${
               isStart
@@ -827,8 +827,8 @@ const Home = () => {
           />
           <Image
             src={"/mongodb-logo.png"}
-            width={30}
-            height={30}
+            width={40}
+            height={40}
             alt="node js"
             className={`rounded-full mongoLogoSmall logoShadow dark:shadow-none! duration-3000 ${
               isStart
