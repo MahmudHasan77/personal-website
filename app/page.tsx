@@ -900,7 +900,7 @@ const Home = () => {
           } w-52 h-52 my-7 md:w-90 md:h-90  rounded-full overflow-hidden `}
         >
           <Image
-            src={"/author.jpg"}
+            src={"/author.png"}
             height={0}
             width={200}
             style={{ height: "auto", width: "100%" }}
