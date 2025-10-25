@@ -897,7 +897,7 @@ const Home = () => {
         <div
           className={`${
             startAbout ? "scale-100 duration-500" : "scale-0"
-          } w-52 h-52 my-7 md:w-90 md:h-90  rounded-full overflow-hidden `}
+          } w-52 h-52 my-7 md:w-90 md:h-90  rounded-full overflow-hidden rotate-5`}
         >
           <Image
             src={"/author.png"}
@@ -906,7 +906,7 @@ const Home = () => {
             style={{ height: "auto", width: "100%" }}
             priority
             alt="mahmud hasan image"
-            className="object-cover  rotate-1"
+            className="object-cover"
           />
         </div>
 
