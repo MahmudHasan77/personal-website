@@ -905,7 +905,7 @@ const Home = () => {
             width={200}
             style={{ height: "auto", width: "100%" }}
             priority
-            alt="author image"
+            alt="mahmud hasan image"
             className="object-cover  rotate-1"
           />
         </div>
