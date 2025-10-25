@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Md Mahmud Hasan | Web Engineer",
     description:
       "Building modern, scalable web applications using React, Next.js, and MongoDB.",
-    images: ["/Nodejs-Application.png"],
+    // images: ["/Nodejs-Application.png"],
   },
   metadataBase: new URL(myUrl),
   other: {
