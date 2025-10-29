@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 const myUrl = "https://mahmud-hasan-seven.vercel.app";
 export const metadata: Metadata = {
   title:
-    "Md Mahmud Hasan  ",
+    "Md Mahmud Hasan | Web Engineer | web developer ",
   description:
     "I'm a passionate MERN Stack Web Engineer building modern, responsive, and high-performance web applications using React and Next.js.",
   keywords: [
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/logo.png",
-    shortcut:"/logo.png",
-    apple:"/logo.png"
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
@@ -80,5 +80,3 @@ export default function RootLayout({
   );
 }
 
-
-// | Web Engineer | web developer | full stack web developer | mern stack developer | web designer | front-end developer | back-end developer
