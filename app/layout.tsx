@@ -11,10 +11,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+// Md Mahmud Hasan | Web Engineer | web developer
 const myUrl = "https://mahmud-hasan-seven.vercel.app";
 export const metadata: Metadata = {
   title:
-    "Md Mahmud Hasan | Web Engineer | web developer ",
+    " ",
   description:
     "I'm a passionate MERN Stack Web Engineer building modern, responsive, and high-performance web applications using React and Next.js.",
   keywords: [
