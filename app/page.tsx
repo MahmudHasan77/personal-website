@@ -1046,6 +1046,19 @@ const Home = () => {
             <p>JavaScript</p>
           </div>
 
+          {/* python */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+            <Image
+              src={"/python-logo.jpg"}
+              width={100}
+              height={100}
+              alt="Python"
+              priority
+              className="rounded-full"
+            />
+            <p>Python</p>
+          </div>
+
           {/* TypeScript */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1129,6 +1142,45 @@ const Home = () => {
               className="rounded-full"
             />
             <p>Express js</p>
+          </div>
+
+          {/* mongo DB */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+            <Image
+              src={"/mongo-DB.png"}
+              width={100}
+              height={100}
+              alt="MongoDB"
+              priority
+              className="rounded-full"
+            />
+            <p>MongoDB</p>
+          </div>
+
+          {/* mongoose */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+            <Image
+              src={"/mongoose.png"}
+              width={100}
+              height={100}
+              alt="Mongoose"
+              priority
+              className="rounded-full"
+            />
+            <p className="mt2 pt-7">Mongoose</p>
+          </div>
+
+          {/* my sql */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+            <Image
+              src={"/my-sql.png"}
+              width={100}
+              height={100}
+              alt="MySQL"
+              priority
+              className="rounded-full"
+            />
+            <p>MySQL</p>
           </div>
 
           {/* git  */}
