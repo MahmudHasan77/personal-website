@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     "google-site-verification": "b9iHtfZyRhJRLxNsYVZszvjK69CsS6k-dOda9Q9aICs",
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo-google.png",
+    shortcut: "/logo-google.png",
+    apple: "/logo-google.png",
   },
 };
 
