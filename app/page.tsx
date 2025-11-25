@@ -778,6 +778,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-sm"> Web Engineer </p>
+              <p className="text-sm"> Mobile App Developer </p>
             </div>
             <Image
               src={"/sparkling.png"}
@@ -914,7 +915,7 @@ const Home = () => {
           <p
             className={`${
               aboutPara1
-                ? "translate-x-0 opacity-100"
+                ? "aboutPara1 opacity-100"
                 : "translate-x-[100%] opacity-0"
             } duration-500`}
           >
@@ -929,7 +930,7 @@ const Home = () => {
           <p
             className={`${
               aboutPara2
-                ? "translate-x-0 opacity-100"
+                ? "aboutPara2 opacity-100"
                 : "-translate-x-[100%] opacity-0"
             } duration-500`}
           >
@@ -942,7 +943,7 @@ const Home = () => {
           <p
             className={`${
               aboutPara3
-                ? "translate-x-0 opacity-100"
+                ? "aboutPara3 opacity-100"
                 : "translate-x-[100%] opacity-0"
             } duration-500`}
           >
@@ -954,7 +955,7 @@ const Home = () => {
           <p
             className={`${
               aboutPara4
-                ? "translate-x-0 opacity-100"
+                ? "aboutPara4 opacity-100"
                 : "-translate-x-[100%] opacity-0"
             } duration-500`}
           >
@@ -976,8 +977,8 @@ const Home = () => {
         <p
           className={`${
             startSkill
-              ? "opacity-100 translate-y-0"
-              : "-translate-y-[100%] opacity-0"
+              ? "skillTextAnimation translate-y-0"
+              : "-translate-y-[200%] opacity-0"
           } max-w-80 duration-500 md:max-w-100 px-5 text-center mx-auto text-black/70 dark:text-white/70`}
         >
           Here are the technologies and tools I work with to bring ideas to life
@@ -1047,7 +1048,7 @@ const Home = () => {
           </div>
 
           {/* python */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
               src={"/python-logo.jpg"}
               width={100}
@@ -1060,7 +1061,7 @@ const Home = () => {
           </div>
 
           {/* TypeScript */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
               src={"/ts.png"}
               width={100}
@@ -1072,7 +1073,7 @@ const Home = () => {
           </div>
 
           {/* React js */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
               src={"/react-logo.png"}
               width={100}
@@ -1084,7 +1085,7 @@ const Home = () => {
           </div>
 
           {/* jquery */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
               src={"/Jquery.png"}
               width={100}
@@ -1096,7 +1097,7 @@ const Home = () => {
           </div>
 
           {/* next js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
               src={"/next-js.webp"}
               width={100}
@@ -1108,7 +1109,7 @@ const Home = () => {
           </div>
 
           {/* redux  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
               src={"/redux-logo.png"}
               width={100}
@@ -1120,7 +1121,7 @@ const Home = () => {
           </div>
 
           {/* node js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
               src={"/node-js-logo.png"}
               width={100}
@@ -1132,7 +1133,7 @@ const Home = () => {
           </div>
 
           {/* Express js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
               src={"/express_js.jpeg"}
               width={100}
@@ -1145,7 +1146,7 @@ const Home = () => {
           </div>
 
           {/* mongo DB */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
               src={"/mongo-DB.png"}
               width={100}
@@ -1158,7 +1159,7 @@ const Home = () => {
           </div>
 
           {/* mongoose */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
               src={"/mongoose.png"}
               width={100}
@@ -1240,7 +1241,7 @@ const Home = () => {
             <div
               className={`${
                 isService1
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1258,7 +1259,7 @@ const Home = () => {
             <div
               className={`${
                 isService2
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1274,7 +1275,7 @@ const Home = () => {
             <div
               className={`${
                 isService3
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1290,7 +1291,7 @@ const Home = () => {
             <div
               className={`${
                 isService4
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1308,7 +1309,7 @@ const Home = () => {
             <div
               className={`${
                 isService5
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1324,7 +1325,7 @@ const Home = () => {
             <div
               className={`${
                 isService6
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1341,7 +1342,7 @@ const Home = () => {
             <div
               className={`${
                 isService7
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1357,7 +1358,7 @@ const Home = () => {
             <div
               className={`${
                 isService8
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1375,7 +1376,7 @@ const Home = () => {
             <div
               className={`${
                 isService9
-                  ? "translate-y-0 duration-300 scale-100"
+                  ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
@@ -1598,7 +1599,7 @@ const Home = () => {
           <div
             // onClick={handleSend}
             className={`${
-              messageBtn ? "translate-x-0" : "-translate-x-[250%] opacity-0"
+              messageBtn ? "messageBtn " : "-translate-x-[250%] opacity-0 "
             } rounded-md w-42 duration-500  py-2 gap-3  font-semibold text-sm cursor-pointer text-white bg-gray-500 dark:bg-white dark:text-black/70 hover:bg-yellow-400 hover:text-black/70 flex justify-center items-center`}
           >
             <button className="text-center">Send Message</button>

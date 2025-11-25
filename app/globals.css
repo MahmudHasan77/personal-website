@@ -263,3 +263,98 @@ html {
 .animate-ripple {
   animation: ripple 0.6s linear;
 }
+
+.aboutPara1 {
+  animation: aboutPara1 1s;
+}
+@keyframes aboutPara1 {
+  0% {
+    transform: translateX(100%);
+  }
+  70% {
+    transform: translateX(-1%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.aboutPara2 {
+  animation: aboutPara2 1s;
+}
+@keyframes aboutPara2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.aboutPara3 {
+  animation: aboutPara3 1s;
+}
+@keyframes aboutPara3 {
+  0% {
+    transform: translateX(100%);
+  }
+  70% {
+    transform: translateX(-1%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.aboutPara4 {
+  animation: aboutPara4 1s;
+}
+@keyframes aboutPara4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.skillTextAnimation {
+  animation: skillTextAnimation 1s ease-in-out forwards;
+}
+
+@keyframes skillTextAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.messageBtn {
+  transform: translateX(-250%);
+  animation: messageBtn 1s forwards;
+}
+@keyframes messageBtn {
+  0%{
+    transform: translateX(-250%);
+  }
+  80%{
+    transform: translateX(20%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

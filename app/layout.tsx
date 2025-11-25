@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     "React Developer",
     "Portfolio",
     "Bangladesh",
+    "web developer mahmud hasan",
+    "developer mahmud",
+    "mobile app developer",
+    "mobile application developer",
   ],
   authors: [{ name: "Md Mahmud Hasan" }],
 
