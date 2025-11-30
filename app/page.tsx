@@ -620,19 +620,17 @@ const Home = () => {
             <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
           </button>
         </div>
-        <div className="flex items-center gap-2">
           <a href="#home">
+        <div className="flex items-center gap-2  w-[50px] h-[50px] relative">
             <Image
               src="/author.jpg"
               alt="logo image"
-              width={50}
-              height={50}
+              fill
               priority
-              style={{ width: "auto", height: "auto" }}
-              className="object-cover"
+              className=" rotate-2 rounded-full  border"
             />
-          </a>
         </div>
+          </a>
 
         {/* desktop  navigation  */}
         <div
