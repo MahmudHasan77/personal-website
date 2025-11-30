@@ -623,7 +623,7 @@ const Home = () => {
         <div className="flex items-center gap-2">
           <a href="#home">
             <Image
-              src="/logo.png"
+              src="/author.jpg"
               alt="logo image"
               width={50}
               height={50}
