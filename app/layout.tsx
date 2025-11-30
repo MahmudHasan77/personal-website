@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     "google-site-verification": "b9iHtfZyRhJRLxNsYVZszvjK69CsS6k-dOda9Q9aICs",
   },
   icons: {
-    icon: "/logo-google.png",
-    shortcut: "/logo-google.png",
-    apple: "/logo-google.png",
+    icon: "/author.jpg",
+    shortcut: "/author.jpg",
+    apple: "/author.jpg",
   },
 };
 
