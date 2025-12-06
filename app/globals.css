@@ -324,24 +324,6 @@ html {
   }
 }
 
-.skillTextAnimation {
-  animation: skillTextAnimation 1s ease-in-out forwards;
-}
-
-@keyframes skillTextAnimation {
-  0% {
-    transform: translateY(-100%);
-  }
-  40% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(-10%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 
 .messageBtn {
   transform: translateX(-250%);

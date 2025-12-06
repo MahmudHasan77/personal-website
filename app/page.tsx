@@ -99,8 +99,10 @@ const Home = () => {
   const service7Ref = useRef<HTMLDivElement>(null);
   const [isService8, setService8] = useState(false);
   const service8Ref = useRef<HTMLDivElement>(null);
-  const [isService9, setService9] = useState(false);
   const service9Ref = useRef<HTMLDivElement>(null);
+  const service10Ref = useRef<HTMLDivElement>(null);
+  const [isService9, setService9] = useState(false);
+  const [isService10, setService10] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [isDetailsOpen, setDetailsOpen] = useState(false);
   const [click, setClick] = useState({
@@ -487,6 +489,29 @@ const Home = () => {
     };
   }, []);
   useEffect(() => {
+    const currentDiv = service10Ref.current;
+    if (!currentDiv) return;
+    const handleObserve = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setService10(true);
+        } else {
+          setService10(false);
+        }
+      },
+      { rootMargin: "-10% -10%" }
+    );
+    if (currentDiv) {
+      handleObserve.observe(currentDiv);
+    }
+    return () => {
+      if (currentDiv) {
+        handleObserve.unobserve(currentDiv);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     const currentDiv = messageBtnRef.current;
     if (!currentDiv) return;
     const handleObserve = new IntersectionObserver(
@@ -663,10 +688,11 @@ const Home = () => {
       </header>
       <div>
         {/* toggle navigation */}
+
         <div
-          className={`md:hidden ${
-            showNav ? "translate-y-0 h-65" : "h-0 -translate-y-60"
-          }  flex flex-col gap-3 px-10 fixed top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900  duration-500 transition-all w-full border-b border-zinc-300 z-40 dark:text-[#ffd900] text-green-600 pt-9 ${
+          className={`md:hidden h-65 ${
+            showNav ? "translate-y-0" : "-translate-y-65"
+          } flex flex-col gap-3 px-10 fixed top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 duration-500 transition-all w-full border-b border-zinc-300 z-40 dark:text-[#ffd900] text-green-600 pt-9 ${
             neue.className
           }`}
         >
@@ -676,10 +702,14 @@ const Home = () => {
                 onClick={() => setShowNav(false)}
                 href={nav.link}
                 key={i}
-                className="border-b border-green-100 hover:border-green-300 hover:dark:border-yellow-50 dark:border-yellow-50/20 flex items-center group duration-300"
+                className={`border-b border-green-100 hover:border-green-300 hover:dark:border-yellow-50 dark:border-yellow-50/20 flex items-center group  transform transition-all duration-500 ${
+                  showNav
+                    ? "translate-x-0 opacity-100 "
+                    : "translate-x-50 opacity-0"
+                }`}
+                style={{ transitionDelay: `${i * 50}ms` }}
               >
                 <div className="w-2 h-2 border rounded-full group-hover:bg-green-500 dark:group-hover:bg-yellow-500 duration-300" />
-
                 <span className="pl-5 group-hover:scale-105"> {nav.nav}</span>
               </a>
             );
@@ -862,8 +892,10 @@ const Home = () => {
                 : "translate-y-[100%] opacity-0"
             }`}
           >
-            I&apos;m a full Stack Web Developer . I love creating clean,
-            responsive, modern, and user-friendly web applications .
+            I'm a Full Stack Web & Mobile App Developer passionate about
+            creating clean, responsive, and modern applications. I specialize in
+            building user-friendly web platforms and cross-platform mobile apps,
+            delivering seamless experiences for both web and mobile users.
           </div>
 
           <div
@@ -892,9 +924,27 @@ const Home = () => {
         ref={aboutRef}
         className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31] overflow-hidden`}
       >
-        <h1 className="font-bold text-2xl text-center  animateText">
-          About me
-        </h1>
+        <div className="font-bold text-2xl text-center flex justify-center items-center gap-2">
+          <h1
+            className={`${
+              startAbout
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-20 opacity-0"
+            } animateText duration-500`}
+          >
+            About
+          </h1>
+
+          <h1
+            className={`${
+              startAbout
+                ? "translate-x-0 opacity-100"
+                : "translate-x-20 opacity-0"
+            } animateText duration-500`}
+          >
+            me
+          </h1>
+        </div>
         <div
           className={`${
             startAbout ? "scale-100 duration-500" : "scale-0"
@@ -906,7 +956,7 @@ const Home = () => {
             width={200}
             style={{ height: "auto", width: "100%" }}
             priority
-            alt="mahmud hasan image"
+            alt="mahmud hasan web developer"
             className="object-cover"
           />
         </div>
@@ -919,11 +969,12 @@ const Home = () => {
                 : "translate-x-[100%] opacity-0"
             } duration-500`}
           >
-            Hi, I’m <strong>Muhammad Hasan</strong>, a passionate Full Stack Web
-            Developer who loves turning ideas into interactive, modern, and
-            responsive web experiences. I specialize in building clean,
-            efficient, and user-focused applications using MERN Stack and
-            Next.js.
+            Hi, I’m <strong>Muhammad Hasan,</strong> a passionate Full Stack Web
+            & Mobile App Developer who loves turning ideas into interactive,
+            modern, and responsive experiences. I specialize in building clean,
+            efficient, and user-focused web applications using the MERN Stack
+            and Next.js, as well as cross-platform mobile apps with React Native
+            and Expo.
           </p>
         </div>
         <div ref={aboutPara2Ref} className="overflow-hidden">
@@ -934,9 +985,9 @@ const Home = () => {
                 : "-translate-x-[100%] opacity-0"
             } duration-500`}
           >
-            With every project, my goal is simple — to write clean code, create
-            intuitive designs, and deliver smooth, high-performance web
-            solutions that make a difference.
+            With every project, my goal is simple — to write clean code, design
+            intuitive interfaces, and deliver smooth, high-performance solutions
+            that make a real impact across both web and mobile platforms.
           </p>
         </div>
         <div ref={aboutPara3Ref} className="overflow-hidden">
@@ -977,12 +1028,13 @@ const Home = () => {
         <p
           className={`${
             startSkill
-              ? "skillTextAnimation translate-y-0"
-              : "-translate-y-[200%] opacity-0"
-          } max-w-80 duration-500 md:max-w-100 px-5 text-center mx-auto text-black/70 dark:text-white/70`}
+              ? " translate-y-0"
+              : "-translate-y-[100%] opacity-0  -translate-x-52"
+          } max-w-80 duration-500 sm:max-w-100 px-5 text-center mx-auto text-black/70 dark:text-white/70`}
         >
-          Here are the technologies and tools I work with to bring ideas to life
-          and build efficient, scalable web applications.
+          Here are the technologies and tools I work with to build efficient,
+          scalable web and mobile applications, turning ideas into seamless,
+          high-performance experiences.
         </p>
         <div className="flex my-5 gap-x-2 gap-y-5 md:gap-5 flex-wrap justify-around dark:text-white">
           {/* html  */}
@@ -1120,20 +1172,46 @@ const Home = () => {
             <p>Redux</p>
           </div>
 
-          {/* node js  */}
+          {/* React native  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+            <Image
+              src={"/react-native.png"}
+              width={100}
+              height={100}
+              alt="Node js"
+              priority
+              className="rounded-full"
+            />
+            <p>React Native</p>
+          </div>
+
+          {/* Expo  */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+            <Image
+              src={"/expo-logo.png"}
+              width={100}
+              height={100}
+              alt="Node js"
+              priority
+              className="rounded-full"
+            />
+            <p>Expo</p>
+          </div>
+
+          {/* node js  */}
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
               src={"/node-js-logo.png"}
               width={100}
               height={100}
-              alt="Node js"
+              alt="React native"
               priority
             />
             <p>Node js</p>
           </div>
 
           {/* Express js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
               src={"/express_js.jpeg"}
               width={100}
@@ -1146,7 +1224,7 @@ const Home = () => {
           </div>
 
           {/* mongo DB */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
               src={"/mongo-DB.png"}
               width={100}
@@ -1159,7 +1237,7 @@ const Home = () => {
           </div>
 
           {/* mongoose */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
               src={"/mongoose.png"}
               width={100}
@@ -1172,7 +1250,7 @@ const Home = () => {
           </div>
 
           {/* my sql */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
               src={"/my-sql.png"}
               width={100}
@@ -1185,7 +1263,7 @@ const Home = () => {
           </div>
 
           {/* git  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
               src={"/git.png"}
               width={100}
@@ -1197,7 +1275,7 @@ const Home = () => {
           </div>
 
           {/* Git Hub  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
               src={"/github.png"}
               width={100}
@@ -1209,7 +1287,7 @@ const Home = () => {
           </div>
 
           {/* firebase  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
+          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
               src={"/firebase.png"}
               width={100}
@@ -1250,8 +1328,9 @@ const Home = () => {
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
                 I develop complete, dynamic, and responsive web applications
-                using MERN Stack and Next.js — from concept to deployment.I
-                ensure every project is well-structured, fast, and scalable.
+                using MERN Stack and Next.js — from concept to deployment. Every
+                project is structured, fast, and scalable for seamless web
+                experiences.
               </p>
             </div>
           </div>
@@ -1263,11 +1342,13 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🔵 Frontend Development </h1>
+              <h1 className="font-semibold pb-3">
+                🟢 Full Stack Mobile App Development
+              </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I create modern and interactive UIs with React.js, Tailwind CSS,
-                and Material UI, ensuring seamless experiences across all
-                devices.
+                I build cross-platform mobile applications using React Native
+                and Expo, delivering smooth, responsive, and user-friendly apps
+                for both Android and iOS devices.
               </p>
             </div>
           </div>
@@ -1279,11 +1360,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🟣 Backend Development </h1>
+              <h1 className="font-semibold pb-3">
+                🔵 Frontend Development (Web & Mobile)
+              </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I build secure and efficient server-side systems using Node.js,
-                Express.js, and MongoDB, focusing on clean architecture and API
-                performance.
+                I create modern and interactive interfaces using React.js,
+                Tailwind CSS, and Material UI for web, and React Native
+                components for mobile, ensuring intuitive and consistent user
+                experiences across all platforms.
               </p>
             </div>
           </div>
@@ -1296,12 +1380,12 @@ const Home = () => {
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
-                🟠 Authentication & Authorization
+                🟣 Backend Development (Web & Mobile)
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I implement secure authentication systems using technologies
-                like JWT, bcrypt, and OAuth, ensuring user data privacy and
-                reliable access control.
+                I design secure and efficient server-side systems using Node.js
+                and Express.js, supporting APIs and data handling for both web
+                and mobile applications.
               </p>
             </div>
           </div>
@@ -1313,11 +1397,31 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🟡 Hosting & Deployment </h1>
+              <h1 className="font-semibold pb-3">
+                🟠 Authentication & Authorization
+              </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I handle hosting, domain setup, and deployment on platforms like
-                Vercel, Render, and Netlify, making sure your app runs smoothly
-                in production.
+                I implement secure authentication systems using JWT, bcrypt,
+                NextAuth, and Firebase, ensuring user data privacy and reliable
+                access control for web and mobile apps.
+              </p>
+            </div>
+          </div>
+          <div className={`overflow-hidden`} ref={service5Ref}>
+            <div
+              className={`${
+                isService5
+                  ? "translate-y-0 duration-500 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
+              }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
+            >
+              <h1 className="font-semibold pb-3">
+                🟡 Database Design & Management
+              </h1>
+              <p className="text-sm text-gray-700 dark:text-white">
+                I design, optimize, and manage databases using MongoDB, MySQL,
+                PostgreSQL, and Firebase, ensuring speed, scalability, and
+                security for both web and mobile projects.
               </p>
             </div>
           </div>
@@ -1329,12 +1433,11 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟤 Database Design & Management
-              </h1>
+              <h1 className="font-semibold pb-3">🟡 🔵 API Integration </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I design and optimize databases for better data handling,
-                ensuring speed, scalability, and security in every project.
+                I integrate third-party APIs (Payment, Email, Authentication,
+                etc.) to enhance functionality and efficiency for web and mobile
+                applications.
               </p>
             </div>
           </div>
@@ -1346,11 +1449,11 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🔵 API Integration </h1>
+              <h1 className="font-semibold pb-3">🟣 Hosting & Deployment</h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I integrate third-party APIs (like Payment, Email, and
-                Authentication APIs) to extend your web app’s functionality and
-                efficiency.
+                I manage hosting, domain setup, and deployment on platforms like
+                Vercel, Render, and Netlify for web apps, and handle app store
+                deployment for mobile applications.
               </p>
             </div>
           </div>
@@ -1363,12 +1466,12 @@ const Home = () => {
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
-                🟣 Maintenance & Optimization
+                🔵 🟤 Maintenance & Optimization
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I provide website updates, bug fixes, and performance
-                improvements to keep your project secure, fast, and reliable
-                over time.
+                I provide updates, bug fixes, and performance improvements to
+                keep web and mobile projects secure, fast, and reliable over
+                time.
               </p>
             </div>
           </div>
@@ -1381,12 +1484,30 @@ const Home = () => {
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
+                🟣 Maintenance & Optimization
+              </h1>
+              <p className="text-sm text-gray-700 dark:text-white">
+                I provide updates, bug fixes, and performance improvements to
+                keep web and mobile projects secure, fast, and reliable over
+                time.
+              </p>
+            </div>
+          </div>
+          <div className={`overflow-hidden`} ref={service10Ref}>
+            <div
+              className={`${
+                isService10
+                  ? "translate-y-0 duration-500 scale-100"
+                  : "translate-y-[50%] opacity-0 scale-50"
+              }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
+            >
+              <h1 className="font-semibold pb-3">
                 🟢 Search Engine Optimization (SEO)
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I optimize websites for better visibility and ranking on search
-                engines. From clean code structure and fast performance to
-                proper meta tags and on-page SEO techniques.
+                I optimize web applications for better visibility and search
+                engine ranking, including clean code structure, fast
+                performance, meta tags, and on-page SEO techniques
               </p>
             </div>
           </div>
