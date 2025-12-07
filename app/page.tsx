@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 import { CgMenuHotdog } from "react-icons/cg";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
