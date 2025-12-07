@@ -15,10 +15,11 @@ const geistMono = Geist_Mono({
 });
 const myUrl = "https://mahmud-hasan-seven.vercel.app";
 export const metadata: Metadata = {
-  title: "Md Mahmud Hasan | web developer ",
+  title: "Md Mahmud Hasan | Web and Mobile App Developer",
   description:
-    "I'm a passionate MERN Stack Web Engineer building modern, responsive, and high-performance web applications using React and Next.js.",
+    "I'm a passionate Full Stack Web and Mobile App Developer building modern, responsive, and high-performance applications using React, Next.js, and React Native.",
   keywords: [
+    "Mahmud hasan",
     "web Engineer",
     "web Developer",
     "MERN Stack",
@@ -26,7 +27,6 @@ export const metadata: Metadata = {
     "React Developer",
     "Portfolio",
     "Bangladesh",
-    "web developer mahmud hasan",
     "developer mahmud",
     "mobile app developer",
     "mobile application developer",
