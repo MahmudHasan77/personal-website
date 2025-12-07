@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(myUrl),
   other: {
-    "google-site-verification": "googlee7bede12aa14767e",
+    "google-site-verification": "SpySfPuBYpu0p3WV0J0E-6Nzz71izC5yn7n-idWs1BE",
   },
   icons: {
     icon: "/author-google.png",
