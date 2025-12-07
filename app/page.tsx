@@ -892,11 +892,10 @@ const Home = () => {
                 : "translate-y-[100%] opacity-0"
             }`}
           >
-             I&apos;m a Full Stack Web &amp; Mobile App Developer passionate
-            about creating clean, responsive, and modern applications. I
-            specialize in building user-friendly web platforms and
-            cross-platform mobile apps, delivering seamless experiences for both
-            web and mobile users.
+            I'm a Full Stack Web & Mobile App Developer passionate about
+            creating clean, responsive, and modern applications. I specialize in
+            building user-friendly web platforms and cross-platform mobile apps,
+            delivering seamless experiences for both web and mobile users.
           </div>
 
           <div
