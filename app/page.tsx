@@ -101,8 +101,10 @@ const Home = () => {
   const service8Ref = useRef<HTMLDivElement>(null);
   const service9Ref = useRef<HTMLDivElement>(null);
   const service10Ref = useRef<HTMLDivElement>(null);
+  const service11Ref = useRef<HTMLDivElement>(null);
   const [isService9, setService9] = useState(false);
   const [isService10, setService10] = useState(false);
+  const [isService11, setService11] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [isDetailsOpen, setDetailsOpen] = useState(false);
   const [click, setClick] = useState({
@@ -488,6 +490,7 @@ const Home = () => {
       }
     };
   }, []);
+
   useEffect(() => {
     const currentDiv = service10Ref.current;
     if (!currentDiv) return;
@@ -510,7 +513,28 @@ const Home = () => {
       }
     };
   }, []);
-
+  useEffect(() => {
+    const currentDiv = service11Ref.current;
+    if (!currentDiv) return;
+    const handleObserve = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setService11(true);
+        } else {
+          setService11(false);
+        }
+      },
+      { rootMargin: "-10% -10%" }
+    );
+    if (currentDiv) {
+      handleObserve.observe(currentDiv);
+    }
+    return () => {
+      if (currentDiv) {
+        handleObserve.unobserve(currentDiv);
+      }
+    };
+  }, []);
   useEffect(() => {
     const currentDiv = messageBtnRef.current;
     if (!currentDiv) return;
@@ -1408,10 +1432,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service5Ref}>
+          <div className={`overflow-hidden`} ref={service6Ref}>
             <div
               className={`${
-                isService5
+                isService6
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
@@ -1426,10 +1450,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service6Ref}>
+          <div className={`overflow-hidden`} ref={service7Ref}>
             <div
               className={`${
-                isService6
+                isService7
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
@@ -1442,10 +1466,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service7Ref}>
+          <div className={`overflow-hidden`} ref={service8Ref}>
             <div
               className={`${
-                isService7
+                isService8
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
@@ -1458,10 +1482,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service8Ref}>
+          <div className={`overflow-hidden`} ref={service9Ref}>
             <div
               className={`${
-                isService8
+                isService9
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
@@ -1476,10 +1500,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service9Ref}>
+          <div className={`overflow-hidden`} ref={service10Ref}>
             <div
               className={`${
-                isService9
+                isService10
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
@@ -1494,10 +1518,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service10Ref}>
+          <div className={`overflow-hidden`} ref={service11Ref}>
             <div
               className={`${
-                isService10
+                isService11
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
