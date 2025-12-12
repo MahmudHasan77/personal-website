@@ -672,8 +672,8 @@ const Home = () => {
         <div className="flex items-center gap-2">
           <a href="#home">
             <Image
-              src="/logo.png"
-              alt="logo image"
+              src="/author-google.png"
+              alt="mahmud hasan web and mobile app developer"
               width={50}
               height={50}
               priority
