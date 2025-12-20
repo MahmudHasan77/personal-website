@@ -324,6 +324,9 @@ html {
   }
 }
 
+.textColor {
+  color: #00196a;
+}
 
 .messageBtn {
   transform: translateX(-250%);

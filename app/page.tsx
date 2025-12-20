@@ -58,6 +58,8 @@ interface Ripple {
   y: number;
   id: number;
 }
+
+
 const Home = () => {
   const [themMode, setThemMode] = useState("dark");
   useEffect(() => {
@@ -659,7 +661,7 @@ const Home = () => {
       className={`relative overflow-x-hidden  ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800 text-white "
-          : "bg-[#f8feff] text-black "
+          : "bg-[#f8feff] text-[#094100] "
       }
        transition-all duration-500`}
     >
@@ -831,8 +833,8 @@ const Home = () => {
                   Mahmud Hasan
                 </span>
               </h1>
-              <p className="text-sm"> Web Engineer </p>
-              <p className="text-sm"> Mobile App Developer </p>
+              <p className="text-xs  font-semibold"> Web Engineer </p>
+              <p className="text-xs  font-semibold"> Mobile App Developer </p>
             </div>
             <Image
               src={"/sparkling.png"}
@@ -909,7 +911,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={` text-center text-lg md:text-xl  text-yellow-900 dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
+            className={` text-center text-lg md:text-xl  text-[#8a6300] dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
                ${neue.className} ${
               isStart
                 ? "translate-y-0 opacity-100"
