@@ -659,7 +659,7 @@ const Home = () => {
       className={`relative overflow-x-hidden  ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800 text-white "
-          : "bg-gray-100 text-black "
+          : "bg-[#f8feff] text-black "
       }
        transition-all duration-500`}
     >
@@ -674,10 +674,10 @@ const Home = () => {
             <Image
               src="/author-google.png"
               alt="mahmud hasan web and mobile app developer"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               priority
-              style={{ width: "auto", height: "auto" }}
+              style={{ width: "auto", height: "auto", padding: 3 }}
               className="object-cover"
             />
           </a>
@@ -947,7 +947,7 @@ const Home = () => {
       <section
         id="about"
         ref={aboutRef}
-        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-[#d5dafd31] overflow-hidden`}
+        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] overflow-hidden`}
       >
         <div className="font-bold text-2xl text-center flex justify-center items-center gap-2">
           <h1
@@ -1045,7 +1045,7 @@ const Home = () => {
       <section
         ref={skillRef}
         id="skills"
-        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[100%] md:w-[90%]  mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1"
+        className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[100%] md:w-[90%]  mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1 md:px-5"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Skills
@@ -1329,7 +1329,7 @@ const Home = () => {
       {/* services */}
       <section
         id="service"
-        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[100%] md:w-[90%] mx-auto  bg-[#d5dafd31] whiteShadow pb-5"
+        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[100%] md:w-[90%] mx-auto  bg-blue-50 dark:bg-[#d5dafd31] whiteShadow pb-5 md:px-"
       >
         <h1 className="text-center flex justify-center items-center gap-4 py-5">
           <span className="text-xl">
@@ -1339,7 +1339,7 @@ const Home = () => {
             Services
           </span>
         </h1>
-        <div className="flex p-2 flex-wrap gap-5 justify-around">
+        <div className="flex p-2 flex-wrap gap-3 justify-center">
           <div className={`overflow-hidden`} ref={service1Ref}>
             <div
               className={`${
@@ -1458,7 +1458,7 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-50"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🟡 🔵 API Integration </h1>
+              <h1 className="font-semibold pb-3">🔵 API Integration </h1>
               <p className="text-sm text-gray-700 dark:text-white">
                 I integrate third-party APIs (Payment, Email, Authentication,
                 etc.) to enhance functionality and efficiency for web and mobile
@@ -1491,7 +1491,7 @@ const Home = () => {
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
-                🔵 🟤 Maintenance & Optimization
+                🟤 Maintenance & Optimization
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
                 I provide updates, bug fixes, and performance improvements to
@@ -1542,7 +1542,7 @@ const Home = () => {
       {/* portfolio */}
       <section
         id="portfolio"
-        className="scroll-mt-20 my-15 p5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-[#9799ac2f] whiteShadow py-10"
+        className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Website List
