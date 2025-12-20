@@ -663,7 +663,7 @@ const Home = () => {
       }
        transition-all duration-500`}
     >
-      <header className="flex justify-between  backdrop-blur-lg items-center py-2 px-10 md:px-20 fixed top-0 z-50 bg-white/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
+      <header className="flex justify-between  backdrop-blur-lg items-center py-2 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
           <button onClick={() => setShowNav(!showNav)}>
             <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
