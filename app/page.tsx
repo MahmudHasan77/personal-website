@@ -1898,47 +1898,49 @@ const Home = () => {
       {/*app list*/}
       <section
         id="portfolio"
-        className="scroll-mt-20 flex justify-center my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
+        className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
       >
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Application List
         </h1>
-        <div className="flex">
-          <div className="flex flex-col">
-            <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
-              <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
-              <span className="absolute top-20 -right-[7px] bg-gray-700   w-1 h-13 rounded-xs" />
-              <span className="absolute top-40 -right-[7px] bg-gray-700 w-1 h-7 rounded-xs" />
-              <div className="relative h-full w-full">
-                <Image
-                  src={"/coffee-image-home-page.jpg"}
-                  fill
-                  alt="coffee shop mobile"
-                  className="rounded-lg"
-                />
+        <div className="flex justify-center">
+          <div className="flex">
+            <div className="flex flex-col">
+              <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
+                <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
+                <span className="absolute top-20 -right-[7px] bg-gray-700   w-1 h-13 rounded-xs" />
+                <span className="absolute top-40 -right-[7px] bg-gray-700 w-1 h-7 rounded-xs" />
+                <div className="relative h-full w-full">
+                  <Image
+                    src={"/coffee-image-home-page.jpg"}
+                    fill
+                    alt="coffee shop mobile"
+                    className="rounded-lg"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="py-5">
-              <h1 className="text-sm text-center">
-                {"Coffee shop application"}
-              </h1>
-              <div
-                className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
-                // onClick={() => {
-                //   setShowDetails(port);
-                //   setDetailsOpen(true);
-                // }}
-              >
-                View Application
-              </div>
-              <div
-                className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
-                // onClick={() => {
-                //   setShowDetails(port);
-                //   setDetailsOpen(true);
-                // }}
-              >
-                Download Application
+              <div className="py-5">
+                <h1 className="text-sm text-center">
+                  {"Coffee shop application"}
+                </h1>
+                <div
+                  className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
+                  // onClick={() => {
+                  //   setShowDetails(port);
+                  //   setDetailsOpen(true);
+                  // }}
+                >
+                  View Application
+                </div>
+                <div
+                  className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
+                  // onClick={() => {
+                  //   setShowDetails(port);
+                  //   setDetailsOpen(true);
+                  // }}
+                >
+                  Download Application
+                </div>
               </div>
             </div>
           </div>
