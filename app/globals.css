@@ -97,10 +97,48 @@ html {
   }
 }
 .logoShadow {
-  box-shadow: 0px 0px 5px 1px rgb(0, 255, 4);
+  box-shadow: 0px 0px 5px 5px rgb(238, 247, 238);
 }
 .whiteShadow {
   box-shadow: 0px 0px 20px 5px rgba(184, 184, 184, 0.236);
+}
+.serviceWhiteShadow {
+  box-shadow: 0px 0px 20px 5px rgba(156, 156, 156, 0.236);
+}
+.appCardShadow {
+  box-shadow: 0px 0px 15px 5px #9b9b9b82;
+}
+
+.appCardBorder {
+  border: 7px black ridge;
+}
+.appCardBorder:hover {
+  border: 7px red groove;
+  transition: all;
+  animation: appCardBorderHover 3s linear infinite;
+}
+
+@keyframes appCardBorderHover {
+  0% {
+    border: 7px red groove;
+  }
+  50% {
+    border: 7px blue groove;
+  }
+}
+
+.appCardBorder:hover span {
+  background: red;
+  transition: all;
+  animation: appCardBgHoverSpan 3s linear infinite;
+}
+@keyframes appCardBgHoverSpan {
+  0% {
+    background: red;
+  }
+  50% {
+    background: blue;
+  }
 }
 
 .nodeLogo {
@@ -115,7 +153,7 @@ html {
 
 .mongoLogo {
   transform: translateY(-10);
-  animation: mongoLogo 5s infinite linear;
+  animation: mongoLogo 7s infinite linear;
 }
 @keyframes mongoLogo {
   50% {
@@ -125,7 +163,7 @@ html {
 
 .nodeLogoSmall {
   transform: translateY(5);
-  animation: nodeLogoSmall 5s infinite linear;
+  animation: nodeLogoSmall 6s infinite linear;
 }
 @keyframes nodeLogoSmall {
   50% {
@@ -135,7 +173,7 @@ html {
 
 .mongoLogoSmall {
   transform: translateY(-5);
-  animation: mongoLogoSmall 5s infinite linear;
+  animation: mongoLogoSmall 4s infinite linear;
 }
 @keyframes mongoLogoSmall {
   50% {
@@ -150,7 +188,7 @@ html {
     rgba(0, 0, 255, 0.055)
   );
 
-  animation: moveBg 5s infinite linear;
+  animation: moveBg 7s infinite linear;
 }
 
 @keyframes moveBg {
@@ -333,13 +371,111 @@ html {
   animation: messageBtn 1s forwards;
 }
 @keyframes messageBtn {
-  0%{
+  0% {
     transform: translateX(-250%);
   }
-  80%{
+  80% {
     transform: translateX(20%);
   }
-  100%{
+  100% {
     transform: translateX(0%);
   }
+}
+
+/* .mainSection {
+  background-image: url("../public/coding-image-2.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.starAnimation {
+  scale: 1;
+  animation: starAnimation 1s infinite linear;
+}
+@keyframes starAnimation {
+  50% {
+    scale: 2;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.slider {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  animation: rotateStyle 10s linear infinite;
+  transform: rotateX(-30deg);
+}
+@keyframes rotateStyle {
+  0% {
+    transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+.slider span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px);
+}
+
+@media (min-width: 600px) {
+  .slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+  }
+}
+/* @media (max-width: 900px) {
+  .slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+  }
+} */
+
+.slider span Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.lightBg {
+  background: red;
 }

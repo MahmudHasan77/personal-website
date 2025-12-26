@@ -13,12 +13,22 @@ import { MdSend } from "react-icons/md";
 import { FcOk } from "react-icons/fc";
 import { MdOutlineReportGmailerrorred } from "react-icons/md";
 import { RiLoader3Fill } from "react-icons/ri";
+import { MdDarkMode } from "react-icons/md";
 const neue = Roboto_Condensed({
   weight: "400",
   subsets: ["latin"],
 });
 
-import { MdDarkMode } from "react-icons/md";
+const applications = [
+  {
+    id: 1,
+    img: "/coffee-image-home-page.jpg",
+    link: "",
+    title: "Coffee Shop application design",
+    description:
+      "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
+  },
+];
 const portfolios = [
   {
     id: 1,
@@ -59,12 +69,12 @@ interface Ripple {
   id: number;
 }
 
-
 const Home = () => {
   const [themMode, setThemMode] = useState("dark");
   useEffect(() => {
     setThemMode(localStorage.getItem("them") || "dark");
   }, []);
+  const engineeringText = " Web Engineer";
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const [isStart, setStart] = useState(false);
   const [sendStatus, setSendStatus] = useState("");
@@ -714,7 +724,6 @@ const Home = () => {
       </header>
       <div>
         {/* toggle navigation */}
-
         <div
           className={`md:hidden h-65 ${
             showNav ? "translate-y-0" : "-translate-y-65"
@@ -743,8 +752,191 @@ const Home = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <main ref={heroRef} id="home" className="scroll-mt-28   my-5 pt-20">
+      <main
+        ref={heroRef}
+        id="home"
+        className="scroll-mt-28   my-5 pt-20 relative"
+      >
+        {/* stars */}
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-30 md:top-40 lg:top-35 right-20 md:right-10 lg:right-20 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-30 md:top-40 lg:top-35 left-20 md:left-10 lg:left-20 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-65 sm:top-50 right-35 md:right-40 lg:right-80 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-65 sm:top-50 left-35 md:left-40 lg:left-80 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-60 md:top-70 left-15 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-60 md:top-70 right-15 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-77 left-20 sm:left-40 sm:top-70 md:top-77 md:left-50 lg:left-99 lg:top-99 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-77 right-20 sm:right-40 sm:top-70 md:top-77 md:right-50 lg:right-99 lg:top-99 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-155 right-15 md:right-55 lg:right-70 md:top-150 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-155 left-15 md:left-55 lg:left-70 md:top-150 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-127 sm:top-120 lg:top-145 left-1/2 md:left-4/7 lg:left-1/2 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-185 md:top-150 lg:hidden left-1/2 starAnimation"
+        />
+
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-130 left-25 sm:hidden starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-130 right-25 sm:hidden starAnimation"
+        />
+        {/*
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-40 left-20 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-30 left-25 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-25 left-15 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-35 left-7 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-40 left-50 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-43 left-40 starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-45 left-30 starAnimation"
+        /> */}
+        {/* lg screen */}
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-25 left-100 hidden lg:inline starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-25 right-100 hidden lg:inline starAnimation"
+        />
+        <Image
+          src={"/christmas-star.png"}
+          width={5}
+          height={5}
+          alt="star image"
+          className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
+        />
+
         {/* logo small screen */}
+
         <div className="flex justify-center md:justify-around gap-10">
           <div
             className={` ${
@@ -784,15 +976,15 @@ const Home = () => {
             <Image
               src={"/next-js-logo.png"}
               fill
-              alt="typeScript logo"
+              alt="next js logo"
               priority
-              className="rounded-full  logoShadow dark:shadow-none!"
+              className="rounded-full bg-green100 logoShadow dark:shadow-none!"
             />
           </div>
         </div>
 
         {/* name */}
-        <div className="flex justify-around  items-center">
+        <div className="flex justify-around  items-center ">
           <div
             className={`hidden md:inline duration-3000 ${
               isStart
@@ -822,7 +1014,7 @@ const Home = () => {
             />
             <div>
               <h1
-                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-bold `}
+                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-bold z-40 opacity-100`}
               >
                 Hi, I&apos;m{" "}
                 <span
@@ -833,8 +1025,42 @@ const Home = () => {
                   Mahmud Hasan
                 </span>
               </h1>
-              <p className="text-xs  font-semibold"> Web Engineer </p>
-              <p className="text-xs  font-semibold"> Mobile App Developer </p>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src={"/coding.png"}
+                  width={20}
+                  height={20}
+                  alt="web development"
+                />
+                <p className="text-xs  font-semibold text-[#021ab6] dark:text-[#faf]">
+                  {engineeringText.split("").map((char, i) => (
+                    <span
+                      key={i}
+                      className={`
+        
+              inline-block transform transition-all duration-500 
+              ${isStart ? "opacity-100" : "opacity-0 "}
+            `}
+                      style={{
+                        transitionDelay: `${i * 0.2}s`,
+                      }}
+                    >
+                      {char === " " ? "\u00A0" : char}
+                    </span>
+                  ))}
+                </p>
+              </div>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src={"/mobile-coding.png"}
+                  width={20}
+                  height={20}
+                  alt="web development"
+                />
+                <p className="text-xs  font-semibold text-[#021ab6] dark:text-[#faf]">
+                  Mobile App Developer
+                </p>
+              </div>
             </div>
             <Image
               src={"/sparkling.png"}
@@ -859,8 +1085,8 @@ const Home = () => {
               src={"/mongodb-logo.png"}
               width={60}
               height={60}
-              alt="node js"
-              className="rounded-full mongoLogo logoShadow dark:shadow-none!"
+              alt="mongodb logo"
+              className="rounded-full mongoLogo logoShadow  dark:shadow-none!"
             />
           </div>
         </div>
@@ -949,7 +1175,7 @@ const Home = () => {
       <section
         id="about"
         ref={aboutRef}
-        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] overflow-hidden`}
+        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] `}
       >
         <div className="font-bold text-2xl text-center flex justify-center items-center gap-2">
           <h1
@@ -972,20 +1198,115 @@ const Home = () => {
             me
           </h1>
         </div>
-        <div
-          className={`${
-            startAbout ? "scale-100 duration-500" : "scale-0"
-          } w-52 h-52 my-7 md:w-90 md:h-90  rounded-full overflow-hidden rotate-5`}
-        >
-          <Image
-            src={"/author.png"}
-            height={0}
-            width={200}
-            style={{ height: "auto", width: "100%" }}
-            priority
-            alt="mahmud hasan web developer"
-            className="object-cover"
-          />
+
+        <div className="w-full  relative h-40 md:h-70 lg:h-70 mb-30 md:mb-30 ">
+          <div className="flex flex-col justify-center items-center z-0">
+            <div
+              className={`${
+                startAbout ? "scale-100 duration-500" : "scale-0"
+              } w-50 h-50  md:w-70 md:h-70  rounded-full overflow-hidden rotate-5 m-auto z-40`}
+            >
+              <Image
+                src={"/author.png"}
+                height={0}
+                width={200}
+                style={{ height: "auto", width: "100%" }}
+                priority
+                alt="mahmud hasan web developer"
+                className="object-cover z-40"
+              />
+            </div>
+            <div className="slider -mt-12">
+              <span
+                style={{ "--i": 1 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 2 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 3 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 4 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 5 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 6 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 7 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+              <span
+                style={{ "--i": 8 } as React.CSSProperties}
+                className="relative h-10 w-10"
+              >
+                <Image
+                  src={"/author-google.png"}
+                  fill
+                  alt=""
+                  className="rounded"
+                />
+              </span>
+            </div>
+          </div>
         </div>
 
         <div ref={aboutPara1Ref} className="overflow-hidden">
@@ -1331,7 +1652,7 @@ const Home = () => {
       {/* services */}
       <section
         id="service"
-        className="scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl w-[100%] md:w-[90%] mx-auto  bg-blue-50 dark:bg-[#d5dafd31] whiteShadow pb-5 md:px-"
+        className="scroll-mt-20 my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[100%] md:w-[90%] mx-auto  bg-blue-50 dark:bg-[#d5dafd31] whiteShadow pb-5"
       >
         <h1 className="text-center flex justify-center items-center gap-4 py-5">
           <span className="text-xl">
@@ -1341,19 +1662,22 @@ const Home = () => {
             Services
           </span>
         </h1>
-        <div className="flex p-2 flex-wrap gap-3 justify-center">
-          <div className={`overflow-hidden`} ref={service1Ref}>
+        <div className="flex p-2 flex-wrap gap-3 lg:gap-7 justify-center">
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service1Ref}
+          >
             <div
               className={`${
                 isService1
                   ? "translate-y-0 duration-500 scale-100"
                   : "translate-y-[50%] opacity-0 scale-50"
-              }  w-[100%] mx-auto md:w-90 text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
+              }  w-[100%] mx-auto md:w-90 text-center rounded p-5 bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Full Stack Web Development
               </h1>
-              <p className="text-sm text-gray-700 dark:text-white">
+              <p className="text-sm text-gray-900 dark:text-white">
                 I develop complete, dynamic, and responsive web applications
                 using MERN Stack and Next.js — from concept to deployment. Every
                 project is structured, fast, and scalable for seamless web
@@ -1361,7 +1685,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service2Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service2Ref}
+          >
             <div
               className={`${
                 isService2
@@ -1379,7 +1706,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service3Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service3Ref}
+          >
             <div
               className={`${
                 isService3
@@ -1398,7 +1728,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service4Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service4Ref}
+          >
             <div
               className={`${
                 isService4
@@ -1416,7 +1749,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service5Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service5Ref}
+          >
             <div
               className={`${
                 isService5
@@ -1434,7 +1770,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service6Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service6Ref}
+          >
             <div
               className={`${
                 isService6
@@ -1452,7 +1791,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service7Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service7Ref}
+          >
             <div
               className={`${
                 isService7
@@ -1468,7 +1810,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service8Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service8Ref}
+          >
             <div
               className={`${
                 isService8
@@ -1484,7 +1829,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service9Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service9Ref}
+          >
             <div
               className={`${
                 isService9
@@ -1502,7 +1850,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service10Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service10Ref}
+          >
             <div
               className={`${
                 isService10
@@ -1520,7 +1871,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className={`overflow-hidden`} ref={service11Ref}>
+          <div
+            className={`overflow-hidden serviceWhiteShadow`}
+            ref={service11Ref}
+          >
             <div
               className={`${
                 isService11
@@ -1541,11 +1895,91 @@ const Home = () => {
         </div>
       </section>
 
-      {/* portfolio */}
+      {/*app list*/}
       <section
         id="portfolio"
-        className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
+        className="scroll-mt-20 flex justify-center my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
       >
+        <h1 className="font-bold text-2xl text-center pb-5 animateText">
+          Application List
+        </h1>
+        <div className="flex">
+          <div className="flex flex-col">
+            <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
+              <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
+              <span className="absolute top-20 -right-[7px] bg-gray-700   w-1 h-13 rounded-xs" />
+              <span className="absolute top-40 -right-[7px] bg-gray-700 w-1 h-7 rounded-xs" />
+              <div className="relative h-full w-full">
+                <Image
+                  src={"/coffee-image-home-page.jpg"}
+                  fill
+                  alt="coffee shop mobile"
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="py-5">
+              <h1 className="text-sm text-center">
+                {"Coffee shop application"}
+              </h1>
+              <div
+                className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
+                // onClick={() => {
+                //   setShowDetails(port);
+                //   setDetailsOpen(true);
+                // }}
+              >
+                View Application
+              </div>
+              <div
+                className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
+                // onClick={() => {
+                //   setShowDetails(port);
+                //   setDetailsOpen(true);
+                // }}
+              >
+                Download Application
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* details toggle */}
+      {showDetails && isDetailsOpen && (
+        <div
+          className={
+            "mt-20 mb-5 w-[90%] md:w-[70%] mx-auto fixed inset-0 border border-zinc-300   dark:border-white/30 rounded overflow-y-auto detailsScroll bg-white dark:bg-gray-800 z-10"
+          }
+        >
+          <div className="flex justify-center">
+            <button
+              onClick={() => setDetailsOpen(false)}
+              className="py-2 px-5 bg-white whiteShadow hover:bg-red-500 hover:text-white text-red-500 rounded-md m-3 duration-300"
+            >
+              <RxCross2 />
+            </button>
+          </div>
+          <div className="relative w-full">
+            <Image
+              src={showDetails.img}
+              width={200}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+              alt={showDetails.title}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center gap-y-3 p-3 text-center">
+            <h1 className="font-semibold">{showDetails.title}</h1>
+            <p className="dark:text-gray-300 text-gray-700">
+              {showDetails.description}
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* website list */}
+      <section className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10">
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Website List
         </h1>
@@ -1554,9 +1988,9 @@ const Home = () => {
             return (
               <div
                 key={index}
-                className="border border-zinc-300   dark:border-white/30 whiteShadow w-[80%] md:w-70 mx-auto rounded-md my-5"
+                className="border border-zinc-300  appCardShadow dark:border-white/30 whiteShadow w-[80%] md:w-70 mx-auto rounded-md my-5 bg-blue-200/50"
               >
-                <div className="relative w-full h-80 portfolioBox rounded-t-md overflow-y-auto">
+                <div className="relative w-full h-70 portfolioBox rounded-t-md overflow-y-auto">
                   <Image
                     src={port.img}
                     priority
@@ -1571,7 +2005,7 @@ const Home = () => {
                 </h1>
                 <div className="flex justify-around py-5">
                   <div
-                    className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow"
+                    className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded-full cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow"
                     onClick={() => {
                       setShowDetails(port);
                       setDetailsOpen(true);
@@ -1579,7 +2013,7 @@ const Home = () => {
                   >
                     View Details
                   </div>
-                  <div className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow">
+                  <div className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded-full cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow">
                     <a href={port.link}>View website</a>
                   </div>
                 </div>
@@ -1620,6 +2054,7 @@ const Home = () => {
           </div>
         </div>
       )}
+
       {/* contact */}
       <section
         id="contact"
