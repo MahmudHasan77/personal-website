@@ -763,14 +763,14 @@ const Home = () => {
           width={5}
           height={5}
           alt="star image"
-          className="absolute top-30 md:top-40 lg:top-35 right-20 md:right-10 lg:right-20 starAnimation"
+          className="absolute top-35 md:top-40 lg:top-35 right-40 md:right-10 lg:right-20 starAnimation"
         />
         <Image
           src={"/christmas-star.png"}
           width={5}
           height={5}
           alt="star image"
-          className="absolute top-30 md:top-40 lg:top-35 left-20 md:left-10 lg:left-20 starAnimation"
+          className="absolute top-35 md:top-40 lg:top-35 left-40 md:left-10 lg:left-20 starAnimation"
         />
         <Image
           src={"/christmas-star.png"}
@@ -862,56 +862,7 @@ const Home = () => {
           alt="star image"
           className="absolute top-130 right-25 sm:hidden starAnimation"
         />
-        {/*
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-40 left-20 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-30 left-25 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-25 left-15 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-35 left-7 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-40 left-50 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-43 left-40 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-45 left-30 starAnimation"
-        /> */}
+        
         {/* lg screen */}
         <Image
           src={"/christmas-star.png"}
