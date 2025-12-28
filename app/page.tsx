@@ -1859,8 +1859,8 @@ const Home = () => {
             <div className="flex flex-col">
               <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
                 <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
-                <span className="absolute top-20 -right-[7px] bg-gray-700   w-1 h-13 rounded-xs" />
-                <span className="absolute top-40 -right-[7px] bg-gray-700 w-1 h-7 rounded-xs" />
+                <span className="absolute top-20 -right-[8px] bg-[#101010]   w-1 h-13 rounded-xs" />
+                <span className="absolute top-40 -right-[8px] bg-[#101010] w-1 h-7 rounded-xs" />
                 <div className="relative h-full w-full">
                   <Image
                     src={"/coffee-image-home-page.jpg"}

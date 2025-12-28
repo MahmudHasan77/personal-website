@@ -110,20 +110,20 @@ html {
 }
 
 .appCardBorder {
-  border: 7px black ridge;
+  border: 7px #101010 solid;
 }
 .appCardBorder:hover {
-  border: 7px red groove;
+  border: 7px red solid;
   transition: all;
   animation: appCardBorderHover 3s linear infinite;
 }
 
 @keyframes appCardBorderHover {
   0% {
-    border: 7px red groove;
+    border: 7px red solid;
   }
   50% {
-    border: 7px blue groove;
+    border: 7px blue solid;
   }
 }
 
