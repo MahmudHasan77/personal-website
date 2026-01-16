@@ -1266,7 +1266,7 @@ const Home = () => {
               aboutPara1
                 ? "aboutPara1 opacity-100"
                 : "translate-x-[100%] opacity-0"
-            } duration-500 para_style`}
+            } duration-500 `}
           >
             Hi, I’m <strong>Muhammad Hasan,</strong> a passionate Full Stack Web
             & Mobile App Developer who loves turning ideas into interactive,
@@ -1282,7 +1282,7 @@ const Home = () => {
               aboutPara2
                 ? "aboutPara2 opacity-100"
                 : "-translate-x-[100%] opacity-0"
-            } duration-500 para_style`}
+            } duration-500 `}
           >
             With every project, my goal is simple — to write clean code, design
             intuitive interfaces, and deliver smooth, high-performance solutions
@@ -1295,7 +1295,7 @@ const Home = () => {
               aboutPara3
                 ? "aboutPara3 opacity-100"
                 : "translate-x-[100%] opacity-0"
-            } duration-500 para_style`}
+            } duration-500 `}
           >
             I enjoy learning new technologies, improving my skills every day,
             and collaborating with others to bring creative visions to life.
@@ -1307,7 +1307,7 @@ const Home = () => {
               aboutPara4
                 ? "aboutPara4 opacity-100"
                 : "-translate-x-[100%] opacity-0"
-            } duration-500 para_style`}
+            } duration-500 `}
           >
             When I’m not coding, I love exploring new design trends and thinking
             about how technology can make people’s lives easier.
@@ -1936,7 +1936,7 @@ const Home = () => {
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Website List
         </h1>
-        <div className="sm:flex flex-wrap gap-5 justify-center">
+        <div className="sm:flex flex-wrap gap-5 lg:gap-8 justify-center">
           {portfolios.map((port, index) => {
             return (
               <div
