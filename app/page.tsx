@@ -976,7 +976,7 @@ const Home = () => {
                   Mahmud Hasan
                 </span>
               </h1>
-              <div className="flex gap-2 justify-center">
+              {/* <div className="flex gap-2 justify-center">
                 <Image
                   src={"/coding.png"}
                   width={20}
@@ -1000,6 +1000,18 @@ const Home = () => {
                     </span>
                   ))}
                 </p>
+              </div> */}
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src={"/coding.png"}
+                  width={20}
+                  height={20}
+                  alt="web development"
+                />
+                <div className="text-xs w-20  relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
+                  Web Engineer
+                  <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
+                </div>
               </div>
               <div className="flex gap-2 justify-center">
                 <Image
@@ -1008,9 +1020,10 @@ const Home = () => {
                   height={20}
                   alt="web development"
                 />
-                <p className="text-xs  font-semibold text-[#021ab6] dark:text-[#faf]">
+                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
                   Mobile App Developer
-                </p>
+                  <div className="w-32 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
+                </div>
               </div>
             </div>
             <Image
