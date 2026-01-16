@@ -479,3 +479,20 @@ html {
 .lightBg {
   background: red;
 }
+
+.para_style {
+  background: linear-gradient(
+    90deg,
+    #9f9a9a,
+    rgba(255, 99, 71, 0.566),
+    #9f9a9a
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: para_style 3s infinite;
+}
+@keyframes para_style {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}

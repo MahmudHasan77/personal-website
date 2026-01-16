@@ -862,7 +862,7 @@ const Home = () => {
           alt="star image"
           className="absolute top-130 right-25 sm:hidden starAnimation"
         />
-        
+
         {/* lg screen */}
         <Image
           src={"/christmas-star.png"}
@@ -1126,7 +1126,7 @@ const Home = () => {
       <section
         id="about"
         ref={aboutRef}
-        className={` scroll-mt-20 my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] `}
+        className={` scroll-mt-20  my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] `}
       >
         <div className="font-bold text-2xl text-center flex justify-center items-center gap-2">
           <h1
@@ -1167,7 +1167,7 @@ const Home = () => {
                 className="object-cover z-40"
               />
             </div>
-            <div className="slider -mt-12">
+            <div className="slider -mt-12 sm:-mt-22">
               <span
                 style={{ "--i": 1 } as React.CSSProperties}
                 className="relative h-10 w-10"
@@ -1266,7 +1266,7 @@ const Home = () => {
               aboutPara1
                 ? "aboutPara1 opacity-100"
                 : "translate-x-[100%] opacity-0"
-            } duration-500`}
+            } duration-500 para_style`}
           >
             Hi, I’m <strong>Muhammad Hasan,</strong> a passionate Full Stack Web
             & Mobile App Developer who loves turning ideas into interactive,
@@ -1282,7 +1282,7 @@ const Home = () => {
               aboutPara2
                 ? "aboutPara2 opacity-100"
                 : "-translate-x-[100%] opacity-0"
-            } duration-500`}
+            } duration-500 para_style`}
           >
             With every project, my goal is simple — to write clean code, design
             intuitive interfaces, and deliver smooth, high-performance solutions
@@ -1295,7 +1295,7 @@ const Home = () => {
               aboutPara3
                 ? "aboutPara3 opacity-100"
                 : "translate-x-[100%] opacity-0"
-            } duration-500`}
+            } duration-500 para_style`}
           >
             I enjoy learning new technologies, improving my skills every day,
             and collaborating with others to bring creative visions to life.
@@ -1307,7 +1307,7 @@ const Home = () => {
               aboutPara4
                 ? "aboutPara4 opacity-100"
                 : "-translate-x-[100%] opacity-0"
-            } duration-500`}
+            } duration-500 para_style`}
           >
             When I’m not coding, I love exploring new design trends and thinking
             about how technology can make people’s lives easier.
