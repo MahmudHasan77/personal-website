@@ -481,8 +481,7 @@ html {
 }
 
 .appDevTranslation {
-      transform: translateX(0%);
-
+  transform: translateX(0%);
   animation: appDevTranslation 5s linear infinite;
 }
 @keyframes appDevTranslation {
@@ -497,7 +496,7 @@ html {
   }
 }
 .webDevTranslation {
-      transform: translateX(100%);
+  transform: translateX(100%);
 
   animation: webDevTranslation 5s linear infinite;
 }
@@ -509,6 +508,6 @@ html {
     transform: translateX(0%);
   }
   70% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
 }

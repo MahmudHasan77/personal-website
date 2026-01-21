@@ -19,7 +19,13 @@ const neue = Roboto_Condensed({
   subsets: ["latin"],
 });
 
-const applications = [
+const applications: {
+  id: number
+  img: string
+  link: string
+  title: string
+  description: string
+}[] = [
   {
     id: 1,
     img: "/coffee-image-home-page.jpg",
@@ -89,7 +95,7 @@ const Home = () => {
   const socialIconsRef = useRef<HTMLDivElement>(null);
   const [aboutPara4, setAboutPara4] = useState(false);
   const aboutPara4Ref = useRef<HTMLDivElement>(null);
-  const messageBtnRef = useRef<HTMLDivElement>(null);
+  const messageBtnRef  = useRef<HTMLDivElement>(null);
   const [messageBtn, setMessageBtn] = useState(false);
   const [isSocialIcon, setSocialIcon] = useState(false);
   const [startSkill, setStartSkill] = useState(false);
@@ -970,37 +976,13 @@ const Home = () => {
                 Hi, I&apos;m{" "}
                 <span
                   className={`
-              inline-block font-extrabold dark:text-yellow-300 text-yellow-600
+              inline-block font-extrabold dark:text-yellow-300 text-yellow-600 
             `}
                 >
                   Mahmud Hasan
                 </span>
               </h1>
-              {/* <div className="flex gap-2 justify-center">
-                <Image
-                  src={"/coding.png"}
-                  width={20}
-                  height={20}
-                  alt="web development"
-                />
-                <p className="text-xs  font-semibold text-[#021ab6] dark:text-[#faf]">
-                  {engineeringText.split("").map((char, i) => (
-                    <span
-                      key={i}
-                      className={`
-        
-              inline-block transform transition-all duration-500 
-              ${isStart ? "opacity-100" : "opacity-0 "}
-            `}
-                      style={{
-                        transitionDelay: `${i * 0.2}s`,
-                      }}
-                    >
-                      {char === " " ? "\u00A0" : char}
-                    </span>
-                  ))}
-                </p>
-              </div> */}
+
               <div className="flex gap-2 justify-center">
                 <Image
                   src={"/coding.png"}
@@ -1008,7 +990,7 @@ const Home = () => {
                   height={20}
                   alt="web development"
                 />
-                <div className="text-xs w-20  relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
+                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
                   Web Engineer
                   <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
                 </div>
