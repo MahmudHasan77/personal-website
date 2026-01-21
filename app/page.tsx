@@ -20,11 +20,11 @@ const neue = Roboto_Condensed({
 });
 
 const applications: {
-  id: number
-  img: string
-  link: string
-  title: string
-  description: string
+  id: number;
+  img: string;
+  link: string;
+  title: string;
+  description: string;
 }[] = [
   {
     id: 1,
@@ -95,7 +95,7 @@ const Home = () => {
   const socialIconsRef = useRef<HTMLDivElement>(null);
   const [aboutPara4, setAboutPara4] = useState(false);
   const aboutPara4Ref = useRef<HTMLDivElement>(null);
-  const messageBtnRef  = useRef<HTMLDivElement>(null);
+  const messageBtnRef = useRef<HTMLDivElement>(null);
   const [messageBtn, setMessageBtn] = useState(false);
   const [isSocialIcon, setSocialIcon] = useState(false);
   const [startSkill, setStartSkill] = useState(false);
@@ -189,7 +189,7 @@ const Home = () => {
           setStartAbout(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -211,7 +211,7 @@ const Home = () => {
           setAboutPara1(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -233,7 +233,7 @@ const Home = () => {
           setAboutPara2(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -255,7 +255,7 @@ const Home = () => {
           setAboutPara3(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -277,7 +277,7 @@ const Home = () => {
           setAboutPara4(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -299,7 +299,7 @@ const Home = () => {
           setStartSkill(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -321,7 +321,7 @@ const Home = () => {
           setService1(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -343,7 +343,7 @@ const Home = () => {
           setService2(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -365,7 +365,7 @@ const Home = () => {
           setService3(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -387,7 +387,7 @@ const Home = () => {
           setService4(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -409,7 +409,7 @@ const Home = () => {
           setService5(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -431,7 +431,7 @@ const Home = () => {
           setService6(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -453,7 +453,7 @@ const Home = () => {
           setService7(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -475,7 +475,7 @@ const Home = () => {
           setService8(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -497,7 +497,7 @@ const Home = () => {
           setService9(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -520,7 +520,7 @@ const Home = () => {
           setService10(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -542,7 +542,7 @@ const Home = () => {
           setService11(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -564,7 +564,7 @@ const Home = () => {
           setMessageBtn(false);
         }
       },
-      { rootMargin: "-10% -10%" }
+      { rootMargin: "-10% -10%" },
     );
     if (currentDiv) {
       handleObserve.observe(currentDiv);
@@ -681,21 +681,22 @@ const Home = () => {
       }
        transition-all duration-500`}
     >
-      <header className="flex justify-between  backdrop-blur-lg items-center py-2 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
+      <header className="flex justify-between  backdrop-blur-lg items-center py-3 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
           <button onClick={() => setShowNav(!showNav)}>
             <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
           </button>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 relative h-7 w-7">
           <a href="#home">
             <Image
               src="/author-google.png"
               alt="mahmud hasan web and mobile app developer"
-              width={40}
-              height={40}
-              priority
-              style={{ width: "auto", height: "auto", padding: 3 }}
+              // width={40}
+              // height={40}
+              // priority
+              // style={{ width: "auto", height: "auto", padding: 3 }}
+              fill
               className="object-cover"
             />
           </a>
@@ -732,7 +733,7 @@ const Home = () => {
         {/* toggle navigation */}
         <div
           className={`md:hidden h-65 ${
-            showNav ? "translate-y-0" : "-translate-y-65"
+            showNav ? "translate-y-0" : "-translate-y-75"
           } flex flex-col gap-3 px-10 fixed top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 duration-500 transition-all w-full border-b border-zinc-300 z-40 dark:text-[#ffd900] text-green-600 pt-9 ${
             neue.className
           }`}
@@ -986,8 +987,8 @@ const Home = () => {
               <div className="flex gap-2 justify-center">
                 <Image
                   src={"/coding.png"}
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={11}
                   alt="web development"
                 />
                 <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
@@ -998,8 +999,8 @@ const Home = () => {
               <div className="flex gap-2 justify-center">
                 <Image
                   src={"/mobile-coding.png"}
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={11}
                   alt="web development"
                 />
                 <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
@@ -1085,10 +1086,10 @@ const Home = () => {
           <div
             className={` text-center text-lg md:text-xl  text-[#8a6300] dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
                ${neue.className} ${
-              isStart
-                ? "translate-y-0 opacity-100"
-                : "translate-y-[100%] opacity-0"
-            }`}
+                 isStart
+                   ? "translate-y-0 opacity-100"
+                   : "translate-y-[100%] opacity-0"
+               }`}
           >
             I&apos;m a Full Stack Web &amp; Mobile App Developer passionate
             about creating clean, responsive, and modern applications. I
