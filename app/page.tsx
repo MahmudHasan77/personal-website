@@ -671,6 +671,35 @@ const Home = () => {
   // };
 
   if (themMode === "") return;
+
+  const SkillTemplate = ({
+    name,
+    src,
+    alt,
+    style,
+  }: {
+    name: string;
+    src: any;
+    alt: string;
+    style: string;
+  }) => {
+    return (
+      <div
+        className={`h-12 w-30 flex justify-around items-center border border-zinc-200 dark:border-zinc-600 p-2 rounded-full animatedShadow  skillCardBg  ${style}`}
+      >
+        <Image
+          src={src}
+          width={30}
+          height={30}
+          alt={alt}
+          priority
+          className="rounded-full skillImage"
+        />
+        <p className=" font-light">{name}</p>
+      </div>
+    );
+  };
+
   return (
     <div
       onClick={handleClick}
@@ -1333,6 +1362,13 @@ const Home = () => {
         </p>
         <div className="flex my-5 gap-x-2 gap-y-5 md:gap-5 flex-wrap justify-around dark:text-white">
           {/* html  */}
+          {/* {SkillTemplate({
+            name: "Python",
+            src: "/html-logo.webp",
+            alt: "bootstrap",
+            style: "skillScale2",
+          })} */}
+
           <div
             className={`duration-500 h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1`}
           >
@@ -1345,7 +1381,6 @@ const Home = () => {
             />
             <p>HTML</p>
           </div>
-
           {/* css  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1357,7 +1392,6 @@ const Home = () => {
             />
             <p>CSS</p>
           </div>
-
           {/* tailwind css  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
@@ -1369,7 +1403,6 @@ const Home = () => {
             />
             <p className="text-xs pt-1">Tailwind CSS</p>
           </div>
-
           {/* Bootstrap */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
@@ -1381,7 +1414,6 @@ const Home = () => {
             />
             <p>Bootstrap</p>
           </div>
-
           {/* javaScript */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
@@ -1393,7 +1425,6 @@ const Home = () => {
             />
             <p>JavaScript</p>
           </div>
-
           {/* python */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1406,7 +1437,6 @@ const Home = () => {
             />
             <p>Python</p>
           </div>
-
           {/* TypeScript */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
@@ -1418,7 +1448,6 @@ const Home = () => {
             />
             <p>TypeScript</p>
           </div>
-
           {/* React js */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
@@ -1430,7 +1459,6 @@ const Home = () => {
             />
             <p>React js</p>
           </div>
-
           {/* jquery */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
@@ -1442,7 +1470,6 @@ const Home = () => {
             />
             <p>JQuery</p>
           </div>
-
           {/* next js  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1454,7 +1481,6 @@ const Home = () => {
             />
             <p>Next js</p>
           </div>
-
           {/* redux  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
@@ -1466,7 +1492,6 @@ const Home = () => {
             />
             <p>Redux</p>
           </div>
-
           {/* React native  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
@@ -1479,7 +1504,6 @@ const Home = () => {
             />
             <p>React Native</p>
           </div>
-
           {/* Expo  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
@@ -1492,7 +1516,6 @@ const Home = () => {
             />
             <p>Expo</p>
           </div>
-
           {/* node js  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1504,7 +1527,6 @@ const Home = () => {
             />
             <p>Node js</p>
           </div>
-
           {/* Express js  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
@@ -1517,7 +1539,6 @@ const Home = () => {
             />
             <p>Express js</p>
           </div>
-
           {/* mongo DB */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
@@ -1530,7 +1551,6 @@ const Home = () => {
             />
             <p>MongoDB</p>
           </div>
-
           {/* mongoose */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
@@ -1543,7 +1563,6 @@ const Home = () => {
             />
             <p className="mt2 pt-7">Mongoose</p>
           </div>
-
           {/* my sql */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
             <Image
@@ -1556,7 +1575,6 @@ const Home = () => {
             />
             <p>MySQL</p>
           </div>
-
           {/* git  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
             <Image
@@ -1568,7 +1586,6 @@ const Home = () => {
             />
             <p>Git</p>
           </div>
-
           {/* Git Hub  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
             <Image
@@ -1580,7 +1597,6 @@ const Home = () => {
             />
             <p>Git Hub</p>
           </div>
-
           {/* firebase  */}
           <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
             <Image
@@ -1611,15 +1627,14 @@ const Home = () => {
         </h1>
         <div className="flex p-2 flex-wrap gap-3 lg:gap-7 justify-center">
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service1Ref}
           >
             <div
               className={`${
                 isService1
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
-              }  w-[100%] mx-auto md:w-90 text-center rounded p-5 bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
+              }  w-[100%] mx-auto md:w-90 text-center rounded p-5 bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40`}
             >
               <h1 className="font-semibold pb-3">
                 🟢 Full Stack Web Development
@@ -1633,14 +1648,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service2Ref}
           >
             <div
               className={`${
                 isService2
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1654,14 +1668,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service3Ref}
           >
             <div
               className={`${
                 isService3
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1676,14 +1689,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service4Ref}
           >
             <div
               className={`${
                 isService4
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1697,14 +1709,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service5Ref}
           >
             <div
               className={`${
                 isService5
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1718,14 +1729,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service6Ref}
           >
             <div
               className={`${
                 isService6
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1739,14 +1749,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service7Ref}
           >
             <div
               className={`${
                 isService7
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🔵 API Integration </h1>
@@ -1758,14 +1767,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service8Ref}
           >
             <div
               className={`${
                 isService8
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">🟣 Hosting & Deployment</h1>
@@ -1777,14 +1785,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service9Ref}
           >
             <div
               className={`${
                 isService9
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1798,14 +1805,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service10Ref}
           >
             <div
               className={`${
                 isService10
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">
@@ -1819,14 +1825,13 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`overflow-hidden serviceWhiteShadow`}
             ref={service11Ref}
           >
             <div
               className={`${
                 isService11
-                  ? "translate-y-0 duration-500 scale-100"
-                  : "translate-y-[50%] opacity-0 scale-50"
+                  ? "translate-y-0 duration-1000 scale-100 ease-out"
+                  : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
               <h1 className="font-semibold pb-3">

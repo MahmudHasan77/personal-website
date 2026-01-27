@@ -180,12 +180,11 @@ html {
     transform: translateY(5);
   }
 }
-
 .skillCardBg {
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.055),
-    rgba(0, 0, 255, 0.055)
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.301),
+    rgba(0, 0, 255, 0.301)
   );
 
   animation: moveBg 7s infinite linear;
@@ -240,6 +239,27 @@ html {
 @keyframes skillTranslate2 {
   50% {
     transform: translateX(5px);
+  }
+}
+.skillImage {
+  animation: skillImage 5s linear infinite;
+}
+@keyframes skillImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animatedShadow {
+  box-shadow: 0px 0px 5px 5px rgba(148, 148, 148, 0.1);
+  animation: animatedShadow 3s infinite linear;
+}
+@keyframes animatedShadow {
+  50% {
+  box-shadow: 0px 0px 5px 5px rgba(148, 148, 148, 0.1);
   }
 }
 
