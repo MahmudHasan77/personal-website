@@ -669,7 +669,6 @@ const Home = () => {
   //     setSendStatus("error");
   //   }
   // };
-  const Fs = 20;
   if (themMode === "") return;
   // skill card templates
   const SkillCard = ({
@@ -1510,7 +1509,7 @@ const Home = () => {
           {/* mongo DB */}
           {SkillCard({
             name: "Mongo DB",
-            fontSize: 12,
+            fontSize: 10,
             src: "/mongo-DB.png",
             alt: "Mongo DB",
             style: "skillScale2",
