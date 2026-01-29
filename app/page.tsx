@@ -681,7 +681,7 @@ const Home = () => {
   }: {
     name: string;
     fontSize: number;
-    src: any;
+    src: string;
     alt: string;
     style: string;
   }) => {
