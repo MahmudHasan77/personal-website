@@ -687,7 +687,7 @@ const Home = () => {
   }) => {
     return (
       <div
-        className={`h-12 w-27 bg-white rounded-full cursor-context-menu
+        className={`h-10 w-25 bg-white rounded-full cursor-context-menu
       ${style}`}
       >
         <div
@@ -697,8 +697,8 @@ const Home = () => {
         >
           <Image
             src={src}
-            width={30}
-            height={30}
+            width={25}
+            height={25}
             alt={alt}
             priority
             className="rounded-full skillImage"
