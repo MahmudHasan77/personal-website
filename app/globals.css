@@ -179,21 +179,43 @@ html {
   50% {
     transform: translateY(5);
   }
+} 
+.skillCard {
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 221, 0.9),
+    rgba(0, 42, 255, 0.3),
+    rgba(0, 255, 221, 0.9)
+  );
+  animation: skillCard 5s infinite linear;
 }
-.skillCardBg {
+
+@keyframes skillCard {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.skillCard:hover {
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.301),
-    rgba(0, 0, 255, 0.301)
+    rgba(0, 255, 221, 0.8),
+    rgba(0, 42, 255, 0.5),
+    rgba(0, 255, 221, 0.8)
   );
 
-  animation: moveBg 7s infinite linear;
+  animation: skillCard 5s infinite linear;
 }
-
-@keyframes moveBg {
+ 
+.skillCard img {
+  animation: skillImage 5s linear infinite;
+background: white;
+}
+@keyframes skillImage {
   50% {
-    filter: hue-rotate(180deg);
+    filter: hue-rotate(360deg);
   }
+
 }
 
 .skillBg {
@@ -239,27 +261,6 @@ html {
 @keyframes skillTranslate2 {
   50% {
     transform: translateX(5px);
-  }
-}
-.skillImage {
-  animation: skillImage 5s linear infinite;
-}
-@keyframes skillImage {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animatedShadow {
-  box-shadow: 0px 0px 5px 5px rgba(148, 148, 148, 0.1);
-  animation: animatedShadow 3s infinite linear;
-}
-@keyframes animatedShadow {
-  50% {
-  box-shadow: 0px 0px 5px 5px rgba(148, 148, 148, 0.1);
   }
 }
 

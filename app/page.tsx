@@ -669,33 +669,47 @@ const Home = () => {
   //     setSendStatus("error");
   //   }
   // };
-
+  const Fs = 20;
   if (themMode === "") return;
-
-  const SkillTemplate = ({
+  // skill card templates
+  const SkillCard = ({
     name,
+    fontSize,
     src,
     alt,
     style,
   }: {
     name: string;
+    fontSize: number;
     src: any;
     alt: string;
     style: string;
   }) => {
     return (
       <div
-        className={`h-12 w-30 flex justify-around items-center border border-zinc-200 dark:border-zinc-600 p-2 rounded-full animatedShadow  skillCardBg  ${style}`}
+        className={`h-12 w-27 bg-white rounded-full cursor-context-menu
+      ${style}`}
       >
-        <Image
-          src={src}
-          width={30}
-          height={30}
-          alt={alt}
-          priority
-          className="rounded-full skillImage"
-        />
-        <p className=" font-light">{name}</p>
+        <div
+          className={`h-full w-full flex justify-around items-center border border-zinc-200 dark:border-zinc-600 p-2 rounded-full skillCard 
+           
+           `}
+        >
+          <Image
+            src={src}
+            width={30}
+            height={30}
+            alt={alt}
+            priority
+            className="rounded-full skillImage"
+          />
+          <p
+            className={`text-zinc-900 font-semibold`}
+            style={{ fontSize: fontSize }}
+          >
+            {name}
+          </p>
+        </div>
       </div>
     );
   };
@@ -1362,253 +1376,190 @@ const Home = () => {
         </p>
         <div className="flex my-5 gap-x-2 gap-y-5 md:gap-5 flex-wrap justify-around dark:text-white">
           {/* html  */}
-          {/* {SkillTemplate({
-            name: "Python",
+          {SkillCard({
+            name: "HTML",
+            fontSize: 12,
             src: "/html-logo.webp",
-            alt: "bootstrap",
-            style: "skillScale2",
-          })} */}
-
-          <div
-            className={`duration-500 h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1`}
-          >
-            <Image
-              src={"/html-logo.webp"}
-              width={100}
-              height={100}
-              alt="HTML"
-              priority
-            />
-            <p>HTML</p>
-          </div>
+            alt: "HTML",
+            style: "skillScale1",
+          })}
           {/* css  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
-            <Image
-              src={"/css-logo.webp"}
-              width={100}
-              height={100}
-              alt=" CSS"
-              priority
-            />
-            <p>CSS</p>
-          </div>
+          {SkillCard({
+            name: "CSS",
+            fontSize: 12,
+            src: "/css-logo.webp",
+            alt: "CSS",
+            style: "skillScale2",
+          })}
+
           {/* tailwind css  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
-            <Image
-              src={"/tailwindCSS.png"}
-              width={100}
-              height={100}
-              alt="Tailwind CSS"
-              priority
-            />
-            <p className="text-xs pt-1">Tailwind CSS</p>
-          </div>
+          {SkillCard({
+            name: "Tailwind CSS",
+            fontSize: 10,
+            src: "/tailwindCSS.png",
+            alt: "Tailwind CSS",
+            style: "skillScale1",
+          })}
+
           {/* Bootstrap */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
-            <Image
-              src={"/bootstrap.png"}
-              width={100}
-              height={100}
-              alt="bootstrap"
-              priority
-            />
-            <p>Bootstrap</p>
-          </div>
+          {SkillCard({
+            name: "Bootstrap",
+            fontSize: 12,
+            src: "/bootstrap.png",
+            alt: "Bootstrap",
+            style: "skillScale2",
+          })}
+
           {/* javaScript */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
-            <Image
-              src={"/javaScript.png"}
-              width={100}
-              height={100}
-              alt="javaScript"
-              priority
-            />
-            <p>JavaScript</p>
-          </div>
+          {SkillCard({
+            name: "JavaScript",
+            fontSize: 12,
+            src: "/javaScript.png",
+            alt: "JavaScript",
+            style: "skillScale1",
+          })}
           {/* python */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
-            <Image
-              src={"/python-logo.jpg"}
-              width={100}
-              height={100}
-              alt="Python"
-              priority
-              className="rounded-full"
-            />
-            <p>Python</p>
-          </div>
+          {SkillCard({
+            name: "Python",
+            fontSize: 12,
+            src: "/python-logo.jpg",
+            alt: "Python",
+            style: "skillScale2",
+          })}
           {/* TypeScript */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
-            <Image
-              src={"/ts.png"}
-              width={100}
-              height={100}
-              alt="TypeScript"
-              priority
-            />
-            <p>TypeScript</p>
-          </div>
+          {SkillCard({
+            name: "TypeScript",
+            fontSize: 12,
+            src: "/ts.png",
+            alt: "TypeScript",
+            style: "skillScale1",
+          })}
+
           {/* React js */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
-            <Image
-              src={"/react-logo.png"}
-              width={100}
-              height={100}
-              alt="React js"
-              priority
-            />
-            <p>React js</p>
-          </div>
+          {SkillCard({
+            name: "React js",
+            fontSize: 12,
+            src: "/react-logo.png",
+            alt: "React js",
+            style: "skillScale2",
+          })}
+
           {/* jquery */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
-            <Image
-              src={"/Jquery.png"}
-              width={100}
-              height={100}
-              alt="JQuery"
-              priority
-            />
-            <p>JQuery</p>
-          </div>
+          {SkillCard({
+            name: "JQuery",
+            fontSize: 12,
+            src: "/Jquery.png",
+            alt: "JQuery",
+            style: "skillScale1",
+          })}
+
           {/* next js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
-            <Image
-              src={"/next-js.webp"}
-              width={100}
-              height={100}
-              alt="Next js"
-              priority
-            />
-            <p>Next js</p>
-          </div>
+          {SkillCard({
+            name: "Next js",
+            fontSize: 12,
+            src: "/next-js.webp",
+            alt: "Next js",
+            style: "skillScale2",
+          })}
+
           {/* redux  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
-            <Image
-              src={"/redux-logo.png"}
-              width={100}
-              height={100}
-              alt="Redux"
-              priority
-            />
-            <p>Redux</p>
-          </div>
+          {SkillCard({
+            name: "Redux",
+            fontSize: 12,
+            src: "/redux-logo.png",
+            alt: "Redux",
+            style: "skillScale1",
+          })}
+
           {/* React native  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
-            <Image
-              src={"/react-native.png"}
-              width={100}
-              height={100}
-              alt="Node js"
-              priority
-              className="rounded-full"
-            />
-            <p>React Native</p>
-          </div>
+          {SkillCard({
+            name: "React Naive",
+            fontSize: 10,
+            src: "/react-native.png",
+            alt: "React Naive",
+            style: "skillScale2",
+          })}
+
           {/* Expo  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
-            <Image
-              src={"/expo-logo.png"}
-              width={100}
-              height={100}
-              alt="Node js"
-              priority
-              className="rounded-full"
-            />
-            <p>Expo</p>
-          </div>
+          {SkillCard({
+            name: "Expo",
+            fontSize: 12,
+            src: "/expo-logo.png",
+            alt: "Expo",
+            style: "skillScale1",
+          })}
+
           {/* node js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
-            <Image
-              src={"/node-js-logo.png"}
-              width={100}
-              height={100}
-              alt="React native"
-              priority
-            />
-            <p>Node js</p>
-          </div>
+          {SkillCard({
+            name: "Node js",
+            fontSize: 12,
+            src: "/node-js-logo.png",
+            alt: "Node js",
+            style: "skillScale2",
+          })}
+
           {/* Express js  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
-            <Image
-              src={"/express_js.jpeg"}
-              width={100}
-              height={100}
-              alt="Express js"
-              priority
-              className="rounded-full"
-            />
-            <p>Express js</p>
-          </div>
+          {SkillCard({
+            name: "Express js",
+            fontSize: 12,
+            src: "/express_js.jpeg",
+            alt: "Express js",
+            style: "skillScale1",
+          })}
+
           {/* mongo DB */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
-            <Image
-              src={"/mongo-DB.png"}
-              width={100}
-              height={100}
-              alt="MongoDB"
-              priority
-              className="rounded-full"
-            />
-            <p>MongoDB</p>
-          </div>
+          {SkillCard({
+            name: "Mongo DB",
+            fontSize: 12,
+            src: "/mongo-DB.png",
+            alt: "Mongo DB",
+            style: "skillScale2",
+          })}
+
           {/* mongoose */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
-            <Image
-              src={"/mongoose.png"}
-              width={100}
-              height={100}
-              alt="Mongoose"
-              priority
-              className="rounded-full"
-            />
-            <p className="mt2 pt-7">Mongoose</p>
-          </div>
+          {SkillCard({
+            name: "Mongoose",
+            fontSize: 12,
+            src: "/mongoose.png",
+            alt: "Mongoose",
+            style: "skillScale1",
+          })}
+
           {/* my sql */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate1">
-            <Image
-              src={"/my-sql.png"}
-              width={100}
-              height={100}
-              alt="MySQL"
-              priority
-              className="rounded-full"
-            />
-            <p>MySQL</p>
-          </div>
+          {SkillCard({
+            name: "MySQL",
+            fontSize: 12,
+            src: "/my-sql.png",
+            alt: "MySQL",
+            style: "skillScale2",
+          })}
+
           {/* git  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale2">
-            <Image
-              src={"/git.png"}
-              width={100}
-              height={100}
-              alt="Git"
-              priority
-            />
-            <p>Git</p>
-          </div>
+          {SkillCard({
+            name: "Git",
+            fontSize: 12,
+            src: "/git.png",
+            alt: "Git",
+            style: "skillScale1",
+          })}
+
           {/* Git Hub  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillTranslate2">
-            <Image
-              src={"/github.png"}
-              width={100}
-              height={100}
-              alt="Git Hub"
-              priority
-            />
-            <p>Git Hub</p>
-          </div>
+          {SkillCard({
+            name: "Git Hub",
+            fontSize: 12,
+            src: "/github.png",
+            alt: "Git Hub",
+            style: "skillScale2",
+          })}
+
           {/* firebase  */}
-          <div className="h-30 w-25 flex flex-col justify-center items-center border border-zinc-200 dark:border-zinc-600 p-2 font-semibold rounded-md  skillCardBg skillScale1">
-            <Image
-              src={"/firebase.png"}
-              width={100}
-              height={100}
-              alt="firebase"
-              priority
-              className="rounded-full p-[1px]"
-            />
-            <p>Firebase</p>
-          </div>
+          {SkillCard({
+            name: "Firebase",
+            fontSize: 12,
+            src: "/firebase.png",
+            alt: "Firebase",
+            style: "skillScale1",
+          })}
         </div>
       </section>
 
@@ -1626,9 +1577,7 @@ const Home = () => {
           </span>
         </h1>
         <div className="flex p-2 flex-wrap gap-3 lg:gap-7 justify-center">
-          <div
-            ref={service1Ref}
-          >
+          <div ref={service1Ref}>
             <div
               className={`${
                 isService1
@@ -1647,9 +1596,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service2Ref}
-          >
+          <div ref={service2Ref}>
             <div
               className={`${
                 isService2
@@ -1667,9 +1614,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service3Ref}
-          >
+          <div ref={service3Ref}>
             <div
               className={`${
                 isService3
@@ -1688,9 +1633,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service4Ref}
-          >
+          <div ref={service4Ref}>
             <div
               className={`${
                 isService4
@@ -1708,9 +1651,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service5Ref}
-          >
+          <div ref={service5Ref}>
             <div
               className={`${
                 isService5
@@ -1728,9 +1669,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service6Ref}
-          >
+          <div ref={service6Ref}>
             <div
               className={`${
                 isService6
@@ -1748,9 +1687,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service7Ref}
-          >
+          <div ref={service7Ref}>
             <div
               className={`${
                 isService7
@@ -1766,9 +1703,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service8Ref}
-          >
+          <div ref={service8Ref}>
             <div
               className={`${
                 isService8
@@ -1784,9 +1719,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service9Ref}
-          >
+          <div ref={service9Ref}>
             <div
               className={`${
                 isService9
@@ -1804,9 +1737,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service10Ref}
-          >
+          <div ref={service10Ref}>
             <div
               className={`${
                 isService10
@@ -1824,9 +1755,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            ref={service11Ref}
-          >
+          <div ref={service11Ref}>
             <div
               className={`${
                 isService11
