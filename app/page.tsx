@@ -686,7 +686,7 @@ const Home = () => {
   }) => {
     return (
       <div
-        className={`h-10 w-25 bg-white rounded-full cursor-context-menu
+        className={`h-10 md:h-12 w-25 md:w-25 bg-white rounded-full cursor-context-menu
       ${style}`}
       >
         <div
@@ -1625,10 +1625,9 @@ const Home = () => {
                 🔵 Frontend Development (Web & Mobile)
               </h1>
               <p className="text-sm text-gray-700 dark:text-white">
-                I create modern and interactive interfaces using React.js,
-                Tailwind CSS, and Material UI for web, and React Native
-                components for mobile, ensuring intuitive and consistent user
-                experiences across all platforms.
+                I build modern, interactive interfaces for web and mobile using
+                React, Tailwind CSS, Material UI, and React Native, focusing on
+                clean and consistent user experiences.
               </p>
             </div>
           </div>
