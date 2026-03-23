@@ -21,16 +21,27 @@ const neue = Roboto_Condensed({
 
 const applications: {
   id: number;
-  img: string;
+  image: string;
   link: string;
   title: string;
   description: string;
 }[] = [
   {
     id: 1,
-    img: "/coffee-image-home-page.jpg",
+    title: "Al Quran",
+    image: "/quran-app.jpeg",
+
     link: "",
+
+    description:
+      "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
+  },
+  {
+    id: 2,
     title: "Coffee Shop application design",
+    image: "/coffee-image-home-page.jpg",
+    link: "",
+
     description:
       "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
   },
@@ -1782,47 +1793,51 @@ const Home = () => {
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Application List
         </h1>
-        <div className="flex justify-center">
-          <div className="flex">
-            <div className="flex flex-col">
-              <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
-                <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
-                <span className="absolute top-20 -right-[8px] bg-[#101010]   w-1 h-13 rounded-xs" />
-                <span className="absolute top-40 -right-[8px] bg-[#101010] w-1 h-7 rounded-xs" />
-                <div className="relative h-full w-full">
-                  <Image
-                    src={"/coffee-image-home-page.jpg"}
-                    fill
-                    alt="coffee shop mobile"
-                    className="rounded-lg"
-                  />
+        <div className="flex justify-center flex-wrap gap-5">
+          {applications?.map((app) => {
+            return (
+              <div key={app?.id} className="flex">
+                <div className="flex flex-col">
+                  <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
+                    <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
+                    <span className="absolute top-20 -right-[8px] bg-[#101010]   w-1 h-13 rounded-xs" />
+                    <span className="absolute top-40 -right-[8px] bg-[#101010] w-1 h-7 rounded-xs" />
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={app?.image}
+                        fill
+                        alt="coffee shop mobile"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                  <div className="py-5">
+                    <h1 className="text-sm text-center">
+                      {"Coffee shop application"}
+                    </h1>
+                    <div
+                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
+                      // onClick={() => {
+                      //   setShowDetails(port);
+                      //   setDetailsOpen(true);
+                      // }}
+                    >
+                      View Application
+                    </div>
+                    <div
+                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
+                      // onClick={() => {
+                      //   setShowDetails(port);
+                      //   setDetailsOpen(true);
+                      // }}
+                    >
+                      Download Application
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="py-5">
-                <h1 className="text-sm text-center">
-                  {"Coffee shop application"}
-                </h1>
-                <div
-                  className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
-                  // onClick={() => {
-                  //   setShowDetails(port);
-                  //   setDetailsOpen(true);
-                  // }}
-                >
-                  View Application
-                </div>
-                <div
-                  className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
-                  // onClick={() => {
-                  //   setShowDetails(port);
-                  //   setDetailsOpen(true);
-                  // }}
-                >
-                  Download Application
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 
