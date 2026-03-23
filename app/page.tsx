@@ -1204,7 +1204,7 @@ const Home = () => {
             <div
               className={`${
                 startAbout ? "scale-100 duration-500" : "scale-0"
-              } w-50 h-50  md:w-70 md:h-70  rounded-full overflow-hidden rotate-5 m-auto z-40`}
+              } w-50 h-50  md:w-70 md:h-70  rounded-full overflow-hidden m-auto z-40`}
             >
               <Image
                 src={"/mahmud-hasan.png"}
