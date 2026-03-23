@@ -1207,7 +1207,7 @@ const Home = () => {
               } w-50 h-50  md:w-70 md:h-70  rounded-full overflow-hidden rotate-5 m-auto z-40`}
             >
               <Image
-                src={"/author.png"}
+                src={"/mahmud-hasan.png"}
                 height={0}
                 width={200}
                 style={{ height: "auto", width: "100%" }}
@@ -1317,7 +1317,7 @@ const Home = () => {
                 : "translate-x-[100%] opacity-0"
             } duration-500 `}
           >
-            Hi, I’m <strong>Muhammad Hasan,</strong> a passionate Full Stack Web
+            Hi, I’m <strong>Mahmud Hasan,</strong> a passionate Full Stack Web
             & Mobile App Developer who loves turning ideas into interactive,
             modern, and responsive experiences. I specialize in building clean,
             efficient, and user-focused web applications using the MERN Stack
