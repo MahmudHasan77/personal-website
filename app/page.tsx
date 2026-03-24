@@ -1620,7 +1620,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-9 w-full service_icons_1`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
