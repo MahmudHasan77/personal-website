@@ -9,6 +9,7 @@ import { MdAttachEmail } from "react-icons/md";
 import { FaPenClip } from "react-icons/fa6";
 import { RiMessage2Fill } from "react-icons/ri";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 import { MdSend } from "react-icons/md";
 import { FcOk } from "react-icons/fc";
 import { MdOutlineReportGmailerrorred } from "react-icons/md";
@@ -46,7 +47,7 @@ const applications: {
       "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
   },
 ];
-const portfolios = [
+const websites = [
   {
     id: 1,
     img: "/first-e-commerce-website.jpg",
@@ -727,7 +728,7 @@ const Home = () => {
   return (
     <div
       onClick={handleClick}
-      className={`relative overflow-x-hidden  ${
+      className={`relative overflow-x-hidden ${
         themMode && themMode === "dark"
           ? "dark dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800 text-white "
           : "bg-[#f8feff] text-[#094100] "
@@ -743,14 +744,14 @@ const Home = () => {
         <div className="flex items-center gap-2 relative h-7 w-7">
           <a href="#home">
             <Image
-              src="/author-google.png"
+              src="/mahmud-hasan.png"
               alt="mahmud hasan web and mobile app developer"
               // width={40}
               // height={40}
               // priority
               // style={{ width: "auto", height: "auto", padding: 3 }}
               fill
-              className="object-cover"
+              className="object-cover rounded-full"
             />
           </a>
         </div>
@@ -782,6 +783,7 @@ const Home = () => {
           </button>
         </div>
       </header>
+
       <div>
         {/* toggle navigation */}
         <div
@@ -1170,7 +1172,6 @@ const Home = () => {
           </div>
         </div>
       </main>
-
       {/* about me  */}
       <section
         id="about"
@@ -1317,8 +1318,8 @@ const Home = () => {
                 : "translate-x-[100%] opacity-0"
             } duration-500 `}
           >
-            Hi, I’m <strong>Mahmud Hasan,</strong> a passionate Full Stack Web
-            & Mobile App Developer who loves turning ideas into interactive,
+            Hi, I’m <strong>Mahmud Hasan,</strong> a passionate Full Stack Web &
+            Mobile App Developer who loves turning ideas into interactive,
             modern, and responsive experiences. I specialize in building clean,
             efficient, and user-focused web applications using the MERN Stack
             and Next.js, as well as cross-platform mobile apps with React Native
@@ -1363,7 +1364,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-
       {/* skills */}
       <section
         ref={skillRef}
@@ -1572,7 +1572,6 @@ const Home = () => {
           })}
         </div>
       </section>
-
       {/* services */}
       <section
         id="service"
@@ -1593,11 +1592,16 @@ const Home = () => {
                 isService1
                   ? "translate-y-0 duration-1000 scale-100 ease-out"
                   : "translate-y-[50%] opacity-0 scale-90"
-              }  w-[100%] mx-auto md:w-90 text-center rounded p-5 bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40`}
+              }  w-[100%] mx-auto md:w-90 text-center rounded p-5 bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 hover:scale-105`}
             >
-              <h1 className="font-semibold pb-3">
-                🟢 Full Stack Web Development
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Full Stack Web Development
+              </span>
               <p className="text-sm text-gray-900 dark:text-white">
                 I develop complete, dynamic, and responsive web applications
                 using MERN Stack and Next.js — from concept to deployment. Every
@@ -1614,9 +1618,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟢 Full Stack Mobile App Development
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Full Stack Mobile App Development
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I build cross-platform mobile applications using React Native
                 and Expo, delivering smooth, responsive, and user-friendly apps
@@ -1632,9 +1641,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🔵 Frontend Development (Web & Mobile)
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Frontend Development (Web & Mobile)
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I build modern, interactive interfaces for web and mobile using
                 React, Tailwind CSS, Material UI, and React Native, focusing on
@@ -1650,9 +1664,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟣 Backend Development (Web & Mobile)
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Backend Development (Web & Mobile)
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I design secure and efficient server-side systems using Node.js
                 and Express.js, supporting APIs and data handling for both web
@@ -1668,9 +1687,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟠 Authentication & Authorization
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Authentication & Authorization
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I implement secure authentication systems using JWT, bcrypt,
                 NextAuth, and Firebase, ensuring user data privacy and reliable
@@ -1686,9 +1710,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟡 Database Design & Management
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Database Design & Management
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I design, optimize, and manage databases using MongoDB, MySQL,
                 PostgreSQL, and Firebase, ensuring speed, scalability, and
@@ -1704,7 +1733,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🔵 API Integration </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                API Integration
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I integrate third-party APIs (Payment, Email, Authentication,
                 etc.) to enhance functionality and efficiency for web and mobile
@@ -1720,7 +1756,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }    w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">🟣 Hosting & Deployment</h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Hosting & Deployment
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I manage hosting, domain setup, and deployment on platforms like
                 Vercel, Render, and Netlify for web apps, and handle app store
@@ -1736,9 +1779,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟤 Maintenance & Optimization
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Maintenance & Optimization
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I provide updates, bug fixes, and performance improvements to
                 keep web and mobile projects secure, fast, and reliable over
@@ -1754,9 +1802,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟣 Maintenance & Optimization
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Maintenance & Optimization
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I provide updates, bug fixes, and performance improvements to
                 keep web and mobile projects secure, fast, and reliable over
@@ -1772,9 +1825,14 @@ const Home = () => {
                   : "translate-y-[50%] opacity-0 scale-90"
               }   w-[100%] mx-auto md:w-90  text-center rounded p-5    bg-[#d5dafd31] border border-zinc-300/50   dark:border-white/10 h-40 `}
             >
-              <h1 className="font-semibold pb-3">
-                🟢 Search Engine Optimization (SEO)
-              </h1>
+              <span className="font-semibold pb-5 relative  mx-auto animateText">
+                <span
+                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                >
+                  <GoDotFill className={`size-10 text-green-500`} />
+                </span>
+                Search Engine Optimization (SEO)
+              </span>
               <p className="text-sm text-gray-700 dark:text-white">
                 I optimize web applications for better visibility and search
                 engine ranking, including clean code structure, fast
@@ -1784,7 +1842,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/*app list*/}
       <section
         id="portfolio"
@@ -1840,47 +1897,13 @@ const Home = () => {
           })}
         </div>
       </section>
-
-      {/* details toggle */}
-      {showDetails && isDetailsOpen && (
-        <div
-          className={
-            "mt-20 mb-5 w-[90%] md:w-[70%] mx-auto fixed inset-0 border border-zinc-300   dark:border-white/30 rounded overflow-y-auto detailsScroll bg-white dark:bg-gray-800 z-10"
-          }
-        >
-          <div className="flex justify-center">
-            <button
-              onClick={() => setDetailsOpen(false)}
-              className="py-2 px-5 bg-white whiteShadow hover:bg-red-500 hover:text-white text-red-500 rounded-md m-3 duration-300"
-            >
-              <RxCross2 />
-            </button>
-          </div>
-          <div className="relative w-full">
-            <Image
-              src={showDetails.img}
-              width={200}
-              height={0}
-              style={{ width: "100%", height: "auto" }}
-              alt={showDetails.title}
-            />
-          </div>
-          <div className="flex flex-col justify-center items-center gap-y-3 p-3 text-center">
-            <h1 className="font-semibold">{showDetails.title}</h1>
-            <p className="dark:text-gray-300 text-gray-700">
-              {showDetails.description}
-            </p>
-          </div>
-        </div>
-      )}
-
       {/* website list */}
       <section className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10">
         <h1 className="font-bold text-2xl text-center pb-5 animateText">
           Website List
         </h1>
         <div className="sm:flex flex-wrap gap-5 lg:gap-8 justify-center">
-          {portfolios.map((port, index) => {
+          {websites.map((website, index) => {
             return (
               <div
                 key={index}
@@ -1888,29 +1911,29 @@ const Home = () => {
               >
                 <div className="relative w-full h-70 portfolioBox rounded-t-md overflow-y-auto">
                   <Image
-                    src={port.img}
+                    src={website.img}
                     priority
                     height={0}
                     width={280}
                     style={{ height: "auto", width: "100%" }}
-                    alt={port.title}
+                    alt={website.title}
                   />
                 </div>
                 <h1 className="font-semibold text-center pt-5  mt-1">
-                  {port.title}
+                  {website.title}
                 </h1>
                 <div className="flex justify-around py-5">
                   <div
                     className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded-full cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow"
                     onClick={() => {
-                      setShowDetails(port);
+                      setShowDetails(website);
                       setDetailsOpen(true);
                     }}
                   >
                     View Details
                   </div>
                   <div className="border border-zinc-300   dark:border-white/30 hover:bg-yellow-300 hover:text-white text-sm py-1.5 w-30 text-center rounded-full cursor-pointer dark:bg-white bg-gray-500 duration-300 text-white dark:text-black whiteShadow">
-                    <a href={port.link}>View website</a>
+                    <a href={website.link}>View website</a>
                   </div>
                 </div>
               </div>
@@ -1918,39 +1941,6 @@ const Home = () => {
           })}
         </div>
       </section>
-      {/* details toggle */}
-      {showDetails && isDetailsOpen && (
-        <div
-          className={
-            "mt-20 mb-5 w-[90%] md:w-[70%] mx-auto fixed inset-0 border border-zinc-300   dark:border-white/30 rounded overflow-y-auto detailsScroll bg-white dark:bg-gray-800 z-10"
-          }
-        >
-          <div className="flex justify-center">
-            <button
-              onClick={() => setDetailsOpen(false)}
-              className="py-2 px-5 bg-white whiteShadow hover:bg-red-500 hover:text-white text-red-500 rounded-md m-3 duration-300"
-            >
-              <RxCross2 />
-            </button>
-          </div>
-          <div className="relative w-full">
-            <Image
-              src={showDetails.img}
-              width={200}
-              height={0}
-              style={{ width: "100%", height: "auto" }}
-              alt={showDetails.title}
-            />
-          </div>
-          <div className="flex flex-col justify-center items-center gap-y-3 p-3 text-center">
-            <h1 className="font-semibold">{showDetails.title}</h1>
-            <p className="dark:text-gray-300 text-gray-700">
-              {showDetails.description}
-            </p>
-          </div>
-        </div>
-      )}
-
       {/* contact */}
       <section
         id="contact"
@@ -2230,7 +2220,6 @@ const Home = () => {
           </a>
         </div>
       </section>
-
       <footer className="p-6 text-center text-sm text-gray-500 dark:text-gray-400">
         © 2025 Mahmud Hasan — Designed & Developed by Me
       </footer>
@@ -2246,6 +2235,38 @@ const Home = () => {
           }}
         />
       ))}
+      {/* details toggle */}
+      {showDetails && isDetailsOpen && (
+        <div
+          className={
+            "mt-15 mb-5 w-[90%] md:w-[70%] mx-auto fixed inset-0 border border-zinc-300   dark:border-white/30 rounded overflow-y-auto detailsScroll bg-white dark:bg-gray-800 z-50 toggleShadow"
+          }
+        >
+          <div className="flex justify-end sticky top-0 right-0 z-50">
+            <button
+              onClick={() => setDetailsOpen(false)}
+              className="p-1 bg-white rounded-full hover:bg-red-500 hover:text-white text-red-500 m-3 duration-300 "
+            >
+              <RxCross2 />
+            </button>
+          </div>
+          <div className="relative w-full">
+            <Image
+              src={showDetails.img}
+              width={200}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+              alt={showDetails.title}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center gap-y-3 p-3 text-center">
+            <h1 className="font-semibold">{showDetails.title}</h1>
+            <p className="dark:text-gray-300 text-gray-700">
+              {showDetails.description}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

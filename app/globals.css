@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --service_icons_opacity: 0.3;
+}
+
 .themShadow {
   box-shadow: 0px 0px 2px 1px rgb(190, 190, 190);
   border: yellow;
@@ -179,7 +183,7 @@ html {
   50% {
     transform: translateY(5);
   }
-} 
+}
 .skillCard {
   background: radial-gradient(
     circle,
@@ -203,19 +207,17 @@ html {
     rgba(0, 42, 255, 0.5),
     rgba(0, 255, 221, 0.8)
   );
-
   animation: skillCard 5s infinite linear;
 }
- 
+
 .skillCard img {
   animation: skillImage 5s linear infinite;
-background: white;
+  background: white;
 }
 @keyframes skillImage {
   50% {
     filter: hue-rotate(360deg);
   }
-
 }
 
 .skillBg {
@@ -286,6 +288,8 @@ background: white;
 }
 
 .animateText {
+  font-weight: bold;
+  font-size: large;
   background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -532,3 +536,120 @@ background: white;
     transform: translateX(100%);
   }
 }
+
+.toggleShadow {
+  box-shadow: 0px 0px 10rem 10rem rgb(45, 45, 45);
+}
+
+.service_icons_1 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation: service_icons_1 5s infinite linear;
+}
+@keyframes service_icons_1 {
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  11% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  50% {
+    transform: translateX(107%);
+    opacity: var(--service_icons_opacity);
+  }
+  89% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.service_icons_2 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation: service_icons_2 5s infinite ease;
+}
+@keyframes service_icons_2 {
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  11% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  50% {
+    transform: translateX(107%);
+    opacity: var(--service_icons_opacity);
+  }
+  89% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.service_icons_3 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation: service_icons_3 5s infinite ease-in;
+}
+@keyframes service_icons_3 {
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  11% {
+    transform: translateX(0%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(107%);
+    opacity: 0.5;
+  }
+  89% {
+    transform: translateX(0%);
+    opacity: 0.5;
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.service_icons_4 {
+  transform: translateX(0%);
+  opacity: 1;
+  animation: service_icons_4 5s infinite ease-in-out;
+}
+@keyframes service_icons_4 {
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  11% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  50% {
+    transform: translateX(107%);
+    opacity: var(--service_icons_opacity);
+  }
+  89% {
+    transform: translateX(0%);
+    opacity: var(--service_icons_opacity);
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* .services_headers_color {
+  color: yellow;
+} */
