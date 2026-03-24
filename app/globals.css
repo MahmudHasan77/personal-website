@@ -187,9 +187,9 @@ html {
 .skillCard {
   background: radial-gradient(
     circle,
-    rgba(0, 255, 221, 0.9),
+    rgba(0, 255, 221, 0.7),
     rgba(0, 42, 255, 0.3),
-    rgba(0, 255, 221, 0.9)
+    rgba(0, 255, 221, 0.7)
   );
   animation: skillCard 5s infinite linear;
 }
@@ -198,14 +198,14 @@ html {
   50% {
     filter: hue-rotate(360deg);
   }
-}
+} 
 
 .skillCard:hover {
   background: linear-gradient(
     0deg,
-    rgba(0, 255, 221, 0.8),
-    rgba(0, 42, 255, 0.5),
-    rgba(0, 255, 221, 0.8)
+    rgba(0, 255, 221, 0.5),
+    rgba(0, 42, 255, 0.3),
+    rgba(0, 255, 221, 0.5)
   );
   animation: skillCard 5s infinite linear;
 }
