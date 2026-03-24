@@ -35,22 +35,22 @@ const applications: {
     link: "",
 
     description:
-      "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
+      "I developed a Quran mobile application using React Native. The app provides a clean and user-friendly interface to read the Holy Quran, with smooth navigation and organized surah and ayah structure. It is designed to ensure a comfortable reading experience on mobile devices.",
   },
   {
     id: 2,
-    title: "Coffee Shop application design",
-    image: "/coffee-image-home-page.jpg",
+    title: "Coffee Shop",
+    image: "/coffee-image.jpg",
     link: "",
 
     description:
-      "A fully functional e-commerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes product management, shopping cart, user authentication, order tracking, and secure payment integration. Designed with a modern UI and responsive layout for seamless user experience across all devices.",
+      "I designed a coffee shop eCommerce mobile application with a modern and visually appealing interface. The app focuses on a clean layout, attractive product presentation, and smooth user experience, allowing users to easily explore coffee items, view details, and navigate seamlessly across the app.",
   },
 ];
 const websites = [
   {
     id: 1,
-    img: "/first-e-commerce-website.jpg",
+    image: "/first-e-commerce-website.jpg",
     link: "https://mahmud-practice-shop.netlify.app",
     title: "Full Stack E-commerce website",
     description:
@@ -58,7 +58,7 @@ const websites = [
   },
   {
     id: 2,
-    img: "/blog Next js .png",
+    image: "/blog Next js .png",
     link: "https://quran-sunnah-phi.vercel.app",
     title: "Full Stack Blog website",
     description:
@@ -66,7 +66,7 @@ const websites = [
   },
   {
     id: 3,
-    img: "/marriage Next js .png",
+    image: "/marriage Next js .png",
     link: "https://test-demo-gamma.vercel.app",
     title: "Home Page Development",
     description:
@@ -74,7 +74,7 @@ const websites = [
   },
   {
     id: 4,
-    img: "/first-demo.jpg",
+    image: "/first-demo.jpg",
     link: "",
     title: "Test Demo Template ",
     description:
@@ -155,7 +155,7 @@ const Home = () => {
   const [showDetails, setShowDetails] = useState<{
     id: number;
     title: string;
-    img: string;
+    image: string;
     link: string;
     description: string;
   }>();
@@ -735,7 +735,7 @@ const Home = () => {
       }
        transition-all duration-500`}
     >
-      <header className="flex justify-between  backdrop-blur-lg items-center py-3 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
+      <header className="flex justify-between  backdrop-blur-lg items-center py-3 md:py-5 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
           <button onClick={() => setShowNav(!showNav)}>
             <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
@@ -1128,9 +1128,9 @@ const Home = () => {
                 : "translate-x-[100%] opacity-0"
             }`}
           >
-            <div className={`relative h-70 w-85 imageAnimate `}>
+                    <div className={`relative h-50 w-65 md:h-70 lg:w-80  imageAnimate`}>
               <Image
-                src={"/Node-Js (1).png"}
+                src={"/website image.png"}
                 fill
                 alt="website image"
                 priority
@@ -1160,7 +1160,7 @@ const Home = () => {
                 : "-translate-x-[100%] opacity-0"
             }`}
           >
-            <div className={`relative h-50 w-65 md:h-70 lg:w-85  imageAnimate`}>
+            <div className={`relative h-50 w-65 md:h-70 lg:w-80  imageAnimate`}>
               <Image
                 src={"/Nodejs-Application.png"}
                 fill
@@ -1620,7 +1620,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-9 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-9 w-full service_icons_2`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1643,7 +1643,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_3`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1666,7 +1666,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_4`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1712,7 +1712,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_2`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1735,7 +1735,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_3`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1758,7 +1758,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_4`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1804,7 +1804,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_2`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1827,7 +1827,7 @@ const Home = () => {
             >
               <span className="font-semibold pb-5 relative  mx-auto animateText">
                 <span
-                  className={`absolute -top-2 -left-10 w-full service_icons_1`}
+                  className={`absolute -top-2 -left-10 w-full service_icons_3`}
                 >
                   <GoDotFill className={`size-10 text-green-500`} />
                 </span>
@@ -1855,10 +1855,10 @@ const Home = () => {
             return (
               <div key={app?.id} className="flex">
                 <div className="flex flex-col">
-                  <div className="w-50 h-105  rounded-2xl appCardBorder duration-300 relative appCardShadow bg-white">
-                    <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2" />
-                    <span className="absolute top-20 -right-[8px] bg-[#101010]   w-1 h-13 rounded-xs" />
-                    <span className="absolute top-40 -right-[8px] bg-[#101010] w-1 h-7 rounded-xs" />
+                  <div className="w-50 h-105  rounded-[13px] appCardBorder duration-300 relative appCardShadow bg-white">
+                    <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2 z-30"/>
+                    <span className="absolute top-20 -right-[6px] bg-[#101010]   w-1 h-13 rounded-xs" />
+                    <span className="absolute top-40 -right-[6px] bg-[#101010] w-1 h-7 rounded-xs" />
                     <div className="relative h-full w-full">
                       <Image
                         src={app?.image}
@@ -1870,23 +1870,23 @@ const Home = () => {
                   </div>
                   <div className="py-5">
                     <h1 className="text-sm text-center">
-                      {"Coffee shop application"}
+                      {app?.title}
                     </h1>
                     <div
                       className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
-                      // onClick={() => {
-                      //   setShowDetails(port);
-                      //   setDetailsOpen(true);
-                      // }}
+                      onClick={() => {
+                        setShowDetails(app);
+                        setDetailsOpen(true);
+                      }}
                     >
-                      View Application
+                      Application details
                     </div>
                     <div
                       className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
-                      // onClick={() => {
-                      //   setShowDetails(port);
-                      //   setDetailsOpen(true);
-                      // }}
+                      onClick={() => {
+                        setShowDetails(app);
+                        setDetailsOpen(true);
+                      }}
                     >
                       Download Application
                     </div>
@@ -1911,7 +1911,7 @@ const Home = () => {
               >
                 <div className="relative w-full h-70 portfolioBox rounded-t-md overflow-y-auto">
                   <Image
-                    src={website.img}
+                    src={website?.image}
                     priority
                     height={0}
                     width={280}
@@ -2252,7 +2252,7 @@ const Home = () => {
           </div>
           <div className="relative w-full">
             <Image
-              src={showDetails.img}
+              src={showDetails.image}
               width={200}
               height={0}
               style={{ width: "100%", height: "auto" }}

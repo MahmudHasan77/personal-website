@@ -1,5 +1,3 @@
-
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 const myUrl = "https://mahmud-hasan-seven.vercel.app";
 export const metadata: Metadata = {
-  title: "Md Mahmud Hasan | Web and Mobile App Developer",
+  title: "Md Mahmud Hasan | Web and Mobile App Developer Ethical hacker",
   description:
     "I'm a passionate Full Stack Web and Mobile App Developer building modern, responsive, and high-performance applications using React, Next.js, and React Native.",
   keywords: [
@@ -30,6 +28,7 @@ export const metadata: Metadata = {
     "developer mahmud",
     "mobile app developer",
     "mobile application developer",
+    "Ethical hacker",
   ],
   authors: [{ name: "Md Mahmud Hasan" }],
 
@@ -41,10 +40,10 @@ export const metadata: Metadata = {
     siteName: "Md Mahmud Hasan Portfolio",
     images: [
       {
-        url: "/Nodejs-Application.png",
+        url: "/mahmud-hasan.png",
         width: 1200,
         height: 630,
-        alt: "Md Mahmud Hasan Portfolio Preview",
+        alt: "Md Mahmud Hasan",
       },
     ],
     locale: "en_US",
@@ -56,16 +55,16 @@ export const metadata: Metadata = {
     title: "Md Mahmud Hasan | Web Engineer",
     description:
       "Building modern, scalable web applications using React, Next.js, and MongoDB.",
-    images: ["/Nodejs-Application.png"],
+    images: ["/mahmud-hasan.png"],
   },
   metadataBase: new URL(myUrl),
   other: {
     "google-site-verification": "SpySfPuBYpu0p3WV0J0E-6Nzz71izC5yn7n-idWs1BE",
   },
   icons: {
-    icon: "/author-google.png",
-    shortcut: "/author-google.png",
-    apple: "/author-google.png",
+    icon: "/mahmud-hasan.png",
+    shortcut: "/mahmud-hasan.png",
+    apple: "/mahmud-hasan.png",
   },
 };
 
