@@ -3,7 +3,7 @@ import { CgMenuHotdog } from "react-icons/cg";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { MdLightMode } from "react-icons/md";
-import { Roboto_Condensed } from "next/font/google";
+import { Inter } from "next/font/google";
 import { RxCross2 } from "react-icons/rx";
 import { MdAttachEmail } from "react-icons/md";
 import { FaPenClip } from "react-icons/fa6";
@@ -15,11 +15,11 @@ import { FcOk } from "react-icons/fc";
 import { MdOutlineReportGmailerrorred } from "react-icons/md";
 import { RiLoader3Fill } from "react-icons/ri";
 import { MdDarkMode } from "react-icons/md";
-const neue = Roboto_Condensed({
-  weight: "400",
-  subsets: ["latin"],
+const neue = Inter({
+  weight: "300",
 });
 
+const MH = "Mahmud Hasan";
 const applications: {
   id: number;
   image: string;
@@ -520,7 +520,6 @@ const Home = () => {
       }
     };
   }, []);
-
   useEffect(() => {
     const currentDiv = service10Ref.current;
     if (!currentDiv) return;
@@ -1013,7 +1012,7 @@ const Home = () => {
               className="rounded-full nodeLogo logoShadow dark:shadow-none!"
             />
           </div>
-          <div className="text-center px-4 my-10 overflow-hidden  flex justify-center items-center gap-5">
+          <div className="text-center px-4 my-10 overflow-hidden  flex justify-center items-center gap-5 p-2">
             <Image
               src={"/sparkling.png"}
               height={20}
@@ -1026,18 +1025,27 @@ const Home = () => {
               } duration-3000 object-contain rotate-45 sparklingLeft`}
             />
             <div>
-              <h1
-                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-bold z-40 opacity-100`}
+              <div
+                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2 name_box`}
               >
-                Hi, I&apos;m{" "}
-                <span
-                  className={`
-              inline-block font-extrabold dark:text-yellow-300 text-yellow-600 
+                Hi, I&apos;m
+                <h1 className={`flex flex-col justicy-center items-center`}>
+                  <span
+                    className={`
+              inline-block font-bold text-3xl! dark:text-yellow-300 text-yellow-800
             `}
-                >
-                  Mahmud Hasan
-                </span>
-              </h1>
+                  >
+                    {MH}
+                  </span>
+                  <span
+                    className={`
+              inline-block font-bold text-3xl!  rotate-180 -mt-2.5 shadow_text
+            `}
+                  >
+                    {MH.split("").reverse()}
+                  </span>
+                </h1>
+              </div>
 
               <div className="flex gap-2 justify-center">
                 <Image
@@ -1046,7 +1054,7 @@ const Home = () => {
                   height={11}
                   alt="web development"
                 />
-                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
+                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#00128a] dark:text-[#faf]">
                   Web Engineer
                   <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
                 </div>
@@ -1058,7 +1066,7 @@ const Home = () => {
                   height={11}
                   alt="web development"
                 />
-                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#021ab6] dark:text-[#faf]">
+                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#00128a] dark:text-[#faf]">
                   Mobile App Developer
                   <div className="w-32 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
                 </div>
@@ -1128,7 +1136,7 @@ const Home = () => {
                 : "translate-x-[100%] opacity-0"
             }`}
           >
-                    <div className={`relative h-50 w-65 md:h-70 lg:w-80  imageAnimate`}>
+            <div className={`relative h-50 w-65 md:h-70 lg:w-80  imageAnimate`}>
               <Image
                 src={"/website image.png"}
                 fill
@@ -1139,7 +1147,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={` text-center text-lg md:text-xl  text-[#8a6300] dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
+            className={` text-center text-lg md:text-xl  text-gray-800 dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
                ${neue.className} ${
                  isStart
                    ? "translate-y-0 opacity-100"
@@ -1178,13 +1186,13 @@ const Home = () => {
         ref={aboutRef}
         className={` scroll-mt-20  my-15 border border-zinc-300/50   dark:border-white/10 rounded-xl text-center flex flex-col items-center gap-3 w-[90%] mx-auto px-3 md:px-10 lg:px-30  py-5 pb-10 lg:pb-15 whiteShadow duration-1000 bg-blue-50 dark:bg-[#d5dafd31] `}
       >
-        <div className="font-bold text-2xl text-center flex justify-center items-center gap-2">
+        <div className="text-center flex justify-center items-center gap-2">
           <h1
             className={`${
               startAbout
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-20 opacity-0"
-            } animateText duration-500`}
+            } animateText duration-500  text-xl!`}
           >
             About
           </h1>
@@ -1194,7 +1202,7 @@ const Home = () => {
               startAbout
                 ? "translate-x-0 opacity-100"
                 : "translate-x-20 opacity-0"
-            } animateText duration-500`}
+            } animateText duration-500  text-xl!`}
           >
             me
           </h1>
@@ -1370,9 +1378,7 @@ const Home = () => {
         id="skills"
         className="scroll-mt-20 overflow-hidden my-15 border border-zinc-300/50 dark:border-white/10 rounded-xl w-[100%] md:w-[90%]  mx-auto whiteShadow duration-500 skillBg text-sm pb-7 pt-5 px-1 md:px-5"
       >
-        <h1 className="font-bold text-2xl text-center pb-5 animateText">
-          Skills
-        </h1>
+        <h1 className="text-xl! text-center pb-5 animateText">Skills</h1>
         <p
           className={`${
             startSkill
@@ -1581,9 +1587,7 @@ const Home = () => {
           <span className="text-xl">
             <MdOutlineSettingsSuggest className="serviceIcon" />
           </span>
-          <span className="font-bold text-2xl text-center  animateText">
-            Services
-          </span>
+          <span className="text-xl! text-center  animateText">Services</span>
         </h1>
         <div className="flex p-2 flex-wrap gap-3 lg:gap-7 justify-center">
           <div ref={service1Ref}>
@@ -1847,7 +1851,7 @@ const Home = () => {
         id="portfolio"
         className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10"
       >
-        <h1 className="font-bold text-2xl text-center pb-5 animateText">
+        <h1 className="text-xl! text-center pb-5 animateText">
           Application List
         </h1>
         <div className="flex justify-center flex-wrap gap-5">
@@ -1856,7 +1860,7 @@ const Home = () => {
               <div key={app?.id} className="flex">
                 <div className="flex flex-col">
                   <div className="w-50 h-105  rounded-[13px] appCardBorder duration-300 relative appCardShadow bg-white">
-                    <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2 z-30"/>
+                    <span className="absolute top-1 left-[50%] -translate-x-[50%] bg-black rounded-full w-2 h-2 z-30" />
                     <span className="absolute top-20 -right-[6px] bg-[#101010]   w-1 h-13 rounded-xs" />
                     <span className="absolute top-40 -right-[6px] bg-[#101010] w-1 h-7 rounded-xs" />
                     <div className="relative h-full w-full">
@@ -1869,11 +1873,9 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="py-5">
-                    <h1 className="text-sm text-center">
-                      {app?.title}
-                    </h1>
+                    <h1 className="text-sm text-center">{app?.title}</h1>
                     <div
-                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
+                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-900 dark:text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow my-3 hover:bg-blue-100/80 hover:text-black"
                       onClick={() => {
                         setShowDetails(app);
                         setDetailsOpen(true);
@@ -1882,7 +1884,7 @@ const Home = () => {
                       Application details
                     </div>
                     <div
-                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-100 w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
+                      className="border border-zinc-300  dark:border-white/30 text-xs py-2 bg-blue-100/50 text-green-900 dark:text-green-100  w-full text-center rounded-full cursor-pointer duration-300 whiteShadow mb-3 hover:bg-blue-100/80 hover:text-black"
                       onClick={() => {
                         setShowDetails(app);
                         setDetailsOpen(true);
@@ -1899,9 +1901,7 @@ const Home = () => {
       </section>
       {/* website list */}
       <section className="scroll-mt-20 my-15 md:p-5  border border-zinc-300/50   dark:border-white/10 rounded-md bg-blue-50 dark:bg-[#d5dafd31] whiteShadow py-10">
-        <h1 className="font-bold text-2xl text-center pb-5 animateText">
-          Website List
-        </h1>
+        <h1 className="text-xl! text-center pb-5 animateText">Website List</h1>
         <div className="sm:flex flex-wrap gap-5 lg:gap-8 justify-center">
           {websites.map((website, index) => {
             return (
