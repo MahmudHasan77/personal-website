@@ -1026,23 +1026,16 @@ const Home = () => {
             />
             <div>
               <div
-                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2 name_box`}
+                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2`}
               >
                 Hi, I&apos;m
-                <h1 className={`flex flex-col justicy-center items-center`}>
+                <h1 className={`flex flex-col justicy-center items-center  name_box my-2`}>
                   <span
                     className={`
-              inline-block font-bold text-3xl! dark:text-yellow-300 text-yellow-800
+              inline-block font-bold text-4xl! dark:text-yellow-300 text-[rgb(0,0,70)] name_font px-2
             `}
                   >
                     {MH}
-                  </span>
-                  <span
-                    className={`
-              inline-block font-bold text-3xl!  rotate-180 -mt-2.5 shadow_text
-            `}
-                  >
-                    {MH.split("").reverse()}
                   </span>
                 </h1>
               </div>
