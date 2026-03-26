@@ -98,30 +98,24 @@ html {
   }
 }
 
-.star-right {
-  scale: 1;
-  animation: star-right 5s infinite linear;
+.code_left {
+  font-weight: 900;
+  font-style:larger;
+  background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: code_left 5s infinite linear;
 }
-@keyframes star-right {
+@keyframes code_left {
   50% {
-    scale: 2;
-  }
-}
-
-.star-left {
-  scale: 2;
-  animation: star-left 5s infinite linear;
-}
-@keyframes star-left {
-  50% {
-    scale: 1;
+    filter: hue-rotate(360deg);
   }
 }
 
 /* name  */
 .name-font {
- font-size: larger !important;
- font-weight:900;
+  font-size: larger !important;
+  font-weight: 900;
 }
 
 .logoShadow {
@@ -431,11 +425,6 @@ html {
   }
 }
 
-/* .mainSection {
-  background-image: url("../public/coding-image-2.jfif");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .starAnimation {
   scale: 1;

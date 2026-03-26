@@ -817,26 +817,22 @@ const Home = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <main
-        ref={heroRef}
-        id="home"
-        className="scroll-mt-28   my-5 pt-20 relative"
-      >
+      <main ref={heroRef} id="home" className="scroll-mt-28 pt-20 relative">
         {/* stars */}
-        {/* <Image
-          src={SmallStar}
-          width={5}
-          height={5}
+        <Image
+          src={"/coding-2.png"}
+          width={25}
+          height={25}
           alt="star image"
-          className="absolute top-35 md:top-40 lg:top-35 right-40 md:right-10 lg:right-20 starAnimation"
-        /> */}
+          className="absolute top-25 md:top-40 lg:top-35 left-40 md:right-10 lg:right-20"
+        />
         {/* <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-35 md:top-40 lg:top-35 left-40 md:left-10 lg:left-20 starAnimation"
-        /> */}
+        //   src={SmallStar}
+        //   width={5}
+        //   height={5}
+        //   alt="star image"
+        //   className="absolute top-35 md:top-40 lg:top-35 left-40 md:left-10 lg:left-20 starAnimation"
+        // />
         {/* <Image
           src={SmallStar}
           width={5}
@@ -935,37 +931,49 @@ const Home = () => {
           alt="star image"
           className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
         /> */}
-        <div className="absolute top-37 left-5 flex justify-center items-center">
+        <div className="absolute top-44 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
+          <div className="relative h-15 w-15">
+            <Image
+              src={"/coding-circle.png"}
+              fill
+              alt="star image"
+              className="code_icon_rotate_2 dark:opacity-30 opacity-50"
+            />
+          </div>
           <Image
-            src={"/software-development.png"}
-            width={70}
-            height={70}
-            alt="star image"
-            className="code_icon_rotate_2 opacity-10"
-          />
-          <Image
-            src={"/star-2.png"}
-            height={20}
-            width={20}
+            src={"/coding-circle.png"}
+            height={33}
+            width={33}
             alt="sparkling"
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  star-left`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate dark:opacity-30 opacity-50`}
           />
+          <span
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-1 text-[10px]`}
+          >
+          {'</>'}
+            </span>
         </div>
-        <div className="absolute top-37 right-5 flex justify-center items-center">
+        <div className="absolute top-44 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
+          <div className="relative h-15 w-15">
+            <Image
+              src={"/coding-circle.png"}
+              fill
+              alt="star image"
+              className="code_icon_rotate dark:opacity-30 opacity-50"
+            />
+          </div>
           <Image
-            src={"/software-development.png"}
-            width={70}
-            height={70}
-            alt="star image"
-            className="code_icon_rotate_2 opacity-10"
-          />
-          <Image
-            src={"/star-2.png"}
-            height={20}
-            width={20}
+            src={"/coding-circle.png"}
+            height={33}
+            width={33}
             alt="sparkling"
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  star-right`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate_2 dark:opacity-30 opacity-50`}
           />
+          <span
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-1 text-[10px]`}
+          >
+          {'</>'}
+            </span>
         </div>
 
 
@@ -1018,7 +1026,7 @@ const Home = () => {
         </div> */}
 
         {/* name */}
-        <div className="flex justify-around  items-center ">
+        <div className="flex justify-around  items-center mb-5">
           <div
             className={`hidden md:inline duration-3000 ${
               isStart
@@ -1034,17 +1042,17 @@ const Home = () => {
               className="rounded-full nodeLogo logoShadow dark:shadow-none!"
             />
           </div>
-          <div className="text-center px-4 my-10 overflow-hidden  flex justify-center items-center gap-5 p-2">
+          <div className="text-center px-4 overflow-hidden  flex justify-center items-center gap-5 p-2">
             <div>
               <div
-                className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2`}
+                className={` text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2 text-yellow-300`}
               >
                 Hi, I&apos;m
                 <h1
-                  className={`flex flex-col justicy-center items-center  name_box my-2`}
+                  className={`flex flex-col justicy-center items-center  name_box my-1`}
                 >
                   <span
-                    className={`
+                    className={` 
               inline-block uppercase dark:text-yellow-300 text-[rgb(0,0,70)] px-2  name-font
             `}
                   >
