@@ -971,7 +971,7 @@ const Home = () => {
 
         {/* logo small screen */}
 
-        <div className="flex justify-center md:justify-around gap-10">
+        {/* <div className="flex justify-center md:justify-around gap-10">
           <div
             className={` ${
               isStart
@@ -1015,7 +1015,7 @@ const Home = () => {
               className="rounded-full bg-green100 logoShadow dark:shadow-none!"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* name */}
         <div className="flex justify-around  items-center ">
