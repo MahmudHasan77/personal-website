@@ -73,6 +73,30 @@ html {
     rotate: 360deg;
   }
 }
+.code_icon_rotate {
+  scale: 1;
+  animation: code_icon_rotate 5s infinite linear;
+}
+@keyframes code_icon_rotate {
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.code_icon_rotate_2 {
+  scale: 1;
+  animation: code_icon_rotate_2 5s infinite linear;
+}
+@keyframes code_icon_rotate_2 {
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
 
 .sparklingRight {
   scale: 1;

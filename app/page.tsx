@@ -856,21 +856,6 @@ const Home = () => {
           width={5}
           height={5}
           alt="star image"
-          className="absolute top-60 md:top-70 left-15 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-60 md:top-70 right-15 starAnimation"
-        />
-
-        <Image
-          src={"/christmas-star.png"}
-          width={5}
-          height={5}
-          alt="star image"
           className="absolute top-77 left-20 sm:left-40 sm:top-70 md:top-77 md:left-50 lg:left-99 lg:top-99 starAnimation"
         />
         <Image
@@ -948,6 +933,20 @@ const Home = () => {
           height={5}
           alt="star image"
           className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
+        />
+        <Image
+          src={"/software-development.png"}
+          width={70}
+          height={70}
+          alt="star image"
+          className="absolute top-47 left-3 code_icon_rotate_2 opacity-10"
+        />
+        <Image
+          src={"/software-development.png"}
+          width={70}
+          height={70}
+          alt="star image"
+          className="absolute top-47 right-3 code_icon_rotate opacity-10"
         />
 
         {/* logo small screen */}
@@ -1037,7 +1036,7 @@ const Home = () => {
                 >
                   <span
                     className={`
-              inline-block font-bold! text-4xl! dark:text-yellow-300 text-[rgb(0,0,70)] px-2 uppercase
+              inline-block font-extrabold! text-2xl!  dark:text-yellow-300 text-[rgb(0,0,70)] px-2 uppercase
             `}
                   >
                     {MH}
@@ -1385,7 +1384,7 @@ const Home = () => {
           } max-w-80 duration-500 sm:max-w-100 text-center mx-auto text-black/70 dark:text-white/70`}
         >
           Here are the technologies and tools I work with to build efficient,
-          scalable web and mobile applications, 
+          scalable web and mobile applications,
         </p>
         <div className="flex my-5 gap-x-2 gap-y-5 md:gap-5 flex-wrap justify-around dark:text-white">
           {/* html  */}
