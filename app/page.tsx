@@ -15,6 +15,7 @@ import { FcOk } from "react-icons/fc";
 import { MdOutlineReportGmailerrorred } from "react-icons/md";
 import { RiLoader3Fill } from "react-icons/ri";
 import { MdDarkMode } from "react-icons/md";
+import { TbMenu4 } from "react-icons/tb";
 const neue = Inter({
   weight: "300",
 });
@@ -737,7 +738,7 @@ const Home = () => {
       <header className="flex justify-between  backdrop-blur-lg items-center py-3 md:py-5 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
           <button onClick={() => setShowNav(!showNav)}>
-            <CgMenuHotdog className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
+            <TbMenu4 className="cursor-pointer text-2xl md:hidden text-yellow-300 hover:scale-110 hover:text-yellow-400 duration-300" />
           </button>
         </div>
         <div className="flex items-center gap-2 relative h-7 w-7">
@@ -767,6 +768,8 @@ const Home = () => {
             );
           })}
         </div>
+
+        {/* theme button */}
         <div className="flex">
           <button>
             <MdDarkMode
@@ -777,7 +780,7 @@ const Home = () => {
           <button>
             <MdLightMode
               onClick={handleThem}
-              className="hidden dark:inline text-2xl border rounded-full p-[1px]  text-yellow-500 dark:bg-white cursor-pointer hover:rotate-360 duration-300 hover:scale-110"
+              className="hidden dark:inline text-2xl border rounded-full p-[1px]  text-yellow-500 dark:bg-white cursor-pointer hover:rotate-360 duration-300 hover:scale-110 light_icon"
             />
           </button>
         </div>
@@ -788,7 +791,7 @@ const Home = () => {
         <div
           className={`md:hidden h-65 ${
             showNav ? "translate-y-0" : "-translate-y-75"
-          } flex flex-col gap-3 px-10 fixed top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 duration-500 transition-all w-full border-b border-zinc-300 z-40 dark:text-[#ffd900] text-green-600 pt-9 ${
+          } flex flex-col gap-3 px-10 fixed top-12 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 duration-500 transition-all w-full border-b border-zinc-300 z-45 dark:text-[#ffd900] text-green-600 pt-9 backdrop-blur-lg ${
             neue.className
           }`}
         >
@@ -1029,10 +1032,12 @@ const Home = () => {
                 className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2`}
               >
                 Hi, I&apos;m
-                <h1 className={`flex flex-col justicy-center items-center  name_box my-2`}>
+                <h1
+                  className={`flex flex-col justicy-center items-center  name_box my-2`}
+                >
                   <span
                     className={`
-              inline-block font-bold text-4xl! dark:text-yellow-300 text-[rgb(0,0,70)] name_font px-2
+              inline-block font-bold! text-4xl! dark:text-yellow-300 text-[rgb(0,0,70)] px-2 uppercase
             `}
                   >
                     {MH}
@@ -1047,7 +1052,7 @@ const Home = () => {
                   height={11}
                   alt="web development"
                 />
-                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#00128a] dark:text-[#faf]">
+                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
                   Web Engineer
                   <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
                 </div>
@@ -1059,7 +1064,7 @@ const Home = () => {
                   height={11}
                   alt="web development"
                 />
-                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#00128a] dark:text-[#faf]">
+                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
                   Mobile App Developer
                   <div className="w-32 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
                 </div>
@@ -1215,7 +1220,7 @@ const Home = () => {
                 style={{ height: "auto", width: "100%" }}
                 priority
                 alt="mahmud hasan web developer"
-                className="object-cover z-40"
+                className="object-cover z-30"
               />
             </div>
             <div className="slider -mt-12 sm:-mt-22">
@@ -1377,11 +1382,10 @@ const Home = () => {
             startSkill
               ? " translate-y-0"
               : "-translate-y-[100%] opacity-0  -translate-x-52"
-          } max-w-80 duration-500 sm:max-w-100 px-5 text-center mx-auto text-black/70 dark:text-white/70`}
+          } max-w-80 duration-500 sm:max-w-100 text-center mx-auto text-black/70 dark:text-white/70`}
         >
           Here are the technologies and tools I work with to build efficient,
-          scalable web and mobile applications, turning ideas into seamless,
-          high-performance experiences.
+          scalable web and mobile applications, 
         </p>
         <div className="flex my-5 gap-x-2 gap-y-5 md:gap-5 flex-wrap justify-around dark:text-white">
           {/* html  */}

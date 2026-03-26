@@ -18,9 +18,13 @@ html {
   border: yellow;
 }
 
-.name_font {
-  -webkit-text-stroke: 1px rgb(0, 100, 0);
-  text-shadow: 1px 1px 0px yellow;
+.light_icon {
+  animation: light_icon 3s infinite linear;
+}
+@keyframes light_icon {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .imageAnimate {
