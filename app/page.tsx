@@ -819,13 +819,13 @@ const Home = () => {
       {/* Hero Section */}
       <main ref={heroRef} id="home" className="scroll-mt-28 pt-20 relative">
         {/* stars */}
-        <Image
+        {/* <Image
           src={"/coding-2.png"}
           width={25}
           height={25}
           alt="star image"
           className="absolute top-25 md:top-40 lg:top-35 left-40 md:right-10 lg:right-20"
-        />
+        /> */}
         {/* <Image
         //   src={SmallStar}
         //   width={5}
@@ -948,7 +948,7 @@ const Home = () => {
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate dark:opacity-30 opacity-50`}
           />
           <span
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-1 text-[10px]`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
           >
           {'</>'}
             </span>
@@ -970,7 +970,7 @@ const Home = () => {
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate_2 dark:opacity-30 opacity-50`}
           />
           <span
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-1 text-[10px]`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
           >
           {'</>'}
             </span>
