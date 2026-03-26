@@ -75,7 +75,7 @@ html {
 }
 .code_icon_rotate {
   scale: 1;
-  animation: code_icon_rotate 5s infinite linear;
+  animation: code_icon_rotate 10s infinite linear;
 }
 @keyframes code_icon_rotate {
   50% {
@@ -87,7 +87,7 @@ html {
 }
 .code_icon_rotate_2 {
   scale: 1;
-  animation: code_icon_rotate_2 5s infinite linear;
+  animation: code_icon_rotate_2 10s infinite linear;
 }
 @keyframes code_icon_rotate_2 {
   50% {
@@ -98,21 +98,21 @@ html {
   }
 }
 
-.sparklingRight {
+.star-right {
   scale: 1;
-  animation: sparklingRight 5s infinite linear;
+  animation: star-right 5s infinite linear;
 }
-@keyframes sparklingRight {
+@keyframes star-right {
   50% {
     scale: 2;
   }
 }
 
-.sparklingLeft {
+.star-left {
   scale: 2;
-  animation: sparklingLeft 5s infinite linear;
+  animation: star-left 5s infinite linear;
 }
-@keyframes sparklingLeft {
+@keyframes star-left {
   50% {
     scale: 1;
   }

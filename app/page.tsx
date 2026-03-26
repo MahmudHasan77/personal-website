@@ -16,6 +16,7 @@ import { MdOutlineReportGmailerrorred } from "react-icons/md";
 import { RiLoader3Fill } from "react-icons/ri";
 import { MdDarkMode } from "react-icons/md";
 import { TbMenu4 } from "react-icons/tb";
+const SmallStar = "/star-2.png";
 const neue = Inter({
   weight: "300",
 });
@@ -822,29 +823,29 @@ const Home = () => {
         className="scroll-mt-28   my-5 pt-20 relative"
       >
         {/* stars */}
-        <Image
-          src={"/christmas-star.png"}
+        {/* <Image
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-35 md:top-40 lg:top-35 right-40 md:right-10 lg:right-20 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
+        /> */}
+        {/* <Image
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-35 md:top-40 lg:top-35 left-40 md:left-10 lg:left-20 starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
+        /> */}
+        {/* <Image
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-65 sm:top-50 right-35 md:right-40 lg:right-80 starAnimation"
         />
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
@@ -852,14 +853,14 @@ const Home = () => {
         />
 
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-77 left-20 sm:left-40 sm:top-70 md:top-77 md:left-50 lg:left-99 lg:top-99 starAnimation"
         />
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
@@ -867,7 +868,7 @@ const Home = () => {
         />
 
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
@@ -875,7 +876,7 @@ const Home = () => {
         />
 
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
@@ -883,14 +884,14 @@ const Home = () => {
         />
 
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-127 sm:top-120 lg:top-145 left-1/2 md:left-4/7 lg:left-1/2 starAnimation"
         />
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
@@ -898,56 +899,75 @@ const Home = () => {
         />
 
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-130 left-25 sm:hidden starAnimation"
         />
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-130 right-25 sm:hidden starAnimation"
-        />
+        /> */}
 
         {/* lg screen */}
-        <Image
-          src={"/christmas-star.png"}
+        {/* <Image
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-25 left-100 hidden lg:inline starAnimation"
         />
         <Image
-          src={"/christmas-star.png"}
+          src={SmallStar}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-25 right-100 hidden lg:inline starAnimation"
-        />
-        <Image
-          src={"/christmas-star.png"}
+        /> */}
+        {/* <Image
+          src={'/star-2.png'}
           width={5}
           height={5}
           alt="star image"
           className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
-        />
-        <Image
-          src={"/software-development.png"}
-          width={70}
-          height={70}
-          alt="star image"
-          className="absolute top-47 left-3 code_icon_rotate_2 opacity-10"
-        />
-        <Image
-          src={"/software-development.png"}
-          width={70}
-          height={70}
-          alt="star image"
-          className="absolute top-47 right-3 code_icon_rotate opacity-10"
-        />
+        /> */}
+        <div className="absolute top-47 left-3 flex justify-center items-center">
+          <Image
+            src={"/software-development.png"}
+            width={70}
+            height={70}
+            alt="star image"
+            className="code_icon_rotate_2 opacity-10"
+          />
+          <Image
+            src={"/star-2.png"}
+            height={20}
+            width={20}
+            alt="sparkling"
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  star-left`}
+          />
+        </div>
+        <div className="absolute top-47 right-3 flex justify-center items-center">
+          <Image
+            src={"/software-development.png"}
+            width={70}
+            height={70}
+            alt="star image"
+            className="code_icon_rotate_2 opacity-10"
+          />
+          <Image
+            src={"/star-2.png"}
+            height={20}
+            width={20}
+            alt="sparkling"
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  star-right`}
+          />
+        </div>
+
 
         {/* logo small screen */}
 
@@ -1015,17 +1035,6 @@ const Home = () => {
             />
           </div>
           <div className="text-center px-4 my-10 overflow-hidden  flex justify-center items-center gap-5 p-2">
-            <Image
-              src={"/sparkling.png"}
-              height={20}
-              width={20}
-              alt="sparkling"
-              className={` ${
-                isStart
-                  ? "translate-x-0 opacity-100"
-                  : "-translate-x-20 opacity-0"
-              } duration-3000 object-contain rotate-45 sparklingLeft`}
-            />
             <div>
               <div
                 className={`${neue.className} text-2xl md:text-3xl lg:text-4xl font-semibold! z-40 px-2`}
@@ -1069,17 +1078,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <Image
-              src={"/sparkling.png"}
-              height={20}
-              width={20}
-              alt="sparkling"
-              className={` ${
-                isStart
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-20 opacity-0"
-              } duration-3000 object-contain rotate-45 sparklingRight`}
-            />
           </div>
           <div
             className={`hidden md:inline duration-3000 ${
