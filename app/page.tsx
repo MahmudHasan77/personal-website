@@ -935,7 +935,7 @@ const Home = () => {
           alt="star image"
           className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
         /> */}
-        <div className="absolute top-47 left-3 flex justify-center items-center">
+        <div className="absolute top-37 left-5 flex justify-center items-center">
           <Image
             src={"/software-development.png"}
             width={70}
@@ -951,7 +951,7 @@ const Home = () => {
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  star-left`}
           />
         </div>
-        <div className="absolute top-47 right-3 flex justify-center items-center">
+        <div className="absolute top-37 right-5 flex justify-center items-center">
           <Image
             src={"/software-development.png"}
             width={70}
@@ -1045,7 +1045,7 @@ const Home = () => {
                 >
                   <span
                     className={`
-              inline-block font-extrabold! text-2xl!  dark:text-yellow-300 text-[rgb(0,0,70)] px-2 uppercase
+              inline-block uppercase dark:text-yellow-300 text-[rgb(0,0,70)] px-2  name-font
             `}
                   >
                     {MH}
