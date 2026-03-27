@@ -100,7 +100,7 @@ html {
 
 .code_left {
   font-weight: 900;
-  font-style:larger;
+  font-style: larger;
   background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -193,15 +193,68 @@ html {
   }
 }
 
-.mongoLogoSmall {
+/* small screen logos */
+.small_screen_logo_1 {
   transform: translateY(-5);
-  animation: mongoLogoSmall 4s infinite linear;
+  animation: small_screen_logo_1 4s infinite ease;
+  animation-delay: 0ms;
 }
-@keyframes mongoLogoSmall {
+@keyframes small_screen_logo_1 {
   50% {
     transform: translateY(5);
   }
 }
+.small_screen_logo_2 {
+  transform: translateY(-5);
+  animation: small_screen_logo_2 4s infinite ease;
+  animation-delay: 1s;
+}
+@keyframes small_screen_logo_2 {
+  50% {
+    transform: translateY(5);
+  }
+}
+.small_screen_logo_3 {
+  transform: translateY(-5);
+  animation: small_screen_logo_3 4s infinite ease;
+  animation-delay: 2s;
+}
+@keyframes small_screen_logo_3 {
+  50% {
+    transform: translateY(5);
+  }
+}
+.small_screen_logo_4 {
+  transform: translateY(-5);
+  animation: small_screen_logo_4 4s infinite ease;
+  animation-delay: 3s;
+}
+@keyframes small_screen_logo_4 {
+  50% {
+    transform: translateY(5);
+  }
+}
+.small_screen_logo_5 {
+  transform: translateY(-5);
+  animation: small_screen_logo_5 4s infinite ease;
+  animation-delay: 4s;
+}
+@keyframes small_screen_logo_5 {
+  50% {
+    transform: translateY(5);
+  }
+}
+.small_screen_logo_6 {
+  transform: translateY(-5);
+  animation: small_screen_logo_6 4s infinite ease;
+  animation-delay: 5s;
+}
+@keyframes small_screen_logo_6 {
+  50% {
+    transform: translateY(5);
+  }
+}
+
 .skillCard {
   background: radial-gradient(
     circle,
@@ -424,7 +477,6 @@ html {
     transform: translateX(0%);
   }
 }
-
 
 .starAnimation {
   scale: 1;

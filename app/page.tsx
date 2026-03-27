@@ -1117,60 +1117,71 @@ const Home = () => {
         </div>
 
         {/* small screen icons */}
-        <div className="flex justify-center md:hidden gap-5">
+        <div className="flex justify-center md:hidden gap-3">
           <Image
             src={"/ts.png"}
-            width={30}
-            height={30}
+            width={22}
+            height={22}
             alt="node js"
-            className={`rounded-full nodeLogoSmall logoShadow dark:shadow-none! duration-3000 ${
+            className={`rounded-full small_screen_logo_1 logoShadow dark:shadow-none! duration-3000 ${
               isStart
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-[500%] opacity-0"
+                ? "opacity-100"
+                : "opacity-0"
             }`}
           />
           <Image
             src={"/next-js.webp"}
-            width={30}
-            height={30}
+            width={22}
+            height={22}
             alt="node js"
-            className={`rounded-full nodeLogoSmall logoShadow dark:shadow-none! duration-3000 ${
+            className={`rounded-full small_screen_logo_2 logoShadow dark:shadow-none! duration-3000 ${
               isStart
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-[500%] opacity-0"
+                ? "opacity-100"
+                : "opacity-0"
             }`}
           />
           <Image
             src={"/node-js-logo.png"}
-            width={30}
-            height={30}
+            width={22}
+            height={22}
             alt="node js"
-            className={`rounded-full nodeLogoSmall logoShadow dark:shadow-none! duration-3000 ${
+            className={`rounded-full small_screen_logo_3 logoShadow dark:shadow-none! duration-3000 ${
               isStart
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-[500%] opacity-0"
+                ? "opacity-100"
+                : " opacity-0"
             }`}
           />
           <Image
-            src={"/node-js-logo.png"}
-            width={30}
-            height={30}
+            src={"/mongodb-logo.png"}
+            width={22}
+            height={22}
             alt="node js"
-            className={`rounded-full nodeLogoSmall logoShadow dark:shadow-none! duration-3000 ${
+            className={`rounded-full small_screen_logo_4 logoShadow dark:shadow-none! duration-3000 ${
               isStart
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-[500%] opacity-0"
+                ? " opacity-100"
+                : "opacity-0"
+            }`}
+          />
+          <Image
+            src={"/my-sql-.png"}
+            width={22}
+            height={22}
+            alt="node js"
+            className={`rounded-full small_screen_logo_5 logoShadow dark:shadow-none! duration-3000 ${
+              isStart
+                ? "opacity-100"
+                : "opacity-0"
             }`}
           />
           <Image
             src={"/python-logo-.png"}
-            width={30}
-            height={30}
+            width={22}
+            height={22}
             alt="node js"
-            className={`rounded-full mongoLogoSmall logoShadow dark:shadow-none! duration-3000 ${
+            className={`rounded-full small_screen_logo_6 logoShadow dark:shadow-none! duration-3000 ${
               isStart
-                ? "translate-x-0 opacity-100"
-                : "translate-x-[500%] opacity-0"
+                ? "opacity-100"
+                : "opacity-0"
             }`}
           />
         </div>
