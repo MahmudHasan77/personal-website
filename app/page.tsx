@@ -817,10 +817,10 @@ const Home = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <main ref={heroRef} id="home" className="scroll-mt-28 pt-20 relative">
+      <main ref={heroRef} id="home" className="scroll-mt-28 pt-30 relative">
         {/* stars */}
         <span
-          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left top-15 `}
+          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left top-20`}
         >
           {"</>"}
         </span>
@@ -831,7 +831,7 @@ const Home = () => {
           alt="star image"
           className="absolute 
           top-22  left-15 md:top-27 md:left-50 lg:top-30 lg:left-70
-           opacity-30 code_animation"
+           opacity-40 code_animation"
         />
         <Image
           src={"/code.png"}
@@ -840,10 +840,10 @@ const Home = () => {
           alt="star image"
           className="absolute 
           top-22  right-15 md:top-27 md:right-50 lg:top-30 lg:right-70
-           opacity-30 code_animation"
+           opacity-40 code_animation"
         />
 
-        <div className="absolute top-40 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
+        <div className="absolute top-38 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -865,7 +865,7 @@ const Home = () => {
             {"</>"}
           </span>
         </div>
-        <div className="absolute top-40 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
+        <div className="absolute top-38 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -971,32 +971,22 @@ const Home = () => {
                   </span>
                 </h1>
               </div>
+              <div className={"flex flex-col items-center"}>
+                <div className="flex gap-2 ">
+                  <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
+                    Mobile App Developer
+                    <div className="w-32 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
+                  </div>
+                </div>
+                <div className="flex gap-2 ">
+                  <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
+                    Web Engineer
+                    <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
+                  </div>
+                </div>
+              </div>
 
-              <div className="flex gap-2 justify-center">
-                <Image
-                  src={"/coding.png"}
-                  width={15}
-                  height={11}
-                  alt="web development"
-                />
-                <div className="webEngineer text-xs w-20  relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
-                  Web Engineer
-                  <div className="w-20 h-4.5 webDevTranslation   border-l  dark:bg-[#000922] absolute top-0"></div>
-                </div>
-              </div>
-              <div className="flex gap-2 justify-center">
-                <Image
-                  src={"/mobile-coding.png"}
-                  width={15}
-                  height={11}
-                  alt="web development"
-                />
-                <div className="text-xs w-32 relative overflow-hidden font-semibold text-[#00128a] dark:text-yellow-300">
-                  Mobile App Developer
-                  <div className="w-32 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
-                </div>
-              </div>
-              <div className="flex gap-2 justify-center">
+              {/* <div className="flex gap-2 justify-center">
                 <Image
                   src={"/hacking.png"}
                   width={15}
@@ -1007,7 +997,7 @@ const Home = () => {
                   Cyber Security Specialist
                   <div className="w-40 h-4.5 appDevTranslation border-l  dark:bg-[#000922] opacity-100 absolute top-0"></div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div
