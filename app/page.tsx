@@ -1086,7 +1086,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={`text-lg md:text-xl  text-gray-800 dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 rounded-full text-center
+            className={`text-lg md:text-xl  text-gray-800 dark:text-yellow-400 p-5 mb-5 md:flex lg:inline duration-3000 rounded-full text-center 
                ${neue.className} ${
                  isStart
                    ? "translate-y-0 opacity-100"
