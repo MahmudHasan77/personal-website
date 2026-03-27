@@ -196,7 +196,7 @@ html {
 /* small screen logos */
 .small_screen_logo_1 {
   transform: translateY(-5);
-  animation: small_screen_logo_1 4s infinite ease;
+  animation: small_screen_logo_1 4s infinite linear;
   animation-delay: 0ms;
 }
 @keyframes small_screen_logo_1 {
@@ -206,7 +206,7 @@ html {
 }
 .small_screen_logo_2 {
   transform: translateY(-5);
-  animation: small_screen_logo_2 4s infinite ease;
+  animation: small_screen_logo_2 4s infinite linear;
   animation-delay: 1s;
 }
 @keyframes small_screen_logo_2 {
@@ -216,7 +216,7 @@ html {
 }
 .small_screen_logo_3 {
   transform: translateY(-5);
-  animation: small_screen_logo_3 4s infinite ease;
+  animation: small_screen_logo_3 4s infinite linear;
   animation-delay: 2s;
 }
 @keyframes small_screen_logo_3 {
@@ -224,36 +224,7 @@ html {
     transform: translateY(5);
   }
 }
-.small_screen_logo_4 {
-  transform: translateY(-5);
-  animation: small_screen_logo_4 4s infinite ease;
-  animation-delay: 3s;
-}
-@keyframes small_screen_logo_4 {
-  50% {
-    transform: translateY(5);
-  }
-}
-.small_screen_logo_5 {
-  transform: translateY(-5);
-  animation: small_screen_logo_5 4s infinite ease;
-  animation-delay: 4s;
-}
-@keyframes small_screen_logo_5 {
-  50% {
-    transform: translateY(5);
-  }
-}
-.small_screen_logo_6 {
-  transform: translateY(-5);
-  animation: small_screen_logo_6 4s infinite ease;
-  animation-delay: 5s;
-}
-@keyframes small_screen_logo_6 {
-  50% {
-    transform: translateY(5);
-  }
-}
+
 
 .skillCard {
   background: radial-gradient(

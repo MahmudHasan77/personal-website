@@ -1117,18 +1117,8 @@ const Home = () => {
         </div>
 
         {/* small screen icons */}
-        <div className="flex justify-center md:hidden gap-3">
-          <Image
-            src={"/ts.png"}
-            width={22}
-            height={22}
-            alt="node js"
-            className={`rounded-full small_screen_logo_1 logoShadow dark:shadow-none! duration-3000 ${
-              isStart
-                ? "opacity-100"
-                : "opacity-0"
-            }`}
-          />
+        {/* <div className="flex justify-center md:hidden gap-3">
+
           <Image
             src={"/next-js.webp"}
             width={22}
@@ -1162,29 +1152,8 @@ const Home = () => {
                 : "opacity-0"
             }`}
           />
-          <Image
-            src={"/my-sql-.png"}
-            width={22}
-            height={22}
-            alt="node js"
-            className={`rounded-full small_screen_logo_5 logoShadow dark:shadow-none! duration-3000 ${
-              isStart
-                ? "opacity-100"
-                : "opacity-0"
-            }`}
-          />
-          <Image
-            src={"/python-logo-.png"}
-            width={22}
-            height={22}
-            alt="node js"
-            className={`rounded-full small_screen_logo_6 logoShadow dark:shadow-none! duration-3000 ${
-              isStart
-                ? "opacity-100"
-                : "opacity-0"
-            }`}
-          />
-        </div>
+
+        </div> */}
 
         {/* introduction */}
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-3  my-5 gap-y-10 ">
