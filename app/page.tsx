@@ -42,7 +42,7 @@ const applications: {
   {
     id: 2,
     title: "Coffee Shop",
-    image: "/coffee-image.jpg",
+    image: "/coffee-image-landing-page.jpg",
     link: "",
 
     description:
@@ -819,119 +819,31 @@ const Home = () => {
       {/* Hero Section */}
       <main ref={heroRef} id="home" className="scroll-mt-28 pt-20 relative">
         {/* stars */}
-        {/* <Image
-          src={"/coding-2.png"}
+        <span
+          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left top-15 `}
+        >
+          {"</>"}
+        </span>
+        <Image
+          src={"/code.png"}
           width={25}
           height={25}
           alt="star image"
-          className="absolute top-25 md:top-40 lg:top-35 left-40 md:right-10 lg:right-20"
-        /> */}
-        {/* <Image
-        //   src={SmallStar}
-        //   width={5}
-        //   height={5}
-        //   alt="star image"
-        //   className="absolute top-35 md:top-40 lg:top-35 left-40 md:left-10 lg:left-20 starAnimation"
-        // />
-        {/* <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-65 sm:top-50 right-35 md:right-40 lg:right-80 starAnimation"
+          className="absolute 
+          top-22  left-15 md:top-27 md:left-50 lg:top-30 lg:left-70
+           opacity-30 code_animation"
         />
         <Image
-          src={SmallStar}
-          width={5}
-          height={5}
+          src={"/code.png"}
+          width={25}
+          height={25}
           alt="star image"
-          className="absolute top-65 sm:top-50 left-35 md:left-40 lg:left-80 starAnimation"
+          className="absolute 
+          top-22  right-15 md:top-27 md:right-50 lg:top-30 lg:right-70
+           opacity-30 code_animation"
         />
 
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-77 left-20 sm:left-40 sm:top-70 md:top-77 md:left-50 lg:left-99 lg:top-99 starAnimation"
-        />
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-77 right-20 sm:right-40 sm:top-70 md:top-77 md:right-50 lg:right-99 lg:top-99 starAnimation"
-        />
-
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-155 right-15 md:right-55 lg:right-70 md:top-150 starAnimation"
-        />
-
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-155 left-15 md:left-55 lg:left-70 md:top-150 starAnimation"
-        />
-
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-127 sm:top-120 lg:top-145 left-1/2 md:left-4/7 lg:left-1/2 starAnimation"
-        />
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-185 md:top-150 lg:hidden left-1/2 starAnimation"
-        />
-
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-130 left-25 sm:hidden starAnimation"
-        />
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-130 right-25 sm:hidden starAnimation"
-        /> */}
-
-        {/* lg screen */}
-        {/* <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-25 left-100 hidden lg:inline starAnimation"
-        />
-        <Image
-          src={SmallStar}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-25 right-100 hidden lg:inline starAnimation"
-        /> */}
-        {/* <Image
-          src={'/star-2.png'}
-          width={5}
-          height={5}
-          alt="star image"
-          className="absolute top-73 right-1/2 hidden lg:inline starAnimation"
-        /> */}
-        <div className="absolute top-44 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
+        <div className="absolute top-40 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -950,10 +862,10 @@ const Home = () => {
           <span
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
           >
-          {'</>'}
-            </span>
+            {"</>"}
+          </span>
         </div>
-        <div className="absolute top-44 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
+        <div className="absolute top-40 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -972,10 +884,9 @@ const Home = () => {
           <span
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
           >
-          {'</>'}
-            </span>
+            {"</>"}
+          </span>
         </div>
-
 
         {/* logo small screen */}
 
@@ -1175,7 +1086,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className={` text-center text-lg md:text-xl  text-gray-800 dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 items-center 
+            className={`text-lg md:text-xl  text-gray-800 dark:text-yellow-400 px-7 mb-5 md:flex lg:inline duration-3000 rounded-full text-center
                ${neue.className} ${
                  isStart
                    ? "translate-y-0 opacity-100"

@@ -225,7 +225,6 @@ html {
   }
 }
 
-
 .skillCard {
   background: radial-gradient(
     circle,
@@ -449,13 +448,13 @@ html {
   }
 }
 
-.starAnimation {
+.code_animation {
   scale: 1;
-  animation: starAnimation 1s infinite linear;
+  animation: code_animation 5s infinite linear;
 }
-@keyframes starAnimation {
+@keyframes code_animation {
   50% {
-    scale: 2;
+    scale: 1.5;
   }
 }
 @keyframes fadeIn {
