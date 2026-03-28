@@ -682,7 +682,7 @@ const Home = () => {
   //     setSendStatus("error");
   //   }
   // };
-  if (themMode === "") return;
+
   // skill card templates
   const SkillCard = ({
     name,
@@ -820,7 +820,12 @@ const Home = () => {
       <main ref={heroRef} id="home" className="scroll-mt-28 pt-30 relative">
         {/* stars */}
         <span
-          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left top-20`}
+          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_icon_top top-20`}
+        >
+          {"</>"}
+        </span>
+        <span
+          className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_icon_top_2 top-20`}
         >
           {"</>"}
         </span>
@@ -843,7 +848,7 @@ const Home = () => {
            opacity-40 code_animation"
         />
 
-        <div className="absolute top-38 left-2 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
+        <div className="absolute top-38 left-1 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -860,12 +865,12 @@ const Home = () => {
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate dark:opacity-30 opacity-50`}
           />
           <span
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_icon -mt-0.5 text-[10px]`}
           >
             {"</>"}
           </span>
         </div>
-        <div className="absolute top-38 right-2 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
+        <div className="absolute top-38 right-1 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -882,9 +887,61 @@ const Home = () => {
             className={`duration-3000 absolute left-1/2 -translate-x-1/2 object-contain  code-left code_icon_rotate_2 dark:opacity-30 opacity-50`}
           />
           <span
-            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_left -mt-0.5 text-[10px]`}
+            className={`duration-3000 absolute left-1/2 -translate-x-1/2 text-center code_icon -mt-0.5 text-[10px]`}
           >
             {"</>"}
+          </span>
+        </div>
+        <div
+          className="absolute flex justify-center items-center           top-60  left-1/2 -translate-x-1/2 md:top-27 md:right-50 lg:top-30 lg:right-70"
+        >
+          <Image
+            src={"/programming_10817310.png"}
+            width={40}
+            height={40}
+            alt="star image"
+            className="
+          opacity-40"
+          />
+          <span
+            className={`absolute code_icon_middle -mt-2`}
+          >
+            {"("}
+          </span>
+          <span
+            className={`absolute code_icon_middle_2 -mt-2`}
+          >
+            {")"}
+          </span>
+          <span
+            className={`absolute code_icon_middle -mt-2`}
+          >
+            {"("}
+          </span>
+          <span
+            className={`absolute code_icon_middle_2 -mt-2`}
+          >
+            {")"}
+          </span>
+          <span
+            className={`absolute code_icon_middle -mt-2`}
+          >
+            {"("}
+          </span>
+          <span
+            className={`absolute code_icon_middle_2 -mt-2`}
+          >
+            {")"}
+          </span>
+          <span
+            className={`absolute code_icon_middle -mt-2`}
+          >
+            {"("}
+          </span>
+          <span
+            className={`absolute code_icon_middle_2 -mt-2`}
+          >
+            {")"}
           </span>
         </div>
 
