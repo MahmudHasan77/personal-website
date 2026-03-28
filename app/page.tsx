@@ -163,7 +163,7 @@ const Home = () => {
   }>();
   const handleThem = () => {
     setThemMode(themMode === "dark" ? "light" : "dark");
-    localStorage.setItem("them", themMode === "dark" ? "light" : "dark");
+    localStorage.setItem("theme", themMode === "dark" ? "light" : "dark");
   };
 
   const navigation = [
@@ -725,15 +725,19 @@ const Home = () => {
       </div>
     );
   };
+  //   ${
+  //   themMode && themMode != "dark"
+  //     ? "bg-[#f8feff] text-[#094100] "
+  // dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800
+  //     : "dark"
+  // }
   return (
     <div
       onClick={handleClick}
-      className={`relative overflow-x-hidden ${
-        themMode && themMode != "dark"
-          ? "bg-[#f8feff] text-[#094100] " 
-          : "dark"
-      }
-       transition-all duration-500 dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800 text-white `}
+      className={`relative overflow-x-hidden 
+       transition-all duration-500
+text-white 
+       `}
     >
       <header className="flex justify-between  backdrop-blur-lg items-center py-3 md:py-5 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
         <div className="flex">
@@ -911,6 +915,13 @@ const Home = () => {
           <span className={`absolute code_icon_middle_right_2 -mt-2`}>
             {")"}
           </span>
+
+          <Image
+            src={"/website-content_2956461.png"}
+            height={20}
+            width={20}
+            alt="website"
+          />
         </div>
 
         {/* logo small screen */}
