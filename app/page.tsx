@@ -849,7 +849,7 @@ const Home = () => {
           height={25}
           alt="star image"
           className="absolute 
-          top-22  left-15 md:top-27 md:left-50 lg:top-30 lg:left-70
+          top-28  left-15 md:top-27 md:left-50 lg:top-30 lg:left-70
            opacity-40 code_animation"
         />
         <Image
@@ -858,11 +858,11 @@ const Home = () => {
           height={25}
           alt="star image"
           className="absolute 
-          top-22  right-15 md:top-27 md:right-50 lg:top-30 lg:right-70
+          top-28 right-15 md:top-27 md:right-50 lg:top-30 lg:right-70
            opacity-40 code_animation"
         />
 
-        <div className="absolute top-38 left-1 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
+        <div className="absolute top-55 left-10 sm:left-30 md:left-50 lg:left-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -884,7 +884,7 @@ const Home = () => {
             {"</>"}
           </span>
         </div>
-        <div className="absolute top-38 right-1 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
+        <div className="absolute top-55 right-10 sm:right-30 md:right-50 lg:right-80 flex justify-center items-center">
           <div className="relative h-15 w-15">
             <Image
               src={"/coding-circle.png"}
@@ -908,16 +908,16 @@ const Home = () => {
         </div>
 
         {/* desktop image  */}
-        <div className="absolute flex justify-center items-center           top-65  left-1/2 -translate-x-1/2 md:top-27 md:right-50 lg:top-30 lg:right-70">
+        <div className="absolute flex justify-center items-center top-75  left-1/2 -translate-x-1/2 md:top-80 ">
           <Image
             src={"/programming_10817310.png"}
             width={40}
             height={40}
             alt="star image"
             className="
-          opacity-40"
+          opacity40"
           />
-          <span className={`absolute code_icon_middle_left -mt-2`}>{"("}</span>
+          {/* <span className={`absolute code_icon_middle_left -mt-2`}>{"("}</span>
           <span className={`absolute code_icon_middle_left_2 -mt-2`}>
             {"("}
           </span>
@@ -925,14 +925,64 @@ const Home = () => {
           <span className={`absolute code_icon_middle_right -mt-2`}>{")"}</span>
           <span className={`absolute code_icon_middle_right_2 -mt-2`}>
             {")"}
-          </span>
+          </span> */}
 
           <Image
             src={"/website-content_2956461.png"}
-            height={20}
-            width={20}
+            height={15}
+            width={15} 
             alt="website"
-          />
+            className={'absolute top-[3px] web_page_icon'}    
+            />
+          <Image 
+            src={"/website-content_2956461.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] web_page_icon_2'}    
+            />
+          <Image
+            src={"/website-content_2956461.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] web_page_icon_3'}    
+            />
+          <Image
+            src={"/website-content_2956461.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] web_page_icon_4'}    
+            />
+          <Image
+            src={"/mobile-app_6608098.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] mobile_app_icon'}    
+            />
+          <Image
+            src={"/mobile-app_6608098.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] mobile_app_icon_2'}    
+            />
+          <Image
+            src={"/mobile-app_6608098.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] mobile_app_icon_3'}    
+            />
+          <Image
+            src={"/mobile-app_6608098.png"}
+            height={15}
+            width={15} 
+            alt="website"
+            className={'absolute top-[3px] mobile_app_icon_4'}    
+            />
         </div>
 
         {/* logo small screen */}
@@ -984,7 +1034,7 @@ const Home = () => {
         </div> */}
 
         {/* name */}
-        <div className="flex justify-around  items-center mb-15">
+        <div className="flex justify-around  items-center mb-25">
           <div
             className={`hidden md:inline duration-3000 ${
               isStart
