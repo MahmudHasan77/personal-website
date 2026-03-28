@@ -778,7 +778,7 @@ text-white
           <button>
             <MdDarkMode
               onClick={handleThem}
-              className="text-2xl border border-zinc-400 rounded-full p-[2px] bg-gray-300 dark:hidden text-gray-500 cursor-pointer hover:rotate-360 duration-300 hover:scale-110"
+              className="text-2xl border border-zinc-400 rounded-full p-[2px] bg-gray-300 darkhidden text-gray-500 cursor-pointer hover:rotate-360 duration-300 hover:scale-110"
             />
           </button>
           <button>
