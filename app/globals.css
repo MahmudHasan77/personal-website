@@ -236,7 +236,7 @@ html {
 }
 @keyframes web_page {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -249,7 +249,7 @@ html {
   }
   95% {
     transform: translateX(-70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(-70px);
@@ -272,7 +272,7 @@ html {
 }
 @keyframes web_page_2 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -285,7 +285,7 @@ html {
   }
   95% {
     transform: translateX(-70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(-70px);
@@ -308,7 +308,7 @@ html {
 }
 @keyframes web_page_3 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -321,7 +321,7 @@ html {
   }
   95% {
     transform: translateX(-70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(-70px);
@@ -344,7 +344,7 @@ html {
 }
 @keyframes web_page_4 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -357,7 +357,7 @@ html {
   }
   95% {
     transform: translateX(-70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(-70px);
@@ -379,7 +379,7 @@ html {
 }
 @keyframes mobile_app_icon {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -392,13 +392,12 @@ html {
   }
   95% {
     transform: translateX(70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(70px);
     opacity: 0;
-    z-index: 0;
-  }
+ }
   100% {
     transform: translateX(70px);
     opacity: 0;
@@ -415,7 +414,7 @@ html {
 }
 @keyframes mobile_app_icon_2 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -428,11 +427,10 @@ html {
   }
   95% {
     transform: translateX(70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(70px);
-    opacity: 0;
   }
   100% {
     transform: translateX(70px);
@@ -451,7 +449,7 @@ html {
 }
 @keyframes mobile_app_icon_3 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -464,7 +462,7 @@ html {
   }
   95% {
     transform: translateX(70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(70px);
@@ -487,7 +485,7 @@ html {
 }
 @keyframes mobile_app_icon_4 {
   1% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   60% {
@@ -500,7 +498,7 @@ html {
   }
   95% {
     transform: translateX(70px);
-    opacity: 1;
+    opacity: 0.5;
   }
   99% {
     transform: translateX(70px);

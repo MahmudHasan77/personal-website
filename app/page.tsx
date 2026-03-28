@@ -906,16 +906,16 @@ const Home = () => {
             {"</>"}
           </span>
         </div>
-
+ 
         {/* desktop image  */}
-        <div className="absolute flex justify-center items-center top-75  left-1/2 -translate-x-1/2 md:top-80 ">
+        <div className="absolute flex justify-center items-center top-75  left-1/2 -translate-x-1/2 md:top-80">
           <Image
             src={"/programming_10817310.png"}
             width={40}
             height={40}
             alt="star image"
             className="
-          opacity40"
+          opacity-50"
           />
           {/* <span className={`absolute code_icon_middle_left -mt-2`}>{"("}</span>
           <span className={`absolute code_icon_middle_left_2 -mt-2`}>
@@ -932,56 +932,56 @@ const Home = () => {
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] web_page_icon'}    
+            className={'absolute top-[5px] web_page_icon'}    
             />
           <Image 
             src={"/website-content_2956461.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] web_page_icon_2'}    
+            className={'absolute top-[5px] web_page_icon_2'}    
             />
           <Image
             src={"/website-content_2956461.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] web_page_icon_3'}    
+            className={'absolute top-[5px] web_page_icon_3'}    
             />
           <Image
             src={"/website-content_2956461.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] web_page_icon_4'}    
+            className={'absolute top-[5px] web_page_icon_4'}    
             />
           <Image
             src={"/mobile-app_6608098.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] mobile_app_icon'}    
+            className={'absolute top-[5px] mobile_app_icon'}    
             />
           <Image
             src={"/mobile-app_6608098.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] mobile_app_icon_2'}    
+            className={'absolute top-[5px] mobile_app_icon_2'}    
             />
           <Image
             src={"/mobile-app_6608098.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] mobile_app_icon_3'}    
+            className={'absolute top-[5px] mobile_app_icon_3'}    
             />
           <Image
             src={"/mobile-app_6608098.png"}
             height={15}
             width={15} 
             alt="website"
-            className={'absolute top-[3px] mobile_app_icon_4'}    
+            className={'absolute top-[5px] mobile_app_icon_4'}    
             />
         </div>
 
