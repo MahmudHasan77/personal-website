@@ -1,17 +1,17 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  scroll-behavior: smooth; 
+transition: background-color 0.3s, color 0.3s;}
+
 :root {
-  background-color: white;
+  background-color: rgb(249, 249, 254);
 }
 
 .dark {
-  background-color: black;
-}
+background: linear-gradient(to left, #1f2937, #000922, #1f2937);}
 
-html {
-  scroll-behavior: smooth;
-}
 
 :root {
   --service_icons_opacity: 0.3;

@@ -161,9 +161,23 @@ const Home = () => {
     link: string;
     description: string;
   }>();
-  const handleThem = () => {
-    setThemMode(themMode === "dark" ? "light" : "dark");
-    localStorage.setItem("theme", themMode === "dark" ? "light" : "dark");
+  const [theme, setTheme] = useState("dark");
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    }
+  }, []);
+
+  const handleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+
+    setTheme(newTheme); // 🔥 instant UI update
+
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+
+    localStorage.setItem("theme", newTheme);
   };
 
   const navigation = [
@@ -725,18 +739,12 @@ const Home = () => {
       </div>
     );
   };
-  //   ${
-  //   themMode && themMode != "dark"
-  //     ? "bg-[#f8feff] text-[#094100] "
-  // dark:bg-gradient-to-l from-gray-800 via-[#000922] to-gray-800
-  //     : "dark"
-  // }
+
   return (
     <div
       onClick={handleClick}
       className={`relative overflow-x-hidden 
-       transition-all duration-500
-text-white 
+       transition-all duration-500 text-[#000751] dark:text-white 
        `}
     >
       <header className="flex justify-between  backdrop-blur-lg items-center py-3 md:py-5 px-10 md:px-20 fixed top-0 z-50 bg-blue-50/70 text-black duration-500 dark:bg-gray-800/70 shadow w-full dark:border-b border-yellow-300/20">
@@ -775,18 +783,21 @@ text-white
 
         {/* theme button */}
         <div className="flex">
-          <button>
-            <MdDarkMode
-              onClick={handleThem}
-              className="text-2xl border border-zinc-400 rounded-full p-[2px] bg-gray-300 darkhidden text-gray-500 cursor-pointer hover:rotate-360 duration-300 hover:scale-110"
-            />
-          </button>
-          <button>
-            <MdLightMode
-              onClick={handleThem}
-              className="hidden dark:inline text-2xl border rounded-full p-[1px]  text-yellow-500 dark:bg-white cursor-pointer hover:rotate-360 duration-300 hover:scale-110 light_icon"
-            />
-          </button>
+          {theme === "light" ? (
+            <button>
+              <MdDarkMode
+                onClick={handleTheme}
+                className="text-2xl border border-zinc-400 rounded-full p-[2px] bg-gray-300 darkhidden text-gray-500 cursor-pointer hover:rotate-360 duration-300 hover:scale-110"
+              />
+            </button>
+          ) : (
+            <button>
+              <MdLightMode
+                onClick={handleTheme}
+                className="text-2xl border rounded-full p-[1px]  text-yellow-500 dark:bg-white cursor-pointer hover:rotate-360 duration-300 hover:scale-110 light_icon"
+              />
+            </button>
+          )}
         </div>
       </header>
 
