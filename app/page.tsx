@@ -892,9 +892,9 @@ const Home = () => {
             {"</>"}
           </span>
         </div>
-        <div
-          className="absolute flex justify-center items-center           top-60  left-1/2 -translate-x-1/2 md:top-27 md:right-50 lg:top-30 lg:right-70"
-        >
+
+        {/* desktop image  */}
+        <div className="absolute flex justify-center items-center           top-65  left-1/2 -translate-x-1/2 md:top-27 md:right-50 lg:top-30 lg:right-70">
           <Image
             src={"/programming_10817310.png"}
             width={40}
@@ -903,46 +903,11 @@ const Home = () => {
             className="
           opacity-40"
           />
-          <span
-            className={`absolute code_icon_middle -mt-2`}
-          >
-            {"("}
-          </span>
-          <span
-            className={`absolute code_icon_middle_2 -mt-2`}
-          >
-            {")"}
-          </span>
-          <span
-            className={`absolute code_icon_middle -mt-2`}
-          >
-            {"("}
-          </span>
-          <span
-            className={`absolute code_icon_middle_2 -mt-2`}
-          >
-            {")"}
-          </span>
-          <span
-            className={`absolute code_icon_middle -mt-2`}
-          >
-            {"("}
-          </span>
-          <span
-            className={`absolute code_icon_middle_2 -mt-2`}
-          >
-            {")"}
-          </span>
-          <span
-            className={`absolute code_icon_middle -mt-2`}
-          >
-            {"("}
-          </span>
-          <span
-            className={`absolute code_icon_middle_2 -mt-2`}
-          >
-            {")"}
-          </span>
+          <span className={`absolute code_icon_middle_left -mt-2`}>{"("}</span>
+          <span className={`absolute code_icon_middle_left_2 -mt-2`}>{"("}</span>
+
+          <span className={`absolute code_icon_middle_right -mt-2`}>{")"}</span>
+          <span className={`absolute code_icon_middle_right_2 -mt-2`}>{")"}</span>
         </div>
 
         {/* logo small screen */}
@@ -994,7 +959,7 @@ const Home = () => {
         </div> */}
 
         {/* name */}
-        <div className="flex justify-around  items-center mb-5">
+        <div className="flex justify-around  items-center mb-15">
           <div
             className={`hidden md:inline duration-3000 ${
               isStart
@@ -1154,7 +1119,9 @@ const Home = () => {
                 : "-translate-x-[100%] opacity-0"
             }`}
           >
-            <div className={`relative h-50 w-65 md:h-70 lg:w-80  imageAnimate`}>
+            <div
+              className={`relative h-50 hidden md:inline w-65 md:h-70 lg:w-80  imageAnimate`}
+            >
               <Image
                 src={"/Nodejs-Application.png"}
                 fill

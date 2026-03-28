@@ -101,7 +101,7 @@ html {
 .code_icon_top {
   font-weight: 900;
   font-style: larger;
-  transform: translateX(-20px);
+  transform: translateX(-15px);
   background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,13 +110,13 @@ html {
 @keyframes code_icon_top {
   50% {
     filter: hue-rotate(360deg);
-    transform: translateX(20px);
+    transform: translateX(15px);
   }
 }
 .code_icon_top_2 {
   font-weight: 900;
   font-style: larger;
-  transform: translateX(20px);
+  transform: translateX(15px);
   background: linear-gradient(45deg, red, orange, tomato, yellow, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,7 +125,7 @@ html {
 @keyframes code_icon_top_2 {
   50% {
     filter: hue-rotate(360deg);
-    transform: translateX(-20px);
+    transform: translateX(-15px);
   }
 }
 .code_icon {
@@ -142,14 +142,14 @@ html {
   }
 }
 
-.code_icon_middle {
-  color:green;
+.code_icon_middle_left {
+  color: red;
   opacity: 1;
   transform: calc(1);
   transform: translateX(0px);
-  animation: code_icon_middle 2s infinite linear;
+  animation: code_icon_middle_left 2s infinite linear;
 }
-@keyframes code_icon_middle {
+@keyframes code_icon_middle_left {
   90% {
     opacity: 0;
     transform: calc(2);
@@ -159,14 +159,50 @@ html {
     opacity: 0;
   }
 }
-.code_icon_middle_2 {
-  color:green;
+.code_icon_middle_left_2 {
+  color: green;
   opacity: 1;
   transform: calc(1);
   transform: translateX(0px);
-  animation: code_icon_middle_2 2s infinite linear;
+  animation: code_icon_middle_left_2 2s infinite linear;
+  animation-delay: 500ms;
 }
-@keyframes code_icon_middle_2 {
+@keyframes code_icon_middle_left_2 {
+  90% {
+    opacity: 0;
+    transform: calc(2);
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.code_icon_middle_right {
+  color: red;
+  opacity: 1;
+  transform: calc(1);
+  transform: translateX(0px);
+  animation: code_icon_middle_right 2s infinite linear;
+}
+@keyframes code_icon_middle_right {
+  90% {
+    opacity: 0;
+    transform: calc(2);
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.code_icon_middle_right_2 {
+  color: green;
+  opacity: 1;
+  transform: calc(1);
+  transform: translateX(0px);
+  animation: code_icon_middle_right_2 2s infinite linear;
+  animation-delay: 500ms;
+}
+@keyframes code_icon_middle_right_2 {
   90% {
     opacity: 0;
     transform: calc(2);
