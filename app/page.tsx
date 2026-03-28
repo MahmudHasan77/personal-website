@@ -729,7 +729,7 @@ const Home = () => {
     <div
       onClick={handleClick}
       className={`relative overflow-x-hidden ${
-        themMode && themMode === "dark"
+        themMode && themMode != "dark"
           ? "bg-[#f8feff] text-[#094100] " 
           : "dark"
       }
