@@ -10,7 +10,9 @@ transition: background-color 0.3s, color 0.3s;}
 }
 
 .dark {
-background: linear-gradient(to left, #1f2937, #000922, #1f2937);}
+/* background: linear-gradient(to left, #1f2937, #000922, #1f2937); */
+background-color: #000a2a;
+}
 
 
 :root {
