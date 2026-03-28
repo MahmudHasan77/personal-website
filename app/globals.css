@@ -229,41 +229,24 @@ html {
 /* desktop icon */
 .web_page_icon {
   opacity: 0;
-  z-index: 1;
   transform: scale(1);
   transform: translateX(0px);
   animation: web_page 6s infinite linear;
 }
 @keyframes web_page {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(-70px);
+
+  50% {
+    transform: translateX(-50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(-70px);
-    opacity: 0;
-    z-index: 0;
-  }
+
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
 }
 .web_page_icon_2 {
-  z-index: 1;
   opacity: 0;
   transform: scale(1);
   transform: translateX(0px);
@@ -271,141 +254,77 @@ html {
   animation-delay: 1.5s;
 }
 @keyframes web_page_2 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(-70px);
+
+  50% {
+    transform: translateX(-50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(-70px);
-    opacity: 0;
-  }
+
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
+
 }
 .web_page_icon_3 {
   opacity: 0;
-  z-index: 1;
-
   transform: scale(1);
   transform: translateX(0px);
   animation: web_page_3 6s infinite linear;
   animation-delay: 3s;
 }
 @keyframes web_page_3 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(-70px);
+  50% {
+    transform: translateX(-50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(-70px);
-    opacity: 0;
-  }
+
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
 }
 .web_page_icon_4 {
   opacity: 0;
-  z-index: 1;
-
   transform: scale(1);
   transform: translateX(0px);
   animation: web_page_4 6s infinite linear;
   animation-delay: 4.5s;
 }
 @keyframes web_page_4 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(-70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(-70px);
+  50% {
+    transform: translateX(-50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(-70px);
-    opacity: 0;
-  }
+
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
 }
 
 .mobile_app_icon {
   opacity: 0;
-  z-index: 1;
   transform: scale(1);
   transform: translateX(0px);
   animation: mobile_app_icon 6s infinite linear;
 }
 @keyframes mobile_app_icon {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(70px);
+  50% {
+    transform: translateX(50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(70px);
-    opacity: 0;
- }
+
   100% {
-    transform: translateX(70px);
+    transform: translateX(100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
 }
 .mobile_app_icon_2 {
-  z-index: 1;
   opacity: 0;
   transform: scale(1);
   transform: translateX(0px);
@@ -413,101 +332,51 @@ html {
   animation-delay: 1.5s;
 }
 @keyframes mobile_app_icon_2 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(70px);
+  50% {
+    transform: translateX(50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(70px);
-  }
+
   100% {
-    transform: translateX(70px);
+    transform: translateX(100px) scale(1);
     opacity: 0;
-    z-index: 0;
-  }
-}
+
+  }}
 .mobile_app_icon_3 {
   opacity: 0;
-  z-index: 1;
-
   transform: scale(1);
   transform: translateX(0px);
   animation: mobile_app_icon_3 6s infinite linear;
   animation-delay: 3s;
 }
 @keyframes mobile_app_icon_3 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(70px);
+  50% {
+    transform: translateX(50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(70px);
-    opacity: 0;
-  }
+
   100% {
-    transform: translateX(70px);
+    transform: translateX(100px) scale(1);
     opacity: 0;
-    z-index: 0;
-  }
-}
+
+  }}
 .mobile_app_icon_4 {
   opacity: 0;
-  z-index: 1;
-
   transform: scale(1);
   transform: translateX(0px);
   animation: mobile_app_icon_4 6s infinite linear;
   animation-delay: 4.5s;
 }
 @keyframes mobile_app_icon_4 {
-  1% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  60% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 1;
-  }
-  70% {
-    transform: translateX(70px) scale(1.5);
-    z-index: 0;
-  }
-  95% {
-    transform: translateX(70px);
+  50% {
+    transform: translateX(50px) scale(1.5);
     opacity: 0.5;
   }
-  99% {
-    transform: translateX(70px);
-    opacity: 0;
-  }
+
   100% {
-    transform: translateX(70px);
+    transform: translateX(100px) scale(1);
     opacity: 0;
-    z-index: 0;
+
   }
 }
 
